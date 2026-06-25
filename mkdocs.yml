@@ -70,6 +70,7 @@ nav:
   - Research Overview:
       - Overview: presentation/research-overview.md
       - Statistics Dashboard: presentation/statistics-dashboard.md
+      - Faculty Presentation: presentation/faculty-presentation.md
       - Research Workflow: workflow/research-workflow.md
   - Context & Statistics:
       - Overview: context-statistics/index.md
