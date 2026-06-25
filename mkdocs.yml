@@ -1,0 +1,122 @@
+site_name: IVF PhD Topic Discovery
+site_description: Literature review, gap analysis, and PhD topic discovery for AI in IVF
+site_author: IVF Research Workspace
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang: en
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js
+  - assets/javascripts/mermaid-init.js
+  - assets/javascripts/research-dashboard.js
+
+extra_css:
+  - assets/stylesheets/research-dashboard.css
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/file-document-edit-outline
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Research Overview:
+      - Overview: presentation/research-overview.md
+      - Statistics Dashboard: presentation/statistics-dashboard.md
+      - Research Workflow: workflow/research-workflow.md
+  - Context & Statistics:
+      - Overview: context-statistics/index.md
+      - Key Statistics: context-statistics/key-statistics.md
+      - Panel Question Bank: context-statistics/panel-question-bank.md
+      - IVF Success and Age: context-statistics/ivf-success-and-age.md
+      - Economic and Access Context: context-statistics/economic-and-access-context.md
+      - Lifestyle and Fertility: context-statistics/lifestyle-and-fertility.md
+      - Source Quality Register: context-statistics/source-quality-register.md
+  - Literature Review:
+      - Literature Matrix: evidence-base/literature-matrix.md
+      - Source Registry: evidence-base/source-registry.md
+      - Excel Workbook: evidence-base/excel-workbook.md
+      - Theme-Wise Review: research-design/theme-wise-review.md
+      - Themes:
+          - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md
+          - Embryo Selection and Grading: research-design/themes/embryo-selection-grading.md
+          - Ovarian Stimulation CDSS: research-design/themes/ovarian-stimulation-cdss.md
+          - FET, Endometrium and Ultrasound: research-design/themes/fet-endometrium-ultrasound.md
+          - XAI and Trustworthy AI: research-design/themes/xai-trustworthy-ai.md
+          - Indian and Lifestyle Data: research-design/themes/indian-lifestyle-data.md
+  - Gap Analysis:
+      - Key Gap Shortlist: gap-analysis/phase-4-gap-shortlist.md
+      - Gap to Research Problem: gap-analysis/gap-to-research-problem.md
+      - Gap Frequency: gap-analysis/gap-frequency.md
+  - Proposed Research:
+      - Research Problem: topic-development/research-problem.md
+      - Research Questions and Objectives: topic-development/research-questions.md
+      - Conceptual Framework: research-design/conceptual-framework.md
+      - Technical Blueprint: proposed-research/technical-blueprint.md
+      - Implementation Roadmap: proposed-research/research-implementation-roadmap.md
+      - Proposed Methodology: research-design/methodology.md
+      - Proposal Structure: topic-development/proposal-structure.md
+  - Data Collection:
+      - Data Collection Framework: research-design/data-collection-framework.md
+      - Clinic Discussion Checklist: research-design/clinic-discussion-checklist.md
+      - Dataset Feasibility Decision: data-collection/dataset-feasibility-decision.md
+  - Topic Development:
+      - Candidate Topics: topic-development/candidate-topics.md
+      - Final Topic Development: topic-development/final-topic-development.md
+  - Research Workspace:
+      - Review Protocol: workflow/review-protocol.md
+      - Next Plan: workflow/next-plan.md
+      - Candidate Expansion Queue: evidence-base/candidate-expansion-queue.md
+      - Theme Classification: research-design/theme-classification.md
+      - Repeated Gaps Raw View: gap-analysis/repeated-gaps.md
+      - Phase 2 Expansion Summary: workflow/phase-2-expansion-summary.md
+      - Phase 3 Theme Summary: workflow/phase-3-theme-summary.md
+      - Phase 4 Gap Summary: workflow/phase-4-gap-summary.md
+      - Phase 5 Proposal Summary: workflow/phase-5-proposal-summary.md
