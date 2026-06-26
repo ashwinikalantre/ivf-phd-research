@@ -218,6 +218,54 @@ Deep reading:
 
 - [AHRQ clinical decision support overview](https://digital.ahrq.gov/clinical-decision-support)
 
+## Human-in-the-Loop AI
+
+**Simple meaning:** An AI workflow where a human expert reviews, interprets or controls the final decision.
+
+**Why it matters:** In IVF, doctors and embryologists should remain responsible for treatment decisions.
+
+**For our research:** The proposed CDSS should support clinicians, not replace them.
+
+Deep reading:
+
+- [NIST human-centered AI resources](https://www.nist.gov/artificial-intelligence)
+
+## Black-Box AI
+
+**Simple meaning:** An AI model whose internal reasoning is difficult for humans to understand.
+
+**Why it matters:** Black-box systems can reduce trust in healthcare if users cannot understand or challenge predictions.
+
+**For our research:** Explainability is needed because IVF decisions affect patient counseling, cost and treatment choices.
+
+Deep reading:
+
+- [NIST explainable AI overview](https://www.nist.gov/artificial-intelligence/explainable-ai)
+
+## Prospective Validation
+
+**Simple meaning:** Testing a model forward in time on new patients after the model has been developed.
+
+**Why it matters:** It gives stronger evidence than retrospective testing.
+
+**For our research:** Prospective validation would be ideal, but feasibility depends on clinic cooperation and study timeline.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
+## Federated Learning
+
+**Simple meaning:** A method where multiple institutions train a shared model without directly sharing raw patient data.
+
+**Why it matters:** It can support multi-clinic collaboration while protecting data privacy.
+
+**For our research:** Federated learning may be future work if multiple IVF clinics cannot share raw data centrally.
+
+Deep reading:
+
+- [Google federated learning overview](https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/)
+
 ## Post-Market Study
 
 **Simple meaning:** A study done after a medical software or product is already available for clinical use.
