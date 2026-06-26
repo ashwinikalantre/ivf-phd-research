@@ -58,6 +58,7 @@ Each paper note follows this structure:
 | 12 | 2024 | The prospect of artificial intelligence to personalize assisted reproductive technology | Review / AI personalization and CDSS in ART | Completed |
 | 13 | 2025 | Current progress and open challenges for applying artificial intelligence across the in vitro fertilization cycle | Review / open challenges and data modalities | Completed |
 | 14 | 2025 | Patient-Centred Explainability in IVF Outcome Prediction | Patient-facing XAI / interface trust and understandability | Completed; preprint |
+| 15 | 2026 | AI-based live birth prediction in IVF cycles: a systematic review without meta-analysis of model performance and validation | Systematic review / live-birth prediction evidence | Completed; outside original 2021-2025 window |
 
 ## Priority Order
 

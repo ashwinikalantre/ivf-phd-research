@@ -422,6 +422,102 @@ Deep reading:
 
 - [TRIPOD statement](https://www.tripod-statement.org/)
 
+## Systematic Review
+
+**Simple meaning:** A structured review that follows a planned method to search, select and analyze studies.
+
+**Why it matters:** It gives stronger synthesis evidence than a narrative review when conducted rigorously.
+
+**For our research:** Systematic reviews help confirm repeated gaps across many papers.
+
+Deep reading:
+
+- [Cochrane systematic review guidance](https://training.cochrane.org/handbook)
+
+## PRISMA
+
+**Simple meaning:** Reporting guidance for systematic reviews and meta-analyses.
+
+**Why it matters:** It improves transparency in how studies were searched, selected and reported.
+
+**For our research:** PRISMA-style thinking helps keep our literature review systematic.
+
+Deep reading:
+
+- [PRISMA statement](https://www.prisma-statement.org/)
+
+## PROSPERO
+
+**Simple meaning:** An international database where systematic review protocols can be registered.
+
+**Why it matters:** Registration improves transparency and reduces selective reporting.
+
+**For our research:** Registered reviews are useful synthesis sources when judging evidence quality.
+
+Deep reading:
+
+- [PROSPERO](https://www.crd.york.ac.uk/prospero/)
+
+## QUADAS-2
+
+**Simple meaning:** A tool for assessing risk of bias and applicability in diagnostic accuracy studies.
+
+**Why it matters:** AI prediction studies often behave like diagnostic/prognostic tests and need bias assessment.
+
+**For our research:** QUADAS-2 helps interpret whether high model performance is trustworthy.
+
+Deep reading:
+
+- [QUADAS-2 guidance](https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-2/)
+
+## GRADE
+
+**Simple meaning:** A framework for rating certainty of evidence.
+
+**Why it matters:** It helps decide whether evidence is strong, moderate, low or very low quality.
+
+**For our research:** Evidence quality matters before converting gaps into thesis claims.
+
+Deep reading:
+
+- [GRADE working group](https://www.gradeworkinggroup.org/)
+
+## Selection Bias
+
+**Simple meaning:** A bias that occurs when the studied samples are not representative of the real target population.
+
+**Why it matters:** IVF embryo studies that include only transferred embryos may miss information from non-transferred embryos.
+
+**For our research:** Selection bias must be checked when defining the dataset and inclusion criteria.
+
+Deep reading:
+
+- [Catalogue of Bias: selection bias](https://catalogofbias.org/biases/selection-bias/)
+
+## Internal Validation Overfitting
+
+**Simple meaning:** A model performs well on internal validation but may fail on independent external data.
+
+**Why it matters:** This is common when models are tuned heavily on one dataset.
+
+**For our research:** External or temporal validation is needed to reduce this risk.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
+## Noninferiority Trial
+
+**Simple meaning:** A study designed to test whether a new method is not unacceptably worse than an existing standard method.
+
+**Why it matters:** AI embryo-selection trials may test whether AI is at least not worse than embryologist morphology assessment.
+
+**For our research:** Noninferiority evidence is stronger than retrospective accuracy comparison for clinical adoption.
+
+Deep reading:
+
+- [FDA non-inferiority clinical trials guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/non-inferiority-clinical-trials)
+
 ## Post-Market Study
 
 **Simple meaning:** A study done after a medical software or product is already available for clinical use.
