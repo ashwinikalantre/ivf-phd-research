@@ -807,6 +807,30 @@ Deep reading:
 
 - [scikit-learn feature selection](https://scikit-learn.org/stable/modules/feature_selection.html)
 
+## Genetic Algorithm
+
+**Simple meaning:** An optimization method inspired by natural selection, where candidate solutions are repeatedly selected, combined and mutated to search for a good solution.
+
+**Why it matters:** In IVF prediction, Genetic Algorithm can be used to select a smaller set of useful clinical features from a larger dataset.
+
+**For our research:** GA can be considered as one feature-selection approach, but selected features still need clinical interpretation and external validation.
+
+Deep reading:
+
+- [MathWorks genetic algorithm overview](https://www.mathworks.com/help/gads/what-is-the-genetic-algorithm.html)
+
+## SMOTE
+
+**Simple meaning:** Synthetic Minority Over-sampling Technique. It creates synthetic examples of the minority class to reduce class imbalance during model training.
+
+**Why it matters:** IVF datasets often have imbalanced outcomes, such as fewer positive pregnancies or fewer adverse outcomes.
+
+**For our research:** SMOTE should be applied only within training data and must be checked carefully because synthetic balancing can make internal results look stronger than real-world performance.
+
+Deep reading:
+
+- [imbalanced-learn SMOTE](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html)
+
 ## Feature Importance
 
 **Simple meaning:** A method for estimating which input variables contribute most to model predictions.

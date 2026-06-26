@@ -354,6 +354,18 @@ Deep reading:
 
 - [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
 
+## Beta-hCG
+
+**Simple meaning:** A pregnancy hormone measured in blood or urine after embryo transfer.
+
+**Why it matters:** Some IVF studies define clinical pregnancy or early pregnancy outcome using positive beta-hCG after treatment.
+
+**For our research:** Beta-hCG positivity is an early outcome. It should not be treated as equivalent to live birth.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
 ## AMH
 
 **Simple meaning:** Anti-Mullerian hormone. A blood marker used to estimate ovarian reserve.
