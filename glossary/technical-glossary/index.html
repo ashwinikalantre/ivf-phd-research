@@ -2023,6 +2023,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#linear-discriminant-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Discriminant Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#support-vector-machine" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2507,6 +2518,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#treeshap" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2743,6 +2765,8 @@
       
         
           
+        
+      
         
       
         
@@ -3569,6 +3593,34 @@
     
   
     Paper 26: Afnan et al. 2021
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-27-luong-2024-xai-ploidy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 27: Luong et al. 2024
   
 
     
@@ -5681,6 +5733,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#linear-discriminant-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Discriminant Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#support-vector-machine" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6158,6 +6221,17 @@
     <span class="md-ellipsis">
       
         SHAP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIME
       
     </span>
   </a>
@@ -7011,6 +7085,14 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">scikit-learn LogisticRegression</a></li>
 </ul>
+<h2 id="linear-discriminant-analysis">Linear Discriminant Analysis<a class="headerlink" href="#linear-discriminant-analysis" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A classification method that finds a linear combination of variables that separates classes.</p>
+<p><strong>Why it matters:</strong> LDA is often used as a simple baseline model in biomedical classification.</p>
+<p><strong>For our research:</strong> LDA can be included as a benchmark, but more flexible models may perform better on complex IVF data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html">scikit-learn LinearDiscriminantAnalysis</a></li>
+</ul>
 <h2 id="support-vector-machine">Support Vector Machine<a class="headerlink" href="#support-vector-machine" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A supervised machine-learning model that tries to separate classes using a boundary with maximum margin.</p>
 <p><strong>Why it matters:</strong> SVM is often used as a comparison model in medical prediction studies.</p>
@@ -7362,6 +7444,14 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://shap.readthedocs.io/">SHAP documentation</a></li>
+</ul>
+<h2 id="lime">LIME<a class="headerlink" href="#lime" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Local Interpretable Model-agnostic Explanations. A method that explains one prediction by fitting a simpler local model around that case.</p>
+<p><strong>Why it matters:</strong> It can help explain why one patient or embryo received a particular prediction.</p>
+<p><strong>For our research:</strong> LIME can support case-level explanation, but explanations should be checked for stability and clinical usefulness.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://doi.org/10.1145/2939672.2939778">Original LIME paper</a></li>
 </ul>
 <h2 id="treeshap">TreeSHAP<a class="headerlink" href="#treeshap" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A SHAP method optimized for tree-based models.</p>
