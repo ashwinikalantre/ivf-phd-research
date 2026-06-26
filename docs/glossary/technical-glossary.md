@@ -483,6 +483,30 @@ Deep reading:
 
 - [scikit-learn ROC and AUC](https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics)
 
+## Precision-Recall AUC
+
+**Simple meaning:** Area under the precision-recall curve. It shows how well a model balances correct positive predictions and detection of actual positives.
+
+**Why it matters:** It is useful when false positives and false negatives are clinically important.
+
+**For our research:** IVF counseling should consider false reassurance and unnecessary discouragement, not only ROC-AUC.
+
+Deep reading:
+
+- [scikit-learn precision-recall metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics)
+
+## F1 Score
+
+**Simple meaning:** A metric that combines precision and recall into one value.
+
+**Why it matters:** It helps evaluate whether a model balances false positives and false negatives.
+
+**For our research:** F1 can be useful at clinically meaningful thresholds, but it should not replace calibration.
+
+Deep reading:
+
+- [scikit-learn F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)
+
 ## Calibration
 
 **Simple meaning:** How closely predicted probabilities match actual observed outcomes.
@@ -494,6 +518,54 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn probability calibration](https://scikit-learn.org/stable/modules/calibration.html)
+
+## Brier Score
+
+**Simple meaning:** A metric that measures how close predicted probabilities are to actual outcomes.
+
+**Why it matters:** Lower Brier score usually means better probability calibration.
+
+**For our research:** Brier score is useful because IVF counseling often gives patients probability estimates.
+
+Deep reading:
+
+- [scikit-learn brier_score_loss](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html)
+
+## Data Drift
+
+**Simple meaning:** A change in the distribution of input data over time.
+
+**Example:** A clinic’s patient age, diagnosis profile or treatment protocols change over years.
+
+**For our research:** IVF models may need monitoring and updating if clinic populations or practices change.
+
+Deep reading:
+
+- [Evidently AI data drift guide](https://www.evidentlyai.com/ml-in-production/data-drift)
+
+## Concept Drift
+
+**Simple meaning:** A change in the relationship between input features and the outcome.
+
+**Example:** A treatment protocol changes, so a variable predicts live birth differently than before.
+
+**For our research:** Concept drift matters if a model is deployed over time in a real clinic.
+
+Deep reading:
+
+- [Evidently AI concept drift guide](https://www.evidentlyai.com/ml-in-production/concept-drift)
+
+## TRIPOD + AI
+
+**Simple meaning:** Reporting guidance for clinical prediction models that use regression or machine learning.
+
+**Why it matters:** It helps make prediction-model studies transparent and reproducible.
+
+**For our research:** TRIPOD + AI can guide how we report dataset, model, validation and limitations in the thesis.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
 
 ## Bayesian Optimization
 

@@ -48,6 +48,7 @@ Each paper note follows this structure:
 | 02 | 2024 | Optimizing oocyte yield utilizing a machine learning model for dose and trigger decisions, a multi-center, prospective study | Ovarian stimulation / CDSS / prospective evaluation | Completed |
 | 03 | 2026 | Multimodal intelligent prediction model for in vitro fertilization | Multimodal embryo video + clinical-data prediction | Completed; outside original 2021-2025 window |
 | 04 | 2025 | Deep learning classification integrating embryo images with associated clinical information from ART cycles | Multimodal embryo image + clinical-data prediction | Completed |
+| 05 | 2025 | Machine learning center-specific models show improved IVF live birth predictions over US national registry-based model | Center-specific live-birth prediction / local validation | Completed |
 
 ## Priority Order
 
