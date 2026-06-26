@@ -174,6 +174,42 @@ Deep reading:
 - [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 - [ASRM International Glossary on Infertility and Fertility Care](https://www.asrm.org/practice-guidance/practice-committee-documents/the-international-glossary-on-infertility-and-fertility-care-2025/)
 
+## Vitrification
+
+**Simple meaning:** A rapid freezing method used to preserve embryos, eggs or sperm.
+
+**Why it matters:** Frozen embryo transfer studies often involve vitrified-warmed embryos.
+
+**For our research:** Fresh and frozen/vitrified embryo-transfer cycles should not be mixed without clear modeling choices.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## Inner Cell Mass
+
+**Simple meaning:** The group of cells inside a blastocyst that can develop into the fetus.
+
+**Why it matters:** ICM grade is part of blastocyst quality assessment.
+
+**For our research:** ICM grade may be an important embryology feature if blastocyst data is available.
+
+Deep reading:
+
+- [ASRM International Glossary on Infertility and Fertility Care](https://www.asrm.org/practice-guidance/practice-committee-documents/the-international-glossary-on-infertility-and-fertility-care-2025/)
+
+## Trophectoderm
+
+**Simple meaning:** The outer cell layer of a blastocyst that contributes to placenta formation.
+
+**Why it matters:** TE grade is commonly used in blastocyst grading.
+
+**For our research:** TE grade may be an important embryology feature and should be captured if available.
+
+Deep reading:
+
+- [ASRM International Glossary on Infertility and Fertility Care](https://www.asrm.org/practice-guidance/practice-committee-documents/the-international-glossary-on-infertility-and-fertility-care-2025/)
+
 ## Embryo Transfer
 
 **Simple meaning:** Placement of one or more embryos into the uterus.

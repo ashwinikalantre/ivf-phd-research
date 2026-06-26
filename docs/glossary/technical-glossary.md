@@ -531,6 +531,54 @@ Deep reading:
 
 - [Decision curve analysis overview](https://www.mskcc.org/departments/epidemiology-biostatistics/biostatistics/decision-curve-analysis)
 
+## Voting Classifier
+
+**Simple meaning:** An ensemble model that combines predictions from multiple models and chooses the final class by voting or averaged probabilities.
+
+**Why it matters:** It can improve stability when different models capture different patterns.
+
+**For our research:** Voting classifiers may be useful for comparison, but explainability and calibration still matter.
+
+Deep reading:
+
+- [scikit-learn VotingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html)
+
+## Stacking Classifier
+
+**Simple meaning:** An ensemble method where predictions from several base models are used as inputs to another model.
+
+**Why it matters:** It can improve performance but may become harder to explain.
+
+**For our research:** Stacking should be used cautiously in healthcare because transparency and overfitting risk must be controlled.
+
+Deep reading:
+
+- [scikit-learn StackingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html)
+
+## SMOTETomek
+
+**Simple meaning:** A class-balancing method that combines SMOTE oversampling with Tomek Links cleaning.
+
+**Why it matters:** It helps when one outcome class is much smaller than another.
+
+**For our research:** Class balancing must be applied only to training data to avoid leakage.
+
+Deep reading:
+
+- [imbalanced-learn SMOTETomek](https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTETomek.html)
+
+## Mutual Information
+
+**Simple meaning:** A statistic that measures how much knowing one variable reduces uncertainty about another variable.
+
+**Why it matters:** It can identify useful predictors even when relationships are non-linear.
+
+**For our research:** Mutual information can support feature selection, but clinical relevance should still be checked.
+
+Deep reading:
+
+- [scikit-learn mutual_info_classif](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_classif.html)
+
 ## Multilayer Perceptron
 
 **Simple meaning:** A feedforward neural network with one or more hidden layers.

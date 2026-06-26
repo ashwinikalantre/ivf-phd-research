@@ -53,6 +53,7 @@ Each paper note follows this structure:
 | 07 | 2025 | Construction and evaluation of machine learning-based prediction model for live birth following fresh embryo transfer in IVF/ICSI patients with PCOS | PCOS subgroup live-birth prediction / SHAP | Completed |
 | 08 | 2025 | Predictive models for live birth outcomes following fresh embryo transfer in assisted reproductive technologies using machine learning | Fresh embryo-transfer live-birth prediction / web tool | Completed |
 | 09 | 2025 | Comparative analysis of convolutional neural networks and traditional machine learning models for IVF live birth prediction | EMR-based live-birth prediction / resource-constrained deployment | Completed |
+| 10 | 2025 | Optimizing predictive features using machine learning for early miscarriage risk following single vitrified-warmed blastocyst transfer | SVBT early miscarriage risk prediction | Completed |
 
 ## Priority Order
 
