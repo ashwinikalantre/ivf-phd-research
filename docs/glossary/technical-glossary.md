@@ -663,6 +663,42 @@ Deep reading:
 
 - [scikit-learn RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
+## missForest
+
+**Simple meaning:** A Random Forest based method for filling missing values in mixed clinical datasets.
+
+**Why it matters:** IVF datasets often have missing clinical and treatment variables.
+
+**For our research:** Imputation can help use incomplete records, but high missingness should be reported and sensitivity analysis may be needed.
+
+Deep reading:
+
+- [missForest R package](https://cran.r-project.org/package=missForest)
+
+## Out-of-Bag Error
+
+**Simple meaning:** An internal Random Forest error estimate calculated using samples not included in each tree's bootstrap sample.
+
+**Why it matters:** It gives a model-performance estimate without a separate validation split, but it is still internal validation.
+
+**For our research:** OOB error is useful during model development, but external validation remains stronger.
+
+Deep reading:
+
+- [Random Forest overview, scikit-learn](https://scikit-learn.org/stable/modules/ensemble.html#forest)
+
+## Mean Decrease Accuracy
+
+**Simple meaning:** A Random Forest feature-importance measure showing how much model accuracy decreases when a variable is removed or permuted.
+
+**Why it matters:** It helps rank variables that influence model predictions.
+
+**For our research:** It can support interpretation, but it does not prove causal effect.
+
+Deep reading:
+
+- [scikit-learn permutation importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
+
 ## Super Learner
 
 **Simple meaning:** An ensemble method that combines multiple candidate models and learns how to weight them.
@@ -1198,6 +1234,18 @@ Deep reading:
 **Why it matters:** In IVF prediction, specificity helps understand how often the model avoids falsely predicting success or risk.
 
 **For our research:** Specificity should be interpreted together with sensitivity/recall, precision and clinical consequences.
+
+Deep reading:
+
+- [Google ML Crash Course: classification metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)
+
+## Sensitivity
+
+**Simple meaning:** Among truly positive cases, the proportion correctly predicted as positive.
+
+**Why it matters:** In IVF prediction, sensitivity helps understand how often the model detects patients who actually achieve the target outcome.
+
+**For our research:** Sensitivity must be balanced with specificity, because false reassurance and false discouragement both matter in counseling.
 
 Deep reading:
 

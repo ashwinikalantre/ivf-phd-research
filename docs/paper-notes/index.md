@@ -62,6 +62,7 @@ Each paper note follows this structure:
 | 16 | 2024 | Comparative study of machine learning approaches integrated with genetic algorithm for IVF success prediction | Clinical-pregnancy prediction / GA feature selection | Completed |
 | 17 | 2024 | Catalyzing IVF outcome prediction: exploring advanced machine learning paradigms for enhanced success rate prognostication | Live-birth prediction / ensemble ML / SHAP | Completed |
 | 18 | 2022 | Comparison of machine learning classification techniques to predict implantation success in an IVF treatment cycle | Implantation prediction / model comparison | Completed; full-text details limited |
+| 19 | 2022 | Predicting clinical pregnancy using clinical features and machine learning algorithms in in vitro fertilization | Clinical-pregnancy prediction / Random Forest / PDP | Completed |
 
 ## Priority Order
 
