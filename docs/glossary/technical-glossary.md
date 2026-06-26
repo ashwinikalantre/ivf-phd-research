@@ -687,6 +687,42 @@ Deep reading:
 
 - [scikit-learn AdaBoostClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html)
 
+## LogitBoost
+
+**Simple meaning:** A boosting algorithm that builds an additive logistic-regression style model by combining weak learners.
+
+**Why it matters:** It can perform strongly on classification tasks, including tabular clinical prediction.
+
+**For our research:** LogitBoost can be treated as an ensemble benchmark, but strong retrospective accuracy still needs external and prospective validation.
+
+Deep reading:
+
+- [Original LogitBoost paper](https://doi.org/10.1214/aos/1016218223)
+
+## RUSBoost
+
+**Simple meaning:** Random UnderSampling Boosting. It combines boosting with undersampling of the majority class to handle class imbalance.
+
+**Why it matters:** IVF datasets may have imbalanced outcomes, so imbalance-aware methods can improve minority-class detection.
+
+**For our research:** RUSBoost is useful to compare, but undersampling can discard information and must be validated carefully.
+
+Deep reading:
+
+- [RUSBoost paper](https://doi.org/10.1109/TSMCA.2009.2029559)
+
+## Random Subspace Method
+
+**Simple meaning:** An ensemble method where models are trained on different random subsets of features.
+
+**Why it matters:** It can improve robustness when many variables are available.
+
+**For our research:** It may be useful for tabular IVF datasets, but feature subsets should still make clinical sense.
+
+Deep reading:
+
+- [Random subspace method overview](https://doi.org/10.1109/34.709601)
+
 ## Artificial Neural Network
 
 **Simple meaning:** A machine-learning model inspired by connected layers of artificial neurons.
@@ -735,6 +771,18 @@ Deep reading:
 
 - [HealthIT.gov electronic medical records overview](https://www.healthit.gov/faq/what-are-electronic-medical-records-emrs)
 
+## HFEA Dataset
+
+**Simple meaning:** IVF/ART treatment data associated with the UK Human Fertilisation and Embryology Authority.
+
+**Why it matters:** HFEA data is often used for large-scale IVF outcome prediction because it covers many treatment cycles.
+
+**For our research:** HFEA-based results are valuable, but they still need local validation before applying them to Indian IVF clinics.
+
+Deep reading:
+
+- [HFEA fertility treatment data](https://www.hfea.gov.uk/about-us/our-data/)
+
 ## One-Hot Encoding
 
 **Simple meaning:** A way to convert categories into numeric columns so machine-learning models can use them.
@@ -758,6 +806,18 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+
+## Standard Scaling
+
+**Simple meaning:** A method that rescales numeric values so they have mean 0 and standard deviation 1.
+
+**Why it matters:** Models such as SVM, k-NN and neural networks can be sensitive to feature scale.
+
+**For our research:** Scaling must be fitted on training data only, then applied to validation/test data to avoid data leakage.
+
+Deep reading:
+
+- [scikit-learn StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 
 ## Early Stopping
 
