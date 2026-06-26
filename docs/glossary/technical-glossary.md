@@ -1155,6 +1155,18 @@ Deep reading:
 
 - [ICH E10 guideline on choice of control group](https://www.ich.org/page/efficacy-guidelines)
 
+## Real-World Evidence
+
+**Simple meaning:** Evidence generated from routine clinical practice rather than a tightly controlled trial setting.
+
+**Why it matters:** AI tools may perform differently when used by real clinicians in normal workflow.
+
+**For our research:** Real-world evidence is useful, but it still needs careful design because practice changes and selection bias can affect results.
+
+Deep reading:
+
+- [FDA real-world evidence overview](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+
 ## Leave-One-Clinic-Out Cross-Validation
 
 **Simple meaning:** A validation approach where data from one clinic is held out for testing while the model is trained on the remaining clinics.
