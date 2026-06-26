@@ -8,6 +8,18 @@ DOI: [https://doi.org/10.1038/s41467-024-55301-y](https://doi.org/10.1038/s41467
 
 Source checked: [Nature Communications article page](https://www.nature.com/articles/s41467-024-55301-y)
 
+Related study terms:
+
+- [Follicle](../glossary/clinical-glossary.md#follicle)
+- [Oocyte](../glossary/clinical-glossary.md#oocyte)
+- [Mature oocyte / metaphase-II oocyte](../glossary/clinical-glossary.md#mature-oocyte-metaphase-ii-oocyte)
+- [Ovarian stimulation](../glossary/clinical-glossary.md#ovarian-stimulation)
+- [Trigger day](../glossary/clinical-glossary.md#trigger-day)
+- [Gradient boosting](../glossary/technical-glossary.md#gradient-boosting)
+- [SHAP](../glossary/technical-glossary.md#shap)
+- [TreeSHAP](../glossary/technical-glossary.md#treeshap)
+- [Leave-one-clinic-out cross-validation](../glossary/technical-glossary.md#leave-one-clinic-out-cross-validation)
+
 ## Why This Paper Matters
 
 This is a strong paper for our research because it connects:

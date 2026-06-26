@@ -85,6 +85,10 @@ nav:
       - Literature Matrix: evidence-base/literature-matrix.md
       - Source Registry: evidence-base/source-registry.md
       - Excel Workbook: evidence-base/excel-workbook.md
+      - Study Glossary:
+          - Overview: glossary/index.md
+          - Clinical Glossary: glossary/clinical-glossary.md
+          - Technical Glossary: glossary/technical-glossary.md
       - Paper Reading Notes:
           - Overview: paper-notes/index.md
           - "Paper 01: Hanassab et al. 2025": paper-notes/paper-01-hanassab-2025-xai-follicles.md

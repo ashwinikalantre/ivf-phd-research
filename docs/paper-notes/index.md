@@ -12,6 +12,15 @@ If a dataset detail, metric, limitation or future-work point is not available fr
 
 **Not confirmed from available source**
 
+## Supporting Glossary
+
+During paper review, important terms will be added to:
+
+- [Clinical Glossary](../glossary/clinical-glossary.md)
+- [Technical Glossary](../glossary/technical-glossary.md)
+
+These pages are for later study, so we do not need to explain every term again inside every paper note.
+
 ## Page Structure
 
 Each paper note follows this structure:
