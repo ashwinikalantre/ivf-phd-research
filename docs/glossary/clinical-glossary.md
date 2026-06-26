@@ -498,6 +498,18 @@ Deep reading:
 
 - [ASRM ovarian reserve committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/testing-and-interpreting-measures-of-ovarian-reserve-a-committee-opinion-2020/)
 
+## BMI
+
+**Simple meaning:** Body mass index. A weight-for-height measure often used as a broad clinical indicator.
+
+**Why it matters:** BMI can affect fertility, stimulation response, pregnancy risks and IVF counseling, but it does not fully represent body composition or metabolic health.
+
+**For our research:** BMI is a common IVF prediction feature. It should be used carefully with lifestyle, metabolic and clinical context where available.
+
+Deep reading:
+
+- [WHO BMI overview](https://www.who.int/data/gho/data/themes/topics/topic-details/GHO/body-mass-index)
+
 ## AFC
 
 **Simple meaning:** Antral follicle count. The number of small follicles seen on ultrasound at the start of a cycle.

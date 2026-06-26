@@ -72,6 +72,7 @@ Each paper note follows this structure:
 | 26 | 2021 | Interpretable, not black-box, artificial intelligence should be used for embryo selection | Trustworthy AI / embryo-selection ethics / interpretability | Completed |
 | 27 | 2024 | Beyond black-box models: explainable AI for embryo ploidy prediction and patient-centric consultation | Embryo ploidy prediction / SHAP / LIME | Completed |
 | 28 | 2024 | Deep learning versus manual morphology-based embryo selection in IVF: a randomized, double-blind noninferiority trial | Embryo selection RCT / iDAScore / clinical utility | Completed |
+| 29 | 2025 | Artificial intelligence-enhanced in-vitro fertilization outcome prediction for the Indian subpopulation: integrating pre-treatment parameters and Bayesian-optimized ensemble techniques | Indian IVF outcome prediction / Bayesian-optimized ensemble | Completed; source access limited to article page |
 
 ## Priority Order
 
