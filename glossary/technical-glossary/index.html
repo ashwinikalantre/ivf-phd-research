@@ -1869,6 +1869,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#super-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Super Learner
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#extra-trees" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2342,6 +2353,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#specificity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specificity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeated-cross-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeated Cross-Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#precision-recall-auc" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2457,6 +2490,8 @@
       
         
           
+        
+      
         
       
         
@@ -3013,6 +3048,34 @@
     
   
     Paper 17: Sadegh-Zadeh et al. 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-18-yigit-2022-implantation-success/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 18: Yigit et al. 2022
   
 
     
@@ -4971,6 +5034,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#super-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Super Learner
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#extra-trees" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5437,6 +5511,28 @@
     <span class="md-ellipsis">
       
         AUC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specificity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specificity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeated-cross-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeated Cross-Validation
       
     </span>
   </a>
@@ -6057,6 +6153,14 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">scikit-learn RandomForestClassifier</a></li>
 </ul>
+<h2 id="super-learner">Super Learner<a class="headerlink" href="#super-learner" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An ensemble method that combines multiple candidate models and learns how to weight them.</p>
+<p><strong>Why it matters:</strong> It can perform well when no single model is best across all data patterns.</p>
+<p><strong>For our research:</strong> Super Learner may be useful as a benchmark, but it can be harder to explain than a single interpretable model.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=SuperLearner">SuperLearner R package</a></li>
+</ul>
 <h2 id="extra-trees">Extra Trees<a class="headerlink" href="#extra-trees" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> Extremely Randomized Trees. An ensemble method similar to Random Forest but with more randomization in tree construction.</p>
 <p><strong>Why it matters:</strong> It is often used as a comparison ensemble model.</p>
@@ -6400,6 +6504,22 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics">scikit-learn ROC and AUC</a></li>
+</ul>
+<h2 id="specificity">Specificity<a class="headerlink" href="#specificity" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Among truly negative cases, the proportion correctly predicted as negative.</p>
+<p><strong>Why it matters:</strong> In IVF prediction, specificity helps understand how often the model avoids falsely predicting success or risk.</p>
+<p><strong>For our research:</strong> Specificity should be interpreted together with sensitivity/recall, precision and clinical consequences.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall">Google ML Crash Course: classification metrics</a></li>
+</ul>
+<h2 id="repeated-cross-validation">Repeated Cross-Validation<a class="headerlink" href="#repeated-cross-validation" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Cross-validation repeated multiple times with different data splits.</p>
+<p><strong>Why it matters:</strong> It gives a more stable internal performance estimate than one split, especially with smaller datasets.</p>
+<p><strong>For our research:</strong> Repeated cross-validation is useful, but it is still not the same as external validation on another clinic.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/cross_validation.html">scikit-learn cross-validation</a></li>
 </ul>
 <h2 id="precision-recall-auc">Precision-Recall AUC<a class="headerlink" href="#precision-recall-auc" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> Area under the precision-recall curve. It shows how well a model balances correct positive predictions and detection of actual positives.</p>
