@@ -1891,6 +1891,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#logitboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LogitBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rusboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RUSBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-subspace-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Subspace Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#artificial-neural-network" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1935,6 +1968,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hfea-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HFEA Dataset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#one-hot-encoding" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1950,6 +1994,17 @@
     <span class="md-ellipsis">
       
         Min-Max Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard Scaling
       
     </span>
   </a>
@@ -2402,6 +2457,8 @@
       
         
           
+        
+      
         
       
         
@@ -2928,6 +2985,34 @@
     
   
     Paper 16: Dehghan et al. 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-17-sadegh-zadeh-2024-ivf-outcome-ml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 17: Sadegh-Zadeh et al. 2024
   
 
     
@@ -4908,6 +4993,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#logitboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LogitBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rusboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RUSBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-subspace-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Subspace Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#artificial-neural-network" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4952,6 +5070,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hfea-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HFEA Dataset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#one-hot-encoding" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4967,6 +5096,17 @@
     <span class="md-ellipsis">
       
         Min-Max Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard Scaling
       
     </span>
   </a>
@@ -5933,6 +6073,30 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html">scikit-learn AdaBoostClassifier</a></li>
 </ul>
+<h2 id="logitboost">LogitBoost<a class="headerlink" href="#logitboost" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A boosting algorithm that builds an additive logistic-regression style model by combining weak learners.</p>
+<p><strong>Why it matters:</strong> It can perform strongly on classification tasks, including tabular clinical prediction.</p>
+<p><strong>For our research:</strong> LogitBoost can be treated as an ensemble benchmark, but strong retrospective accuracy still needs external and prospective validation.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://doi.org/10.1214/aos/1016218223">Original LogitBoost paper</a></li>
+</ul>
+<h2 id="rusboost">RUSBoost<a class="headerlink" href="#rusboost" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Random UnderSampling Boosting. It combines boosting with undersampling of the majority class to handle class imbalance.</p>
+<p><strong>Why it matters:</strong> IVF datasets may have imbalanced outcomes, so imbalance-aware methods can improve minority-class detection.</p>
+<p><strong>For our research:</strong> RUSBoost is useful to compare, but undersampling can discard information and must be validated carefully.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://doi.org/10.1109/TSMCA.2009.2029559">RUSBoost paper</a></li>
+</ul>
+<h2 id="random-subspace-method">Random Subspace Method<a class="headerlink" href="#random-subspace-method" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An ensemble method where models are trained on different random subsets of features.</p>
+<p><strong>Why it matters:</strong> It can improve robustness when many variables are available.</p>
+<p><strong>For our research:</strong> It may be useful for tabular IVF datasets, but feature subsets should still make clinical sense.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://doi.org/10.1109/34.709601">Random subspace method overview</a></li>
+</ul>
 <h2 id="artificial-neural-network">Artificial Neural Network<a class="headerlink" href="#artificial-neural-network" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A machine-learning model inspired by connected layers of artificial neurons.</p>
 <p><strong>Why it matters:</strong> ANNs can learn non-linear patterns but may overfit if the dataset is not large or balanced enough.</p>
@@ -5965,6 +6129,14 @@
 <ul>
 <li><a href="https://www.healthit.gov/faq/what-are-electronic-medical-records-emrs">HealthIT.gov electronic medical records overview</a></li>
 </ul>
+<h2 id="hfea-dataset">HFEA Dataset<a class="headerlink" href="#hfea-dataset" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> IVF/ART treatment data associated with the UK Human Fertilisation and Embryology Authority.</p>
+<p><strong>Why it matters:</strong> HFEA data is often used for large-scale IVF outcome prediction because it covers many treatment cycles.</p>
+<p><strong>For our research:</strong> HFEA-based results are valuable, but they still need local validation before applying them to Indian IVF clinics.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.hfea.gov.uk/about-us/our-data/">HFEA fertility treatment data</a></li>
+</ul>
 <h2 id="one-hot-encoding">One-Hot Encoding<a class="headerlink" href="#one-hot-encoding" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A way to convert categories into numeric columns so machine-learning models can use them.</p>
 <p><strong>Example:</strong> Infertility type becomes separate yes/no columns for PCOS, tubal factor, male factor, etc.</p>
@@ -5980,6 +6152,14 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html">scikit-learn MinMaxScaler</a></li>
+</ul>
+<h2 id="standard-scaling">Standard Scaling<a class="headerlink" href="#standard-scaling" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A method that rescales numeric values so they have mean 0 and standard deviation 1.</p>
+<p><strong>Why it matters:</strong> Models such as SVM, k-NN and neural networks can be sensitive to feature scale.</p>
+<p><strong>For our research:</strong> Scaling must be fitted on training data only, then applied to validation/test data to avoid data leakage.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">scikit-learn StandardScaler</a></li>
 </ul>
 <h2 id="early-stopping">Early Stopping<a class="headerlink" href="#early-stopping" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A training method that stops model training when validation performance stops improving.</p>
