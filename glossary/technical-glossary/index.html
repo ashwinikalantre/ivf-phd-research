@@ -1704,10 +1704,76 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#precision-recall-auc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision-Recall AUC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#calibration" class="md-nav__link">
     <span class="md-ellipsis">
       
         Calibration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brier-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brier Score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tripod-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TRIPOD + AI
       
     </span>
   </a>
@@ -1753,6 +1819,8 @@
       
         
           
+        
+      
         
       
         
@@ -1919,6 +1987,34 @@
     
   
     Paper 04: Salih et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-05-yao-2025-center-specific-live-birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 05: Yao et al. 2025
   
 
     
@@ -3712,10 +3808,76 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#precision-recall-auc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision-Recall AUC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#calibration" class="md-nav__link">
     <span class="md-ellipsis">
       
         Calibration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brier-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brier Score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tripod-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TRIPOD + AI
       
     </span>
   </a>
@@ -4139,6 +4301,22 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics">scikit-learn ROC and AUC</a></li>
 </ul>
+<h2 id="precision-recall-auc">Precision-Recall AUC<a class="headerlink" href="#precision-recall-auc" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Area under the precision-recall curve. It shows how well a model balances correct positive predictions and detection of actual positives.</p>
+<p><strong>Why it matters:</strong> It is useful when false positives and false negatives are clinically important.</p>
+<p><strong>For our research:</strong> IVF counseling should consider false reassurance and unnecessary discouragement, not only ROC-AUC.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics">scikit-learn precision-recall metrics</a></li>
+</ul>
+<h2 id="f1-score">F1 Score<a class="headerlink" href="#f1-score" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A metric that combines precision and recall into one value.</p>
+<p><strong>Why it matters:</strong> It helps evaluate whether a model balances false positives and false negatives.</p>
+<p><strong>For our research:</strong> F1 can be useful at clinically meaningful thresholds, but it should not replace calibration.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html">scikit-learn F1 score</a></li>
+</ul>
 <h2 id="calibration">Calibration<a class="headerlink" href="#calibration" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> How closely predicted probabilities match actual observed outcomes.</p>
 <p><strong>Example:</strong> If a model predicts 60% pregnancy probability for many patients, about 60% of similar patients should actually become pregnant.</p>
@@ -4146,6 +4324,38 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/calibration.html">scikit-learn probability calibration</a></li>
+</ul>
+<h2 id="brier-score">Brier Score<a class="headerlink" href="#brier-score" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A metric that measures how close predicted probabilities are to actual outcomes.</p>
+<p><strong>Why it matters:</strong> Lower Brier score usually means better probability calibration.</p>
+<p><strong>For our research:</strong> Brier score is useful because IVF counseling often gives patients probability estimates.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html">scikit-learn brier_score_loss</a></li>
+</ul>
+<h2 id="data-drift">Data Drift<a class="headerlink" href="#data-drift" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A change in the distribution of input data over time.</p>
+<p><strong>Example:</strong> A clinic’s patient age, diagnosis profile or treatment protocols change over years.</p>
+<p><strong>For our research:</strong> IVF models may need monitoring and updating if clinic populations or practices change.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.evidentlyai.com/ml-in-production/data-drift">Evidently AI data drift guide</a></li>
+</ul>
+<h2 id="concept-drift">Concept Drift<a class="headerlink" href="#concept-drift" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A change in the relationship between input features and the outcome.</p>
+<p><strong>Example:</strong> A treatment protocol changes, so a variable predicts live birth differently than before.</p>
+<p><strong>For our research:</strong> Concept drift matters if a model is deployed over time in a real clinic.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.evidentlyai.com/ml-in-production/concept-drift">Evidently AI concept drift guide</a></li>
+</ul>
+<h2 id="tripod-ai">TRIPOD + AI<a class="headerlink" href="#tripod-ai" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Reporting guidance for clinical prediction models that use regression or machine learning.</p>
+<p><strong>Why it matters:</strong> It helps make prediction-model studies transparent and reproducible.</p>
+<p><strong>For our research:</strong> TRIPOD + AI can guide how we report dataset, model, validation and limitations in the thesis.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.tripod-statement.org/">TRIPOD statement</a></li>
 </ul>
 <h2 id="bayesian-optimization">Bayesian Optimization<a class="headerlink" href="#bayesian-optimization" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A method for efficiently searching model settings by using previous results to choose better next trials.</p>
