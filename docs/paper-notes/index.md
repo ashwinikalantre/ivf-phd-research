@@ -50,6 +50,7 @@ Each paper note follows this structure:
 | 04 | 2025 | Deep learning classification integrating embryo images with associated clinical information from ART cycles | Multimodal embryo image + clinical-data prediction | Completed |
 | 05 | 2025 | Machine learning center-specific models show improved IVF live birth predictions over US national registry-based model | Center-specific live-birth prediction / local validation | Completed |
 | 06 | 2025 | Predictive modeling of pregnancy outcomes utilizing multiple machine learning techniques for IVF-ET | Clinical and treatment-cycle IVF-ET outcome prediction | Completed |
+| 07 | 2025 | Construction and evaluation of machine learning-based prediction model for live birth following fresh embryo transfer in IVF/ICSI patients with PCOS | PCOS subgroup live-birth prediction / SHAP | Completed |
 
 ## Priority Order
 

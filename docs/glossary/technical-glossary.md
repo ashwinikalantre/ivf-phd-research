@@ -411,6 +411,30 @@ Deep reading:
 
 - [scikit-learn feature selection](https://scikit-learn.org/stable/modules/feature_selection.html)
 
+## Recursive Feature Elimination
+
+**Simple meaning:** A feature-selection method that repeatedly removes less useful variables until a smaller feature set remains.
+
+**Why it matters:** It can help reduce model complexity and improve interpretability.
+
+**For our research:** RFE can be used, but selected features should still make clinical sense.
+
+Deep reading:
+
+- [scikit-learn recursive feature elimination](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)
+
+## Decision Curve Analysis
+
+**Simple meaning:** A method for evaluating whether a prediction model gives useful clinical benefit across decision thresholds.
+
+**Why it matters:** A model can have good AUC but still be less useful for clinical decisions at realistic thresholds.
+
+**For our research:** Decision curve analysis may help show whether an IVF prediction model supports counseling or decision support.
+
+Deep reading:
+
+- [Decision curve analysis overview](https://www.mskcc.org/departments/epidemiology-biostatistics/biostatistics/decision-curve-analysis)
+
 ## Multilayer Perceptron
 
 **Simple meaning:** A feedforward neural network with one or more hidden layers.

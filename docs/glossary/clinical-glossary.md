@@ -317,3 +317,27 @@ Deep reading:
 Deep reading:
 
 - [ASRM ovarian reserve committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/testing-and-interpreting-measures-of-ovarian-reserve-a-committee-opinion-2020/)
+
+## PCOS
+
+**Simple meaning:** Polycystic ovary syndrome. A common endocrine and metabolic condition that can affect ovulation, hormones and fertility.
+
+**Why it matters:** PCOS patients may have different ovarian response, metabolic risk and pregnancy-outcome patterns compared with non-PCOS patients.
+
+**For our research:** PCOS should be recorded as a diagnosis/subgroup variable if available in clinic data.
+
+Deep reading:
+
+- [WHO polycystic ovary syndrome fact sheet](https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome)
+
+## Antagonist Protocol
+
+**Simple meaning:** An ovarian stimulation protocol using GnRH antagonist medication to prevent premature ovulation.
+
+**Why it matters:** IVF outcomes can depend on stimulation protocol, especially in patients at risk of high ovarian response.
+
+**For our research:** Stimulation protocol should be captured as a treatment variable because models may not generalize across protocols.
+
+Deep reading:
+
+- [ASRM/ReproductiveFacts ART booklet](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/assisted-reproductive-technologies-booklet/)
