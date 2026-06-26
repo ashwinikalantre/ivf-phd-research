@@ -663,6 +663,18 @@ Deep reading:
 
 - [scikit-learn RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
+## Super Learner
+
+**Simple meaning:** An ensemble method that combines multiple candidate models and learns how to weight them.
+
+**Why it matters:** It can perform well when no single model is best across all data patterns.
+
+**For our research:** Super Learner may be useful as a benchmark, but it can be harder to explain than a single interpretable model.
+
+Deep reading:
+
+- [SuperLearner R package](https://cran.r-project.org/package=SuperLearner)
+
 ## Extra Trees
 
 **Simple meaning:** Extremely Randomized Trees. An ensemble method similar to Random Forest but with more randomization in tree construction.
@@ -1178,6 +1190,30 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn ROC and AUC](https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics)
+
+## Specificity
+
+**Simple meaning:** Among truly negative cases, the proportion correctly predicted as negative.
+
+**Why it matters:** In IVF prediction, specificity helps understand how often the model avoids falsely predicting success or risk.
+
+**For our research:** Specificity should be interpreted together with sensitivity/recall, precision and clinical consequences.
+
+Deep reading:
+
+- [Google ML Crash Course: classification metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)
+
+## Repeated Cross-Validation
+
+**Simple meaning:** Cross-validation repeated multiple times with different data splits.
+
+**Why it matters:** It gives a more stable internal performance estimate than one split, especially with smaller datasets.
+
+**For our research:** Repeated cross-validation is useful, but it is still not the same as external validation on another clinic.
+
+Deep reading:
+
+- [scikit-learn cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html)
 
 ## Precision-Recall AUC
 

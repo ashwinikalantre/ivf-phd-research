@@ -101,6 +101,18 @@ Deep reading:
 
 - [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 
+## Gonadotropin Dosage
+
+**Simple meaning:** The amount of fertility hormone medication used to stimulate the ovaries.
+
+**Why it matters:** Gonadotropin dose reflects treatment intensity and ovarian response.
+
+**For our research:** Total gonadotropin dose may be an important treatment variable, but it is only available after treatment starts.
+
+Deep reading:
+
+- [ASRM/ReproductiveFacts ART booklet](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/assisted-reproductive-technologies-booklet/)
+
 ## Trigger Day
 
 **Simple meaning:** The day when medication is given to trigger final egg maturation before egg retrieval.
@@ -221,6 +233,18 @@ Deep reading:
 Deep reading:
 
 - [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
+
+## Implantation Success
+
+**Simple meaning:** Successful attachment of the embryo to the uterine lining after embryo transfer.
+
+**Why it matters:** Implantation is an important early step toward pregnancy, but it is not the same as live birth.
+
+**For our research:** Implantation prediction papers are useful, but they should not be mixed with live-birth prediction papers without clearly separating outcome labels.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 
 ## Cleavage-Stage Embryo
 

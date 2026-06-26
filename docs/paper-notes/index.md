@@ -61,6 +61,7 @@ Each paper note follows this structure:
 | 15 | 2026 | AI-based live birth prediction in IVF cycles: a systematic review without meta-analysis of model performance and validation | Systematic review / live-birth prediction evidence | Completed; outside original 2021-2025 window |
 | 16 | 2024 | Comparative study of machine learning approaches integrated with genetic algorithm for IVF success prediction | Clinical-pregnancy prediction / GA feature selection | Completed |
 | 17 | 2024 | Catalyzing IVF outcome prediction: exploring advanced machine learning paradigms for enhanced success rate prognostication | Live-birth prediction / ensemble ML / SHAP | Completed |
+| 18 | 2022 | Comparison of machine learning classification techniques to predict implantation success in an IVF treatment cycle | Implantation prediction / model comparison | Completed; full-text details limited |
 
 ## Priority Order
 

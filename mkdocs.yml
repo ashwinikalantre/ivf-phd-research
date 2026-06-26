@@ -108,6 +108,7 @@ nav:
           - "Paper 15: Yadav et al. 2026": paper-notes/paper-15-yadav-2026-systematic-review-live-birth.md
           - "Paper 16: Dehghan et al. 2024": paper-notes/paper-16-dehghan-2024-ga-ivf-success.md
           - "Paper 17: Sadegh-Zadeh et al. 2024": paper-notes/paper-17-sadegh-zadeh-2024-ivf-outcome-ml.md
+          - "Paper 18: Yigit et al. 2022": paper-notes/paper-18-yigit-2022-implantation-success.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md
