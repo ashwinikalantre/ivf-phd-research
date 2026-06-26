@@ -1627,6 +1627,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#feedforward-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedforward Neural Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naive-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naive Bayes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electronic-medical-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Electronic Medical Record
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-hot-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-Hot Encoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#min-max-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Min-Max Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#early-stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Early Stopping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xgboost" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1969,6 +2035,8 @@
       
         
       
+        
+      
     
     
     
@@ -2237,6 +2305,34 @@
     
   
     Paper 08: Wu et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-09-liu-2025-cnn-emr-live-birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 09: Liu et al. 2025
   
 
     
@@ -3953,6 +4049,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#feedforward-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedforward Neural Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naive-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naive Bayes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electronic-medical-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Electronic Medical Record
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-hot-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-Hot Encoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#min-max-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Min-Max Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#early-stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Early Stopping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xgboost" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4598,6 +4760,54 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/neural_networks_supervised.html">scikit-learn neural network models</a></li>
+</ul>
+<h2 id="feedforward-neural-network">Feedforward Neural Network<a class="headerlink" href="#feedforward-neural-network" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A neural network where information moves in one direction from input to output.</p>
+<p><strong>Why it matters:</strong> It is a common comparison model for structured clinical prediction.</p>
+<p><strong>For our research:</strong> It can model non-linear relationships but needs careful validation to avoid overfitting.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.ibm.com/topics/neural-networks">IBM neural networks overview</a></li>
+</ul>
+<h2 id="naive-bayes">Naive Bayes<a class="headerlink" href="#naive-bayes" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A probabilistic classification model based on Bayes’ theorem and a simplifying assumption that features are conditionally independent.</p>
+<p><strong>Why it matters:</strong> It is simple and fast, but often weak when clinical features are correlated.</p>
+<p><strong>For our research:</strong> Use mainly as a comparison baseline, not as the main model.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/naive_bayes.html">scikit-learn Naive Bayes</a></li>
+</ul>
+<h2 id="electronic-medical-record">Electronic Medical Record<a class="headerlink" href="#electronic-medical-record" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A digital record of patient clinical information collected during care.</p>
+<p><strong>Why it matters:</strong> EMR data is a common source for retrospective IVF prediction studies.</p>
+<p><strong>For our research:</strong> Clinic EMR data may be useful, but missingness, inconsistent coding and privacy must be handled carefully.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.healthit.gov/faq/what-are-electronic-medical-records-emrs">HealthIT.gov electronic medical records overview</a></li>
+</ul>
+<h2 id="one-hot-encoding">One-Hot Encoding<a class="headerlink" href="#one-hot-encoding" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A way to convert categories into numeric columns so machine-learning models can use them.</p>
+<p><strong>Example:</strong> Infertility type becomes separate yes/no columns for PCOS, tubal factor, male factor, etc.</p>
+<p><strong>For our research:</strong> Needed for categorical IVF variables, but categories should be clinically meaningful.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html">scikit-learn OneHotEncoder</a></li>
+</ul>
+<h2 id="min-max-scaling">Min-Max Scaling<a class="headerlink" href="#min-max-scaling" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A method that rescales numeric values to a fixed range.</p>
+<p><strong>Why it matters:</strong> Some models train better when numeric features are on similar scales.</p>
+<p><strong>For our research:</strong> Scaling should be fitted only on training data to avoid data leakage.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html">scikit-learn MinMaxScaler</a></li>
+</ul>
+<h2 id="early-stopping">Early Stopping<a class="headerlink" href="#early-stopping" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A training method that stops model training when validation performance stops improving.</p>
+<p><strong>Why it matters:</strong> It helps reduce overfitting in neural networks.</p>
+<p><strong>For our research:</strong> Useful for deep learning or boosting models, but validation design must be correct.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://keras.io/api/callbacks/early_stopping/">Keras early stopping documentation</a></li>
 </ul>
 <h2 id="xgboost">XGBoost<a class="headerlink" href="#xgboost" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A powerful gradient-boosting tree algorithm often used for structured tabular data.</p>
