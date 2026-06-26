@@ -1572,6 +1572,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#support-vector-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Vector Machine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Forest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra Trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XGBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lightgbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LightGBM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Selection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1831,6 +1897,8 @@
       
         
       
+        
+      
     
     
     
@@ -2015,6 +2083,34 @@
     
   
     Paper 05: Yao et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-06-bai-2025-ivf-et-pregnancy-outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 06: Bai et al. 2025
   
 
     
@@ -3676,6 +3772,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#support-vector-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Vector Machine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Forest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra Trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XGBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lightgbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LightGBM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Selection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4204,6 +4366,54 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">scikit-learn LogisticRegression</a></li>
+</ul>
+<h2 id="support-vector-machine">Support Vector Machine<a class="headerlink" href="#support-vector-machine" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A supervised machine-learning model that tries to separate classes using a boundary with maximum margin.</p>
+<p><strong>Why it matters:</strong> SVM is often used as a comparison model in medical prediction studies.</p>
+<p><strong>For our research:</strong> SVM can be tested, but tree-based models often perform better on mixed clinical tabular data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/svm.html">scikit-learn SVM</a></li>
+</ul>
+<h2 id="random-forest">Random Forest<a class="headerlink" href="#random-forest" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An ensemble model made from many decision trees.</p>
+<p><strong>Why it matters:</strong> It can capture non-linear relationships and is commonly used in IVF prediction papers.</p>
+<p><strong>For our research:</strong> Random Forest is a useful baseline before more complex boosting models.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">scikit-learn RandomForestClassifier</a></li>
+</ul>
+<h2 id="extra-trees">Extra Trees<a class="headerlink" href="#extra-trees" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Extremely Randomized Trees. An ensemble method similar to Random Forest but with more randomization in tree construction.</p>
+<p><strong>Why it matters:</strong> It is often used as a comparison ensemble model.</p>
+<p><strong>For our research:</strong> Extra Trees may be useful for benchmarking, but clinical interpretability still needs attention.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html">scikit-learn ExtraTreesClassifier</a></li>
+</ul>
+<h2 id="xgboost">XGBoost<a class="headerlink" href="#xgboost" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A powerful gradient-boosting tree algorithm often used for structured tabular data.</p>
+<p><strong>Why it matters:</strong> Many IVF prediction studies report strong XGBoost performance.</p>
+<p><strong>For our research:</strong> XGBoost is a strong candidate model, but it must be calibrated, explained and externally validated.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://xgboost.readthedocs.io/">XGBoost documentation</a></li>
+</ul>
+<h2 id="lightgbm">LightGBM<a class="headerlink" href="#lightgbm" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A fast gradient-boosting framework designed for efficient training on large or structured datasets.</p>
+<p><strong>Why it matters:</strong> LightGBM often performs well on clinical tabular datasets.</p>
+<p><strong>For our research:</strong> LightGBM is a strong candidate model, but high performance must be interpreted with validation and explainability.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://lightgbm.readthedocs.io/">LightGBM documentation</a></li>
+</ul>
+<h2 id="feature-selection">Feature Selection<a class="headerlink" href="#feature-selection" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Choosing the most useful input variables for a model.</p>
+<p><strong>Why it matters:</strong> Too many weak or redundant variables can reduce model reliability and interpretability.</p>
+<p><strong>For our research:</strong> Feature selection should be clinically sensible, not only mathematically optimized.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/feature_selection.html">scikit-learn feature selection</a></li>
 </ul>
 <h2 id="multilayer-perceptron">Multilayer Perceptron<a class="headerlink" href="#multilayer-perceptron" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A feedforward neural network with one or more hidden layers.</p>
