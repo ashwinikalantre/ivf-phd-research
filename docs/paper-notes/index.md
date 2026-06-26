@@ -70,6 +70,7 @@ Each paper note follows this structure:
 | 24 | 2023 | Towards Automation in IVF: Pre-Clinical Validation of a Deep Learning-Based Embryo Grading System during PGT-A Cycles | Embryo grading / iDAScore / pre-clinical validation | Completed |
 | 25 | 2025 | An explainable ultrasound-based machine learning model for predicting reproductive outcomes after frozen embryo transfer | Ultrasound radiomics / FET / XAI | Completed |
 | 26 | 2021 | Interpretable, not black-box, artificial intelligence should be used for embryo selection | Trustworthy AI / embryo-selection ethics / interpretability | Completed |
+| 27 | 2024 | Beyond black-box models: explainable AI for embryo ploidy prediction and patient-centric consultation | Embryo ploidy prediction / SHAP / LIME | Completed |
 
 ## Priority Order
 

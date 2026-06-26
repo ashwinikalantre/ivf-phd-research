@@ -222,6 +222,30 @@ Deep reading:
 
 - [ASRM PGT-A committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/)
 
+## Ploidy
+
+**Simple meaning:** The chromosome number status of a cell or embryo.
+
+**Why it matters:** Embryos with normal ploidy are generally more likely to implant and progress, but ploidy is still not the same as live birth.
+
+**For our research:** Ploidy prediction is relevant only if PGT-A labels or embryo genetics data are available.
+
+Deep reading:
+
+- [ASRM PGT-A committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/)
+
+## Morphokinetics
+
+**Simple meaning:** Timing and pattern of embryo development events observed over time.
+
+**Why it matters:** Time-lapse systems can record when embryos reach certain developmental stages, which may relate to embryo competence.
+
+**For our research:** Morphokinetic data is useful only if the clinic uses time-lapse embryo monitoring and exports the measurements.
+
+Deep reading:
+
+- [ESHRE good practice recommendations for time-lapse systems](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Time-lapse-systems)
+
 ## Vitrification
 
 **Simple meaning:** A rapid freezing method used to preserve embryos, eggs or sperm.

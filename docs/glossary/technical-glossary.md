@@ -831,6 +831,18 @@ Deep reading:
 
 - [scikit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
+## Linear Discriminant Analysis
+
+**Simple meaning:** A classification method that finds a linear combination of variables that separates classes.
+
+**Why it matters:** LDA is often used as a simple baseline model in biomedical classification.
+
+**For our research:** LDA can be included as a benchmark, but more flexible models may perform better on complex IVF data.
+
+Deep reading:
+
+- [scikit-learn LinearDiscriminantAnalysis](https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html)
+
 ## Support Vector Machine
 
 **Simple meaning:** A supervised machine-learning model that tries to separate classes using a boundary with maximum margin.
@@ -1358,6 +1370,18 @@ Deep reading:
 Deep reading:
 
 - [SHAP documentation](https://shap.readthedocs.io/)
+
+## LIME
+
+**Simple meaning:** Local Interpretable Model-agnostic Explanations. A method that explains one prediction by fitting a simpler local model around that case.
+
+**Why it matters:** It can help explain why one patient or embryo received a particular prediction.
+
+**For our research:** LIME can support case-level explanation, but explanations should be checked for stability and clinical usefulness.
+
+Deep reading:
+
+- [Original LIME paper](https://doi.org/10.1145/2939672.2939778)
 
 ## TreeSHAP
 
