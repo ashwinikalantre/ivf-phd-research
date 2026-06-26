@@ -651,6 +651,18 @@ Deep reading:
 
 - [scikit-learn SVM](https://scikit-learn.org/stable/modules/svm.html)
 
+## Decision Tree
+
+**Simple meaning:** A machine-learning model that splits data through a sequence of if-then rules.
+
+**Why it matters:** Decision Trees are easy to interpret and are often used as baseline models in clinical prediction.
+
+**For our research:** Decision Trees can provide simple comparisons, but they may be less stable than ensemble models such as Random Forest.
+
+Deep reading:
+
+- [scikit-learn DecisionTreeClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
+
 ## Random Forest
 
 **Simple meaning:** An ensemble model made from many decision trees.
@@ -1226,6 +1238,18 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn ROC and AUC](https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics)
+
+## Balanced Accuracy
+
+**Simple meaning:** The average of sensitivity and specificity, often used when outcome classes are imbalanced.
+
+**Why it matters:** IVF datasets can have uneven positive and negative outcome groups, so ordinary accuracy may be misleading.
+
+**For our research:** Balanced accuracy is useful, but it should still be interpreted with AUC, calibration and clinical decision thresholds.
+
+Deep reading:
+
+- [scikit-learn balanced accuracy score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html)
 
 ## Specificity
 
