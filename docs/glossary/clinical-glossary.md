@@ -270,6 +270,18 @@ Deep reading:
 
 - [ASRM embryo transfer guideline](https://www.asrm.org/practice-guidance/practice-committee-documents/performing-the-embryo-transfer-a-guideline-2017/)
 
+## Ultrasonogram
+
+**Simple meaning:** An ultrasound examination image or measurement.
+
+**Why it matters:** IVF ovarian stimulation often requires repeated ultrasound monitoring of follicle growth.
+
+**For our research:** Reducing unnecessary ultrasound visits may reduce patient burden and clinic workload, but safety must be preserved.
+
+Deep reading:
+
+- [ASRM/ReproductiveFacts ART booklet](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/assisted-reproductive-technologies-booklet/)
+
 ## Single Embryo Transfer
 
 **Simple meaning:** Transfer of one embryo into the uterus.

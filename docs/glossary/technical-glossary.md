@@ -398,6 +398,42 @@ Deep reading:
 
 - [NIH precision medicine overview](https://medlineplus.gov/genetics/understanding/precisionmedicine/definition/)
 
+## Physics-Based Model
+
+**Simple meaning:** A model built from assumptions about the real biological or physical process rather than only from statistical patterns.
+
+**Why it matters:** Ovarian stimulation models may use follicle growth dynamics to guide dose decisions.
+
+**For our research:** Physics-based models can be useful when clinical mechanisms are known, but they still need clinical validation.
+
+Deep reading:
+
+- [FDA model-informed drug development overview](https://www.fda.gov/drugs/development-resources/model-informed-drug-development-pilot-program)
+
+## Optimal Control Theory
+
+**Simple meaning:** A mathematical approach for choosing a sequence of actions that optimizes an objective over time.
+
+**Why it matters:** In IVF stimulation, it can be used to plan hormone dosing across the treatment cycle.
+
+**For our research:** Optimal control may be relevant if the project focuses on treatment recommendation, not only outcome prediction.
+
+Deep reading:
+
+- [MIT OpenCourseWare dynamic optimization and optimal control](https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/)
+
+## Ovarian Sensitivity Index
+
+**Simple meaning:** A measure relating ovarian response to the amount of gonadotropin medication used.
+
+**Why it matters:** It helps evaluate whether stimulation produces oocytes efficiently for the hormone dose used.
+
+**For our research:** OSI may be useful if dose, oocyte count and stimulation protocol data are available.
+
+Deep reading:
+
+- [PubMed search: ovarian sensitivity index IVF](https://pubmed.ncbi.nlm.nih.gov/?term=ovarian+sensitivity+index+IVF)
+
 ## Cost-Effectiveness
 
 **Simple meaning:** A way to compare whether a treatment or system gives better outcomes for the money spent.
