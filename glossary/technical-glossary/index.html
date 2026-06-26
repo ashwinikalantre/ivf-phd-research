@@ -1726,6 +1726,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#feature-importance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Importance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#same-centre-external-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Same-Centre External Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positive-predictive-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positive Predictive Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#negative-predictive-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negative Predictive Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recursive-feature-elimination" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2083,6 +2127,8 @@
       
         
       
+        
+      
     
     
     
@@ -2407,6 +2453,34 @@
     
   
     Paper 10: Liu et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-11-bereczki-2025-preprocedural-factors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 11: Bereczki et al. 2025
   
 
     
@@ -4222,6 +4296,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#feature-importance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Importance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#same-centre-external-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Same-Centre External Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positive-predictive-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positive Predictive Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#negative-predictive-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negative Predictive Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recursive-feature-elimination" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4950,6 +5068,38 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/feature_selection.html">scikit-learn feature selection</a></li>
+</ul>
+<h2 id="feature-importance">Feature Importance<a class="headerlink" href="#feature-importance" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A method for estimating which input variables contribute most to model predictions.</p>
+<p><strong>Why it matters:</strong> It helps researchers and clinicians understand which variables drive model behavior.</p>
+<p><strong>For our research:</strong> Feature importance is useful, but it should be interpreted carefully because it does not prove causality.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/permutation_importance.html">scikit-learn permutation importance</a></li>
+</ul>
+<h2 id="same-centre-external-validation">Same-Centre External Validation<a class="headerlink" href="#same-centre-external-validation" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Testing a model on a later or separate dataset from the same clinic or institution.</p>
+<p><strong>Why it matters:</strong> It is stronger than only testing on a random internal split, but weaker than validation in a different clinic.</p>
+<p><strong>For our research:</strong> We should clearly distinguish same-centre validation from true multicentre external validation.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.tripod-statement.org/">TRIPOD statement</a></li>
+</ul>
+<h2 id="positive-predictive-value">Positive Predictive Value<a class="headerlink" href="#positive-predictive-value" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Among patients predicted as positive, the proportion who actually had the positive outcome.</p>
+<p><strong>Why it matters:</strong> It helps judge how reliable positive predictions are.</p>
+<p><strong>For our research:</strong> PPV depends on outcome prevalence, so it may change across clinics.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/">MedlinePlus diagnostic test definitions</a></li>
+</ul>
+<h2 id="negative-predictive-value">Negative Predictive Value<a class="headerlink" href="#negative-predictive-value" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Among patients predicted as negative, the proportion who actually did not have the positive outcome.</p>
+<p><strong>Why it matters:</strong> It helps judge how reliable negative predictions are.</p>
+<p><strong>For our research:</strong> High NPV may be useful for counseling, but it must be interpreted carefully to avoid discouraging patients unfairly.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/">MedlinePlus diagnostic test definitions</a></li>
 </ul>
 <h2 id="recursive-feature-elimination">Recursive Feature Elimination<a class="headerlink" href="#recursive-feature-elimination" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A feature-selection method that repeatedly removes less useful variables until a smaller feature set remains.</p>
