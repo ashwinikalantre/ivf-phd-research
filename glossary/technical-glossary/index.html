@@ -1297,6 +1297,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multimodal-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multimodal Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pretraining" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pretraining
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-task-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Task Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Attention
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#explainable-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1616,6 +1682,8 @@
       
         
       
+        
+      
     
     
     
@@ -1716,6 +1784,34 @@
     
   
     Paper 02: Canon et al. 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-03-gao-2026-vatep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 03: Gao et al. 2026
   
 
     
@@ -3102,6 +3198,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multimodal-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multimodal Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pretraining" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pretraining
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-task-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Task Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Attention
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#explainable-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3495,6 +3657,54 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://www.ibm.com/topics/deep-learning">IBM deep learning overview</a></li>
+</ul>
+<h2 id="multimodal-learning">Multimodal Learning<a class="headerlink" href="#multimodal-learning" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A machine-learning approach that combines more than one type of data.</p>
+<p><strong>Example:</strong> Clinical table data plus embryo images or videos.</p>
+<p><strong>For our research:</strong> Multimodal learning is central if our dataset includes clinical, embryology and lifestyle data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.nature.com/articles/s41591-023-02448-8">Nature Medicine article on multimodal AI in healthcare</a></li>
+</ul>
+<h2 id="pretraining">Pretraining<a class="headerlink" href="#pretraining" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Training a model first on a related task before training it on the final prediction task.</p>
+<p><strong>Why it matters:</strong> It can help a model learn useful representations, especially for image or video data.</p>
+<p><strong>For our research:</strong> Pretraining may be relevant if embryo images or videos are available, but it is less central for simple tabular data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://developers.google.com/machine-learning/crash-course">Google ML Crash Course</a></li>
+</ul>
+<h2 id="multi-task-learning">Multi-Task Learning<a class="headerlink" href="#multi-task-learning" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Training one model to predict more than one related outcome at the same time.</p>
+<p><strong>Why it matters:</strong> Related IVF outcomes may share useful information, such as fetal heartbeat, miscarriage and live birth.</p>
+<p><strong>For our research:</strong> Multi-task learning is promising, but only if enough high-quality labels are available for multiple outcomes.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://cs330.stanford.edu/">Multi-task learning overview, Stanford CS330 notes</a></li>
+</ul>
+<h2 id="cross-attention">Cross-Attention<a class="headerlink" href="#cross-attention" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A neural-network mechanism where one data source learns which parts of another data source are relevant.</p>
+<p><strong>Example:</strong> Embryo-video features attending to clinical-variable features.</p>
+<p><strong>For our research:</strong> Cross-attention is useful for advanced multimodal deep learning, but may be too complex unless image/video data is available.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://developers.google.com/machine-learning/glossary#transformer">Google Transformer model overview</a></li>
+</ul>
+<h2 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A neural-network architecture based on attention mechanisms.</p>
+<p><strong>Why it matters:</strong> Transformers are used in language, vision, time-series and tabular-data models.</p>
+<p><strong>For our research:</strong> Transformer-based models may be relevant for embryo video or complex multimodal data, but simpler models should be considered first for clinic tabular data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://developers.google.com/machine-learning/glossary#transformer">Google ML glossary: Transformer</a></li>
+</ul>
+<h2 id="object-detection">Object Detection<a class="headerlink" href="#object-detection" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A computer-vision task that locates objects inside images or videos.</p>
+<p><strong>Example:</strong> Detecting the embryo region in time-lapse images.</p>
+<p><strong>For our research:</strong> Object detection is relevant only if embryo image or video data is available.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://docs.ultralytics.com/">Ultralytics YOLO documentation</a></li>
 </ul>
 <h2 id="explainable-ai">Explainable AI<a class="headerlink" href="#explainable-ai" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> AI methods that help users understand why a model gives a prediction.</p>
