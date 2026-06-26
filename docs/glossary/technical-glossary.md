@@ -375,6 +375,30 @@ Deep reading:
 
 - [scikit-learn ExtraTreesClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html)
 
+## AdaBoost
+
+**Simple meaning:** Adaptive Boosting. An ensemble method that gives more attention to samples that previous models classified incorrectly.
+
+**Why it matters:** It is often used as a comparison boosting model.
+
+**For our research:** AdaBoost may be useful for benchmarking, but stronger models such as XGBoost, LightGBM or Random Forest may perform better on IVF tabular data.
+
+Deep reading:
+
+- [scikit-learn AdaBoostClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html)
+
+## Artificial Neural Network
+
+**Simple meaning:** A machine-learning model inspired by connected layers of artificial neurons.
+
+**Why it matters:** ANNs can learn non-linear patterns but may overfit if the dataset is not large or balanced enough.
+
+**For our research:** Use ANN as a comparison model only if sample size and validation design support it.
+
+Deep reading:
+
+- [scikit-learn neural network models](https://scikit-learn.org/stable/modules/neural_networks_supervised.html)
+
 ## XGBoost
 
 **Simple meaning:** A powerful gradient-boosting tree algorithm often used for structured tabular data.
@@ -542,6 +566,30 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn permutation importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
+
+## Partial Dependence Plot
+
+**Simple meaning:** A plot showing how a model prediction changes as one feature changes, while averaging over other features.
+
+**Why it matters:** It can help explain feature effects, but may mislead when features are highly correlated.
+
+**For our research:** PDPs can support global explanation, but local patient-level explanations and clinician interpretation are also needed.
+
+Deep reading:
+
+- [scikit-learn partial dependence plots](https://scikit-learn.org/stable/modules/partial_dependence.html)
+
+## Accumulated Local Effects
+
+**Simple meaning:** A model-interpretation method that shows feature effects while reducing some problems caused by correlated features.
+
+**Why it matters:** IVF variables are often correlated, such as hormones, follicles and oocytes.
+
+**For our research:** ALE can complement SHAP and PDP in explainability analysis.
+
+Deep reading:
+
+- [Interpretable Machine Learning: Accumulated Local Effects](https://christophm.github.io/interpretable-ml-book/ale.html)
 
 ## Mean Absolute Error
 

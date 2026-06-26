@@ -51,6 +51,7 @@ Each paper note follows this structure:
 | 05 | 2025 | Machine learning center-specific models show improved IVF live birth predictions over US national registry-based model | Center-specific live-birth prediction / local validation | Completed |
 | 06 | 2025 | Predictive modeling of pregnancy outcomes utilizing multiple machine learning techniques for IVF-ET | Clinical and treatment-cycle IVF-ET outcome prediction | Completed |
 | 07 | 2025 | Construction and evaluation of machine learning-based prediction model for live birth following fresh embryo transfer in IVF/ICSI patients with PCOS | PCOS subgroup live-birth prediction / SHAP | Completed |
+| 08 | 2025 | Predictive models for live birth outcomes following fresh embryo transfer in assisted reproductive technologies using machine learning | Fresh embryo-transfer live-birth prediction / web tool | Completed |
 
 ## Priority Order
 

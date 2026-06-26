@@ -186,6 +186,30 @@ Deep reading:
 
 - [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
 
+## Cleavage-Stage Embryo
+
+**Simple meaning:** An embryo in the early cell-division stage, usually around day 2 or day 3 after fertilization.
+
+**Why it matters:** Prediction models built for cleavage-stage transfer may not apply to blastocyst transfer.
+
+**For our research:** Embryo transfer day and embryo development stage should be recorded if available.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## Endometrial Thickness
+
+**Simple meaning:** Measurement of the uterine lining thickness, usually by ultrasound.
+
+**Why it matters:** Endometrial thickness can influence embryo implantation and pregnancy outcome.
+
+**For our research:** It is likely to be a useful clinical feature if routinely recorded before transfer.
+
+Deep reading:
+
+- [ASRM embryo transfer guideline](https://www.asrm.org/practice-guidance/practice-committee-documents/performing-the-embryo-transfer-a-guideline-2017/)
+
 ## Single Embryo Transfer
 
 **Simple meaning:** Transfer of one embryo into the uterus.
