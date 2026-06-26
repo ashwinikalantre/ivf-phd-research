@@ -2001,6 +2001,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#genetic-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genetic Algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMOTE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#feature-importance" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2380,6 +2402,8 @@
       
         
           
+        
+      
         
       
         
@@ -2876,6 +2900,34 @@
     
   
     Paper 15: Yadav et al. 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-16-dehghan-2024-ga-ivf-success/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 16: Dehghan et al. 2024
   
 
     
@@ -4966,6 +5018,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#genetic-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genetic Algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMOTE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#feature-importance" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5938,6 +6012,22 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/feature_selection.html">scikit-learn feature selection</a></li>
+</ul>
+<h2 id="genetic-algorithm">Genetic Algorithm<a class="headerlink" href="#genetic-algorithm" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An optimization method inspired by natural selection, where candidate solutions are repeatedly selected, combined and mutated to search for a good solution.</p>
+<p><strong>Why it matters:</strong> In IVF prediction, Genetic Algorithm can be used to select a smaller set of useful clinical features from a larger dataset.</p>
+<p><strong>For our research:</strong> GA can be considered as one feature-selection approach, but selected features still need clinical interpretation and external validation.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.mathworks.com/help/gads/what-is-the-genetic-algorithm.html">MathWorks genetic algorithm overview</a></li>
+</ul>
+<h2 id="smote">SMOTE<a class="headerlink" href="#smote" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Synthetic Minority Over-sampling Technique. It creates synthetic examples of the minority class to reduce class imbalance during model training.</p>
+<p><strong>Why it matters:</strong> IVF datasets often have imbalanced outcomes, such as fewer positive pregnancies or fewer adverse outcomes.</p>
+<p><strong>For our research:</strong> SMOTE should be applied only within training data and must be checked carefully because synthetic balancing can make internal results look stronger than real-world performance.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html">imbalanced-learn SMOTE</a></li>
 </ul>
 <h2 id="feature-importance">Feature Importance<a class="headerlink" href="#feature-importance" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A method for estimating which input variables contribute most to model predictions.</p>
