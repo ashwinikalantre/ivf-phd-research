@@ -386,6 +386,66 @@ Deep reading:
 
 - [NIST explainable AI overview](https://www.nist.gov/artificial-intelligence/explainable-ai)
 
+## Interpretable Model
+
+**Simple meaning:** A model whose reasoning can be directly understood by humans without needing a separate explanation method.
+
+**Why it matters:** In high-stakes IVF decisions, clinicians need to understand why a model recommends or ranks something.
+
+**For our research:** Interpretable models should be considered where possible, especially for clinician-facing decision support.
+
+Deep reading:
+
+- [Rudin 2019: Stop explaining black box machine learning models](https://doi.org/10.1038/s42256-019-0048-x)
+
+## Shared Decision-Making
+
+**Simple meaning:** A clinical process where doctor and patient make decisions together using medical evidence and patient values.
+
+**Why it matters:** IVF decisions involve emotional, ethical and financial tradeoffs, so patient values matter.
+
+**For our research:** AI explanations should support doctor-patient discussion, not replace it.
+
+Deep reading:
+
+- [AHRQ shared decision-making resources](https://www.ahrq.gov/sdm/index.html)
+
+## Responsibility Gap
+
+**Simple meaning:** A situation where it becomes unclear who is responsible when an AI-assisted decision causes harm or poor outcomes.
+
+**Why it matters:** In IVF, responsibility may be shared between clinician, clinic, AI vendor and patient.
+
+**For our research:** The final system design should keep clinicians in control and clearly state that AI is advisory.
+
+Deep reading:
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+## Regulatory Oversight
+
+**Simple meaning:** Review and monitoring by legal, professional or regulatory bodies before and after clinical use.
+
+**Why it matters:** Healthcare AI may affect patient safety, privacy and clinical decision-making.
+
+**For our research:** Regulatory and ethics requirements should be considered before any clinical deployment.
+
+Deep reading:
+
+- [FDA software as a medical device resources](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd)
+
+## Long-Term Follow-Up
+
+**Simple meaning:** Tracking outcomes over months or years after an intervention.
+
+**Why it matters:** For embryo-selection AI, child health and wellbeing may matter beyond pregnancy or live birth.
+
+**For our research:** Long-term follow-up is likely outside the PhD scope, but it is important when discussing responsible deployment.
+
+Deep reading:
+
+- [EQUATOR Network reporting guidelines](https://www.equator-network.org/)
+
 ## Prospective Validation
 
 **Simple meaning:** Testing a model forward in time on new patients after the model has been developed.

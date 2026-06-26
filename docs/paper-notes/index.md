@@ -69,6 +69,7 @@ Each paper note follows this structure:
 | 23 | 2024 | A new decision-support tool in a multi-center randomized trial for personalized, optimized, and simplified fertility treatment in non-PCOS patients | Randomized Opt-IVF CDSS / ovarian stimulation | Completed; full table details limited |
 | 24 | 2023 | Towards Automation in IVF: Pre-Clinical Validation of a Deep Learning-Based Embryo Grading System during PGT-A Cycles | Embryo grading / iDAScore / pre-clinical validation | Completed |
 | 25 | 2025 | An explainable ultrasound-based machine learning model for predicting reproductive outcomes after frozen embryo transfer | Ultrasound radiomics / FET / XAI | Completed |
+| 26 | 2021 | Interpretable, not black-box, artificial intelligence should be used for embryo selection | Trustworthy AI / embryo-selection ethics / interpretability | Completed |
 
 ## Priority Order
 

@@ -116,6 +116,7 @@ nav:
           - "Paper 23: Diwekar et al. 2024": paper-notes/paper-23-diwekar-2024-opt-ivf-randomized-trial.md
           - "Paper 24: Cimadomo et al. 2023": paper-notes/paper-24-cimadomo-2023-idascore-pgta.md
           - "Paper 25: Xu et al. 2025": paper-notes/paper-25-xu-2025-ultrasound-radiomics-fet.md
+          - "Paper 26: Afnan et al. 2021": paper-notes/paper-26-afnan-2021-interpretable-embryo-selection.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md
