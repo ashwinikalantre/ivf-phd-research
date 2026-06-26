@@ -101,6 +101,7 @@ nav:
           - "Paper 08: Wu et al. 2025": paper-notes/paper-08-wu-2025-fresh-transfer-live-birth.md
           - "Paper 09: Liu et al. 2025": paper-notes/paper-09-liu-2025-cnn-emr-live-birth.md
           - "Paper 10: Liu et al. 2025": paper-notes/paper-10-liu-2025-svbt-miscarriage.md
+          - "Paper 11: Bereczki et al. 2025": paper-notes/paper-11-bereczki-2025-preprocedural-factors.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

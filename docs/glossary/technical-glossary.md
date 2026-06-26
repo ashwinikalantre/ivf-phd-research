@@ -507,6 +507,54 @@ Deep reading:
 
 - [scikit-learn feature selection](https://scikit-learn.org/stable/modules/feature_selection.html)
 
+## Feature Importance
+
+**Simple meaning:** A method for estimating which input variables contribute most to model predictions.
+
+**Why it matters:** It helps researchers and clinicians understand which variables drive model behavior.
+
+**For our research:** Feature importance is useful, but it should be interpreted carefully because it does not prove causality.
+
+Deep reading:
+
+- [scikit-learn permutation importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
+
+## Same-Centre External Validation
+
+**Simple meaning:** Testing a model on a later or separate dataset from the same clinic or institution.
+
+**Why it matters:** It is stronger than only testing on a random internal split, but weaker than validation in a different clinic.
+
+**For our research:** We should clearly distinguish same-centre validation from true multicentre external validation.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
+## Positive Predictive Value
+
+**Simple meaning:** Among patients predicted as positive, the proportion who actually had the positive outcome.
+
+**Why it matters:** It helps judge how reliable positive predictions are.
+
+**For our research:** PPV depends on outcome prevalence, so it may change across clinics.
+
+Deep reading:
+
+- [MedlinePlus diagnostic test definitions](https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/)
+
+## Negative Predictive Value
+
+**Simple meaning:** Among patients predicted as negative, the proportion who actually did not have the positive outcome.
+
+**Why it matters:** It helps judge how reliable negative predictions are.
+
+**For our research:** High NPV may be useful for counseling, but it must be interpreted carefully to avoid discouraging patients unfairly.
+
+Deep reading:
+
+- [MedlinePlus diagnostic test definitions](https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/)
+
 ## Recursive Feature Elimination
 
 **Simple meaning:** A feature-selection method that repeatedly removes less useful variables until a smaller feature set remains.
