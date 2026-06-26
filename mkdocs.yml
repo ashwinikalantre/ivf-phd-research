@@ -118,6 +118,7 @@ nav:
           - "Paper 25: Xu et al. 2025": paper-notes/paper-25-xu-2025-ultrasound-radiomics-fet.md
           - "Paper 26: Afnan et al. 2021": paper-notes/paper-26-afnan-2021-interpretable-embryo-selection.md
           - "Paper 27: Luong et al. 2024": paper-notes/paper-27-luong-2024-xai-ploidy.md
+          - "Paper 28: Illingworth et al. 2024": paper-notes/paper-28-illingworth-2024-deep-learning-embryo-selection-rct.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

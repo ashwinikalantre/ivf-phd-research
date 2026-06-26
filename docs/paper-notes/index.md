@@ -71,6 +71,7 @@ Each paper note follows this structure:
 | 25 | 2025 | An explainable ultrasound-based machine learning model for predicting reproductive outcomes after frozen embryo transfer | Ultrasound radiomics / FET / XAI | Completed |
 | 26 | 2021 | Interpretable, not black-box, artificial intelligence should be used for embryo selection | Trustworthy AI / embryo-selection ethics / interpretability | Completed |
 | 27 | 2024 | Beyond black-box models: explainable AI for embryo ploidy prediction and patient-centric consultation | Embryo ploidy prediction / SHAP / LIME | Completed |
+| 28 | 2024 | Deep learning versus manual morphology-based embryo selection in IVF: a randomized, double-blind noninferiority trial | Embryo selection RCT / iDAScore / clinical utility | Completed |
 
 ## Priority Order
 

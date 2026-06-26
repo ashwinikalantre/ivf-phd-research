@@ -710,6 +710,54 @@ Deep reading:
 
 - [FDA non-inferiority clinical trials guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/non-inferiority-clinical-trials)
 
+## Double-Blind Trial
+
+**Simple meaning:** A trial where both participants and key study personnel are unaware of the assigned treatment group, where feasible.
+
+**Why it matters:** Blinding helps reduce bias in treatment delivery and outcome assessment.
+
+**For our research:** Blinding is difficult in software decision-support studies but improves evidence strength when possible.
+
+Deep reading:
+
+- [NIH clinical trial basics](https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics)
+
+## Intention-to-Treat Analysis
+
+**Simple meaning:** An analysis that includes participants in the groups they were originally randomized to, regardless of protocol deviations.
+
+**Why it matters:** It preserves the benefit of randomization and reflects real trial assignment.
+
+**For our research:** ITT is important when interpreting RCT evidence for IVF-AI tools.
+
+Deep reading:
+
+- [CONSORT statement](https://www.consort-statement.org/)
+
+## Per-Protocol Analysis
+
+**Simple meaning:** An analysis including only participants who followed the study protocol sufficiently.
+
+**Why it matters:** It can show treatment effect under correct use, but may introduce bias if exclusions are related to outcome.
+
+**For our research:** Per-protocol results should be read alongside intention-to-treat results.
+
+Deep reading:
+
+- [CONSORT statement](https://www.consort-statement.org/)
+
+## Hawthorne Effect
+
+**Simple meaning:** A change in behavior or outcomes because participants know they are being observed in a study.
+
+**Why it matters:** Trial participation can improve care quality or attention, affecting outcome rates.
+
+**For our research:** RCT results may differ from routine clinic deployment due to trial-environment effects.
+
+Deep reading:
+
+- [Catalogue of Bias: Hawthorne effect](https://catalogofbias.org/biases/hawthorne-effect/)
+
 ## Post-Market Study
 
 **Simple meaning:** A study done after a medical software or product is already available for clinical use.
