@@ -306,6 +306,30 @@ Deep reading:
 
 - [ASRM embryo transfer guideline](https://www.asrm.org/practice-guidance/practice-committee-documents/performing-the-embryo-transfer-a-guideline-2017/)
 
+## Endometrial Receptivity
+
+**Simple meaning:** The readiness of the uterine lining to allow embryo implantation.
+
+**Why it matters:** Frozen embryo transfer success depends partly on whether the endometrium is receptive at the time of transfer.
+
+**For our research:** Endometrial receptivity variables may include thickness, ultrasound texture, vascularity, hormone profile or molecular tests.
+
+Deep reading:
+
+- [Human Reproduction Update review on endometrial receptivity markers](https://doi.org/10.1093/humupd/dmy044)
+
+## Junctional Zone
+
+**Simple meaning:** The inner myometrial region next to the endometrium, visible on some imaging modalities.
+
+**Why it matters:** Junctional-zone features may reflect uterine and endometrial conditions relevant to implantation.
+
+**For our research:** Junctional-zone ultrasound radiomics is relevant only if suitable ultrasound images are available.
+
+Deep reading:
+
+- [Review on junctional zone and infertility](https://pubmed.ncbi.nlm.nih.gov/37886646/)
+
 ## Ultrasonogram
 
 **Simple meaning:** An ultrasound examination image or measurement.

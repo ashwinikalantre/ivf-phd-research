@@ -158,6 +158,30 @@ Deep reading:
 
 - [Nature Medicine article on multimodal AI in healthcare](https://www.nature.com/articles/s41591-023-02448-8)
 
+## Radiomics
+
+**Simple meaning:** A method that extracts many quantitative features from medical images.
+
+**Why it matters:** Ultrasound radiomics can capture image patterns that may not be obvious to human observers.
+
+**For our research:** Radiomics is relevant only if ultrasound or embryo images are available in a consistent format.
+
+Deep reading:
+
+- [Radiomics overview, Nature Reviews Clinical Oncology](https://doi.org/10.1038/nrclinonc.2017.141)
+
+## Region of Interest
+
+**Simple meaning:** The selected area of an image that is analyzed.
+
+**Why it matters:** In radiomics, manual ROI selection can influence extracted features and model results.
+
+**For our research:** ROI selection should be standardized or automated to reduce subjective workflow bias.
+
+Deep reading:
+
+- [Radiomics quality score paper](https://doi.org/10.1038/s41591-019-0590-1)
+
 ## ScoreCAM
 
 **Simple meaning:** A visualization method that highlights image regions that influence a CNN prediction.
