@@ -71,6 +71,7 @@ nav:
       - Overview: presentation/research-overview.md
       - Statistics Dashboard: presentation/statistics-dashboard.md
       - Faculty Presentation: presentation/faculty-presentation.md
+      - Faculty Speaker Script: presentation/faculty-speaker-script.md
       - Research Workflow: workflow/research-workflow.md
   - Context & Statistics:
       - Overview: context-statistics/index.md

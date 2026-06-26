@@ -1,119 +1,123 @@
-# Panel Question Bank
+# Faculty Panel Question Bank
 
-Use this page to prepare answers for faculty questions.
+Use this page before the faculty presentation. The aim is to answer clearly, with evidence, without claiming more than the literature and available data support.
 
-## Why IVF?
+## Answering Rule
 
-Short answer:
+For every question, answer in this order:
 
-IVF is a high-impact women’s healthcare area where treatment decisions are complex, costly and uncertain. AI can help only if it is explainable, validated and clinically useful.
+1. direct answer in simple English
+2. one evidence point or statistic
+3. limitation or caution
+4. how it connects to the proposed PhD work
 
-Evidence to mention:
+## Quick Defense Position
 
-- WHO estimates that about **1 in 6 people worldwide** experience infertility in their lifetime.
-- IVF success depends strongly on age, ovarian reserve, embryo quality, treatment protocol and clinic factors.
-- Many couples need more than one cycle, which increases cost and emotional burden.
+| Panel concern | Safe position |
+| --- | --- |
+| Is the title final? | No. It is a provisional direction. The final title depends on clinic data access. |
+| Is the novelty only prediction? | No. Prediction alone is not enough. The stronger opportunity is explainable, validated and doctor-facing decision support. |
+| Can AI replace doctors? | No. The proposed system is clinical decision support, not automated treatment decision-making. |
+| Can lifestyle data be included? | Only if it can be collected reliably through a structured questionnaire or clinic record. |
+| Can external validation be claimed? | Only if data from another clinic, time period or independent source is available. |
 
-Source:
+## High-Priority Questions
 
-- [WHO infertility fact sheet](https://www.who.int/news-room/fact-sheets/detail/infertility)
+| Question | Short answer | Evidence to mention | Confidence | What not to claim |
+| --- | --- | --- | --- | --- |
+| Why choose IVF as a PhD area? | IVF is clinically important, costly and decision-heavy. Many couples face uncertainty across repeated cycles. | WHO estimates about 1 in 6 adults experience infertility globally. | High | Do not say IVF solves infertility for everyone. |
+| Why AI in IVF? | IVF data contains many interacting clinical, hormonal, treatment and embryology variables. ML can help discover patterns and support counseling. | Literature from 2021-2025 shows many models for live birth, pregnancy, embryo selection and stimulation decisions. | High | Do not say AI will replace embryologists or doctors. |
+| Why not only build a prediction model? | Many papers already predict IVF outcomes. The repeated gaps are explainability, validation and clinical decision-support translation. | In our 35-paper matrix, external validation and CDSS gaps appear repeatedly. | High | Do not present simple prediction as sufficient novelty. |
+| What is the main research gap? | Existing studies often remain model-centric. They do not consistently become explainable, externally validated, clinician-usable decision-support systems. | Gap frequency table: external validation, CDSS translation, real-world deployment and trustworthy AI recur across multiple papers. | High | Do not treat every paper limitation as a PhD gap. |
+| Why is explainability important? | Doctors need to know why a model gives a score before using it in counseling or treatment planning. | XAI methods such as SHAP and LIME are commonly used for feature-level explanation. | High | Do not say SHAP proves causality. |
+| Why Indian validation? | Indian IVF patients, access, affordability, clinic workflows and diagnosis profiles may differ from international datasets. | Many AI-IVF studies are single-country or single-center. Indian data is underrepresented in the reviewed work. | Medium/High | Do not claim all foreign models fail in India without testing. |
+| What is the provisional research direction? | An explainable and personalized clinical decision-support framework for IVF outcome prediction using available clinical and embryological data. | Direction comes from repeated gaps, not one paper. | High | Do not call the title final before data access is confirmed. |
 
-## Why AI in IVF?
+## Statistics Questions
 
-Short answer:
+| Question | Simple answer | Number to quote | Source | Confidence |
+| --- | --- | ---: | --- | --- |
+| How common is infertility globally? | It is a major global reproductive-health issue. | About 1 in 6 adults, or 17.5%, experience infertility in their lifetime. | WHO | High |
+| What is India’s fertility context? | India’s total fertility rate has declined, but infertility and delayed treatment remain important healthcare issues. | NFHS-5 TFR: 2.0; NFHS-4 TFR: 2.2. | NFHS-5 | High |
+| What is the Indian infertility prevalence figure we can safely quote? | Use the peer-reviewed definition carefully. | 18.7 per 1,000 among currently married women in union for at least five years, 2019-20. | Peer-reviewed Indian study using NFHS-5 | Medium/High |
+| What is a typical IVF success figure? | It depends on age and denominator. Always say success per what. | HFEA 2023: fresh embryo-transfer birth rate 35% for ages 18-34 and 5% for ages 43-44 using own eggs. | HFEA | High |
+| What is the economic burden in India? | IVF is often expensive and paid out-of-pocket. | Public OOPE about Rs. 1.10 lakh; private OOPE about Rs. 2.38 lakh; catastrophic expenditure 85%. | HTAIn/ICMR-NIRRCH policy brief | High |
+| How many IVF clinics are in India? | The official current registry should be checked directly before presentation. An older PIB figure reported 308 ICMR-enrolled ART clinics in 2015. | 308 in 2015, old figure. | PIB and National ART & Surrogacy Registry | Medium |
 
-IVF clinics collect many variables: age, AMH, AFC, hormones, stimulation protocol, oocytes, embryo quality and pregnancy outcome. These variables interact in complex ways, so ML can support prediction and counseling.
+## Success-Rate Questions
 
-But the model must be explainable because doctors and patients cannot rely on black-box scores.
+| Question | Safe answer |
+| --- | --- |
+| What is IVF success rate? | There is no single IVF success rate. It depends on age, own eggs or donor eggs, fresh or frozen transfer, diagnosis, clinic practice and denominator. |
+| Why do success rates differ across sources? | Some report pregnancy, some live birth, some per started cycle, some per retrieval, some per embryo transfer, and some cumulative success. |
+| Can we compare natural pregnancy and IVF pregnancy directly? | Not directly. IVF patients usually already have infertility or subfertility, so the populations are different. |
+| Which outcome should the PhD predict? | Live birth is strongest if available. Clinical pregnancy is acceptable if live birth is not reliably recorded. |
+| Should miscarriage be included? | It can be a secondary outcome if records are complete enough. |
 
-## Why not only success prediction?
+## Dataset Questions
 
-Short answer:
+| Question | Answer |
+| --- | --- |
+| What minimum data is needed? | Age, BMI, infertility diagnosis, infertility duration, AMH, AFC, IVF/ICSI, fresh/frozen transfer, stimulation protocol, endometrial thickness, embryos transferred and pregnancy/live-birth outcome. |
+| What makes the dataset stronger? | Embryology variables such as oocytes retrieved, mature oocytes, fertilization, embryo grade, blastocyst grade and transfer day. |
+| What makes it best for this topic? | Clinical + embryology + lifestyle variables, with a second clinic or external dataset for validation and clinician review of explanations. |
+| What if embryo data is not available? | The title should be reduced to clinical-data-based explainable CDSS. |
+| What if lifestyle data is not available? | Lifestyle should be kept as future work or a separate questionnaire-based sub-study. |
+| What if only one clinic gives data? | Use internal validation and temporal validation. Do not claim multicentre external validation. |
+| How many records are needed? | It depends on outcome frequency, missingness and number of predictors. The first step is to audit available cycles and outcome balance before fixing model complexity. |
 
-Many papers already predict IVF success. The gap is not only prediction. The repeated gaps are external validation, explainability and clinical decision-support translation.
+## Methodology Questions
 
-## What is the role of age?
+| Question | Safe answer |
+| --- | --- |
+| Which models will be used? | Start with logistic regression as a baseline, then compare Random Forest, XGBoost and LightGBM for tabular clinical data. |
+| Why not deep learning first? | Deep learning usually needs larger datasets or image/time-lapse embryo data. For clinic tabular data, boosted trees and interpretable baselines are more realistic. |
+| Which evaluation metrics? | AUC, sensitivity, specificity, precision, recall, F1, calibration and Brier score. Decision curve analysis can be added if clinically meaningful thresholds are available. |
+| How will explainability be evaluated? | Use global feature importance and local patient-level explanations, then ask clinicians whether explanations are understandable and useful. |
+| How will overfitting be handled? | Train/test split, cross-validation, careful feature selection, calibration testing and external or temporal validation where possible. |
+| How will missing data be handled? | First report missingness. Then use clinically sensible imputation and compare model performance with transparent missing-data handling. |
 
-Short answer:
+## Ethics and Privacy Questions
 
-Female age is one of the strongest predictors of IVF success. Success rates are higher in younger women and decline after the late 30s, especially after 40.
+| Question | Safe answer |
+| --- | --- |
+| Will patient identity be used? | No. Data should be anonymized or de-identified before analysis. |
+| Is ethics approval needed? | Yes. Clinic permission and institutional ethics approval are required before using patient records. |
+| Can the system advise treatment? | It should support counseling and risk understanding. Final treatment decisions remain with clinicians. |
+| How will bias be checked? | Compare performance across age groups, diagnosis categories and other available subgroups. |
+| Is lifestyle data sensitive? | Yes. It should be collected only with consent and with clear purpose, minimal variables and privacy protection. |
 
-Evidence:
+## Novelty Questions
 
-- HFEA 2023 reported fresh embryo-transfer birth rates of **35% for ages 18-34** and **5% for ages 43-44** using own eggs.
+| Question | Strong answer |
+| --- | --- |
+| What is new here? | The novelty is not "using ML in IVF". The research opportunity is an explainable, personalized and clinically reviewed decision-support framework, validated as far as the available data allows. |
+| How is this different from existing prediction papers? | Existing papers often stop at model performance. This work aims to connect prediction, explanation, dataset feasibility, clinician review and decision-support presentation. |
+| What if external validation is not possible? | Then the thesis should honestly present internal and temporal validation, and frame external validation as future work. |
+| What if the model accuracy is moderate? | A moderate but well-calibrated and explainable model may still support counseling if used carefully. The goal is clinical usefulness, not only highest accuracy. |
 
-Source:
+## Questions To Ask Doctors
 
-- [HFEA Fertility treatment 2023 trends and figures](https://www.hfea.gov.uk/about-us/publications/research-and-data/fertility-treatment-2023-trends-and-figures/)
+| Area | Question |
+| --- | --- |
+| Data access | How many IVF/ICSI cycles from 2021-2025 can be shared in anonymized form? |
+| Outcomes | Are clinical pregnancy, live birth, miscarriage and cycle cancellation recorded reliably? |
+| Embryology | Are embryo grades, blastocyst grades and transfer-day details available digitally? |
+| Lifestyle | Are BMI, smoking, alcohol, sleep, stress, diet or activity recorded? If not, can a short questionnaire be used? |
+| Validation | Can data be separated by year, doctor, protocol or clinic for validation? |
+| Clinician review | Can doctors review sample model explanations and comment on usefulness? |
+| Ethics | What permissions are required from the hospital, clinic and ethics committee? |
 
-## What is normal pregnancy rate vs IVF success?
+## Answers To Avoid
 
-Careful answer:
+| Avoid saying | Say instead |
+| --- | --- |
+| AI will decide IVF treatment. | AI will support doctors with prediction and explanation. |
+| Our model will increase IVF success. | The model may improve counseling and decision support; clinical effect needs prospective validation. |
+| Lifestyle definitely causes IVF failure. | Lifestyle factors may influence fertility, but they must be measured carefully and interpreted cautiously. |
+| This is the final title. | This is the current working direction. The final title depends on data feasibility. |
+| We will prove the model works for India. | We will validate on available Indian clinic data and clearly state the limits. |
 
-Natural conception and IVF success cannot be compared directly because IVF patients usually already have infertility or subfertility. IVF success is usually reported per cycle, per egg retrieval, per embryo transfer or cumulatively across multiple cycles.
+## Closing Answer For Faculty
 
-Panel point:
-
-Always ask: success per what?
-
-- per cycle started
-- per egg retrieval
-- per embryo transfer
-- cumulative live birth after all embryo transfers
-
-## What is the economic burden?
-
-Short answer:
-
-IVF is expensive and often paid out-of-pocket. This affects who can access treatment and how many cycles couples can attempt.
-
-India-specific evidence:
-
-- HTAIn/ICMR-NIRRCH policy brief reported average out-of-pocket expenditure for IVF of about **Rs. 1.10 lakh in public hospitals** and **Rs. 2.38 lakh in private hospitals**, with **85% catastrophic health expenditure** for IVF.
-
-Source:
-
-- [HTAIn Policy Brief on IVF cost](https://htain.dhr.gov.in/images/pdf/Policy_Briefs/79.Policy_Brief_IVF.pdf)
-
-## Which social class can afford IVF?
-
-Careful answer:
-
-Access is strongly affected by affordability. IVF is more accessible to urban, middle-income and higher-income groups, especially where insurance or public support is limited. Lower-income couples may delay, stop or never start treatment due to cost.
-
-Evidence:
-
-- Studies on LMICs show ART costs can be unaffordable and may create catastrophic expenditure.
-- Indian cost evidence shows high out-of-pocket spending.
-
-Sources:
-
-- [Financial costs of ART in low- and middle-income countries](https://pmc.ncbi.nlm.nih.gov/articles/PMC10029849/)
-- [HTAIn Policy Brief on IVF cost](https://htain.dhr.gov.in/images/pdf/Policy_Briefs/79.Policy_Brief_IVF.pdf)
-
-## How does lifestyle affect fertility?
-
-Short answer:
-
-Lifestyle factors such as obesity, smoking, stress, delayed childbearing, sleep, diet and environmental exposure can affect fertility and reproductive health. But for this PhD, lifestyle variables should be included only if the data can be collected reliably.
-
-Source:
-
-- [Frontiers review on global fertility decline drivers](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1364352/full)
-
-## Why Indian validation?
-
-Short answer:
-
-Many IVF AI models are developed in Europe, China, the US or single clinic datasets. Indian patients may differ in age at treatment, diagnosis profile, affordability, access, lifestyle and clinic workflow. So Indian validation is important before clinical use in India.
-
-## What if data is not available?
-
-Short answer:
-
-Then the final title must be adjusted. The working title is flexible:
-
-- clinical data only: clinical-data CDSS
-- clinical + embryo data: multimodal clinical and embryological CDSS
-- clinical + lifestyle data: lifestyle-based personalization
-- multiple clinics: external validation
+The project has moved from a broad IVF interest to a literature-supported research direction. The strongest repeated gap is not only prediction, but the lack of explainable, validated and clinician-usable AI decision support in IVF. The next step is clinic data confirmation. After that, the final title, objectives and methodology can be fixed responsibly.
