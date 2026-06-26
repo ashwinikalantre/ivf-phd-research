@@ -1638,6 +1638,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recursive-feature-elimination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursive Feature Elimination
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-curve-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Curve Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1899,6 +1921,8 @@
       
         
       
+        
+      
     
     
     
@@ -2111,6 +2135,34 @@
     
   
     Paper 06: Bai et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-07-zhu-2025-pcos-live-birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 07: Zhu et al. 2025
   
 
     
@@ -3838,6 +3890,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recursive-feature-elimination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursive Feature Elimination
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-curve-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Curve Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4414,6 +4488,22 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/feature_selection.html">scikit-learn feature selection</a></li>
+</ul>
+<h2 id="recursive-feature-elimination">Recursive Feature Elimination<a class="headerlink" href="#recursive-feature-elimination" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A feature-selection method that repeatedly removes less useful variables until a smaller feature set remains.</p>
+<p><strong>Why it matters:</strong> It can help reduce model complexity and improve interpretability.</p>
+<p><strong>For our research:</strong> RFE can be used, but selected features should still make clinical sense.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html">scikit-learn recursive feature elimination</a></li>
+</ul>
+<h2 id="decision-curve-analysis">Decision Curve Analysis<a class="headerlink" href="#decision-curve-analysis" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A method for evaluating whether a prediction model gives useful clinical benefit across decision thresholds.</p>
+<p><strong>Why it matters:</strong> A model can have good AUC but still be less useful for clinical decisions at realistic thresholds.</p>
+<p><strong>For our research:</strong> Decision curve analysis may help show whether an IVF prediction model supports counseling or decision support.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://www.mskcc.org/departments/epidemiology-biostatistics/biostatistics/decision-curve-analysis">Decision curve analysis overview</a></li>
 </ul>
 <h2 id="multilayer-perceptron">Multilayer Perceptron<a class="headerlink" href="#multilayer-perceptron" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A feedforward neural network with one or more hidden layers.</p>
