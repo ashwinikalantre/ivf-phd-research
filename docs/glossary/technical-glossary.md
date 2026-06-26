@@ -266,6 +266,78 @@ Deep reading:
 
 - [Google federated learning overview](https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/)
 
+## Digital Twin
+
+**Simple meaning:** A digital representation of a real-world person, process or system that can be used to simulate possible outcomes.
+
+**Why it matters:** In future IVF research, digital twins may allow virtual testing of treatment options before clinical decisions.
+
+**For our research:** This is a future-facing concept. It should not be claimed unless the project actually builds a simulation model.
+
+Deep reading:
+
+- [FDA digital health and digital twins discussion](https://www.fda.gov/medical-devices/digital-health-center-excellence)
+
+## Synthetic Data
+
+**Simple meaning:** Artificially generated data designed to resemble real data.
+
+**Why it matters:** Synthetic data may help model development when real IVF datasets are limited or privacy-restricted.
+
+**For our research:** Synthetic data can be future work, but real clinical validation remains necessary.
+
+Deep reading:
+
+- [NIST synthetic data guidance resources](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaboration-space/focus-topics/synthetic-data)
+
+## Trustworthy AI
+
+**Simple meaning:** AI that is reliable, transparent, fair, secure and accountable.
+
+**Why it matters:** Healthcare AI must be trusted by clinicians and patients before it can be used responsibly.
+
+**For our research:** Trustworthy AI includes explainability, validation, privacy, fairness and clinical oversight.
+
+Deep reading:
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+## Model Generalizability
+
+**Simple meaning:** How well a model works on new patients, clinics or populations beyond the data used to build it.
+
+**Why it matters:** IVF models may perform well in one clinic but poorly elsewhere.
+
+**For our research:** Generalizability is one reason Indian clinic validation is important.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
+## Data Bias
+
+**Simple meaning:** A problem where the data used to train a model does not fairly represent the population where the model will be used.
+
+**Why it matters:** Biased IVF datasets can produce unreliable or unfair predictions for underrepresented groups.
+
+**For our research:** We should check subgroup performance where data permits.
+
+Deep reading:
+
+- [NIST AI bias resources](https://www.nist.gov/artificial-intelligence/ai-fundamental-research/bias-ai)
+
+## Clinical Validation
+
+**Simple meaning:** Testing whether a model works in a clinically meaningful setting and population.
+
+**Why it matters:** Good retrospective performance is not enough for patient-facing or clinician-facing use.
+
+**For our research:** Clinical validation may include external validation, temporal validation and clinician review.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
 ## Post-Market Study
 
 **Simple meaning:** A study done after a medical software or product is already available for clinical use.

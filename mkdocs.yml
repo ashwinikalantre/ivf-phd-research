@@ -103,6 +103,7 @@ nav:
           - "Paper 10: Liu et al. 2025": paper-notes/paper-10-liu-2025-svbt-miscarriage.md
           - "Paper 11: Bereczki et al. 2025": paper-notes/paper-11-bereczki-2025-preprocedural-factors.md
           - "Paper 12: Hanassab et al. 2024": paper-notes/paper-12-hanassab-2024-ai-personalize-art.md
+          - "Paper 13: Gao et al. 2025": paper-notes/paper-13-gao-2025-open-challenges-ai-ivf.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

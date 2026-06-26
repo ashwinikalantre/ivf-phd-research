@@ -56,6 +56,7 @@ Each paper note follows this structure:
 | 10 | 2025 | Optimizing predictive features using machine learning for early miscarriage risk following single vitrified-warmed blastocyst transfer | SVBT early miscarriage risk prediction | Completed |
 | 11 | 2025 | Machine Learning-Based Prediction of IVF Outcomes: The Central Role of Female Preprocedural Factors | First-consultation IVF outcome prediction | Completed |
 | 12 | 2024 | The prospect of artificial intelligence to personalize assisted reproductive technology | Review / AI personalization and CDSS in ART | Completed |
+| 13 | 2025 | Current progress and open challenges for applying artificial intelligence across the in vitro fertilization cycle | Review / open challenges and data modalities | Completed |
 
 ## Priority Order
 
