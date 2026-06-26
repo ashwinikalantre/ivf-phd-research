@@ -174,6 +174,78 @@ Deep reading:
 - [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 - [ASRM International Glossary on Infertility and Fertility Care](https://www.asrm.org/practice-guidance/practice-committee-documents/the-international-glossary-on-infertility-and-fertility-care-2025/)
 
+## Embryo Transfer
+
+**Simple meaning:** Placement of one or more embryos into the uterus.
+
+**Why it matters:** IVF outcome prediction depends strongly on what embryo or embryos are transferred.
+
+**For our research:** Transfer type, transfer day and number of embryos transferred are important dataset variables.
+
+Deep reading:
+
+- [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
+
+## Single Embryo Transfer
+
+**Simple meaning:** Transfer of one embryo into the uterus.
+
+**Why it matters:** It reduces the risk of multiple pregnancy compared with transferring more than one embryo.
+
+**For our research:** SET versus DET can affect outcome interpretation and should be recorded as a feature.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## Double Embryo Transfer
+
+**Simple meaning:** Transfer of two embryos into the uterus.
+
+**Why it matters:** It may increase pregnancy probability in some settings but also increases multiple-pregnancy risk.
+
+**For our research:** DET should not be mixed with SET without adjustment because clinical risks and outcomes differ.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## Time-Lapse System
+
+**Simple meaning:** An embryo incubator and imaging system that captures embryo development images or videos over time.
+
+**Why it matters:** It allows embryologists and AI models to study embryo morphokinetics without repeatedly removing embryos from the incubator.
+
+**For our research:** TLS data can support image/video-based multimodal AI, but only if a clinic has this infrastructure.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## Fetal Heartbeat
+
+**Simple meaning:** Detection of heartbeat during early pregnancy assessment.
+
+**Why it matters:** It is an important clinical marker after embryo transfer and is often used as an outcome in IVF studies.
+
+**For our research:** Fetal heartbeat is a useful intermediate outcome, but it is not the same as live birth.
+
+Deep reading:
+
+- [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
+
+## Miscarriage
+
+**Simple meaning:** Loss of pregnancy before viability.
+
+**Why it matters:** Some IVF models predict miscarriage risk after pregnancy is achieved.
+
+**For our research:** Miscarriage may be a secondary outcome if clinic records are complete and reliable.
+
+Deep reading:
+
+- [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
+
 ## Fresh Embryo Transfer
 
 **Simple meaning:** Embryo transfer done in the same cycle as egg retrieval.

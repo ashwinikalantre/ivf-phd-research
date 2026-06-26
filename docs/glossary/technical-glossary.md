@@ -38,6 +38,78 @@ Deep reading:
 
 - [IBM deep learning overview](https://www.ibm.com/topics/deep-learning)
 
+## Multimodal Learning
+
+**Simple meaning:** A machine-learning approach that combines more than one type of data.
+
+**Example:** Clinical table data plus embryo images or videos.
+
+**For our research:** Multimodal learning is central if our dataset includes clinical, embryology and lifestyle data.
+
+Deep reading:
+
+- [Nature Medicine article on multimodal AI in healthcare](https://www.nature.com/articles/s41591-023-02448-8)
+
+## Pretraining
+
+**Simple meaning:** Training a model first on a related task before training it on the final prediction task.
+
+**Why it matters:** It can help a model learn useful representations, especially for image or video data.
+
+**For our research:** Pretraining may be relevant if embryo images or videos are available, but it is less central for simple tabular data.
+
+Deep reading:
+
+- [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course)
+
+## Multi-Task Learning
+
+**Simple meaning:** Training one model to predict more than one related outcome at the same time.
+
+**Why it matters:** Related IVF outcomes may share useful information, such as fetal heartbeat, miscarriage and live birth.
+
+**For our research:** Multi-task learning is promising, but only if enough high-quality labels are available for multiple outcomes.
+
+Deep reading:
+
+- [Multi-task learning overview, Stanford CS330 notes](https://cs330.stanford.edu/)
+
+## Cross-Attention
+
+**Simple meaning:** A neural-network mechanism where one data source learns which parts of another data source are relevant.
+
+**Example:** Embryo-video features attending to clinical-variable features.
+
+**For our research:** Cross-attention is useful for advanced multimodal deep learning, but may be too complex unless image/video data is available.
+
+Deep reading:
+
+- [Google Transformer model overview](https://developers.google.com/machine-learning/glossary#transformer)
+
+## Transformer
+
+**Simple meaning:** A neural-network architecture based on attention mechanisms.
+
+**Why it matters:** Transformers are used in language, vision, time-series and tabular-data models.
+
+**For our research:** Transformer-based models may be relevant for embryo video or complex multimodal data, but simpler models should be considered first for clinic tabular data.
+
+Deep reading:
+
+- [Google ML glossary: Transformer](https://developers.google.com/machine-learning/glossary#transformer)
+
+## Object Detection
+
+**Simple meaning:** A computer-vision task that locates objects inside images or videos.
+
+**Example:** Detecting the embryo region in time-lapse images.
+
+**For our research:** Object detection is relevant only if embryo image or video data is available.
+
+Deep reading:
+
+- [Ultralytics YOLO documentation](https://docs.ultralytics.com/)
+
 ## Explainable AI
 
 **Simple meaning:** AI methods that help users understand why a model gives a prediction.
