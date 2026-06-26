@@ -161,6 +161,30 @@ Deep reading:
 
 - [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 
+## LH
+
+**Simple meaning:** Luteinizing hormone. A reproductive hormone involved in ovulation and final egg maturation.
+
+**Why it matters:** LH values may be measured during ovarian stimulation and around trigger timing.
+
+**For our research:** LH can appear as a clinical feature in IVF prediction models, especially when studies include hormone values on HCG day.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
+## HCG Day
+
+**Simple meaning:** The day when human chorionic gonadotropin or another trigger medication is given to trigger final egg maturation before retrieval.
+
+**Why it matters:** Hormone levels on HCG day can reflect ovarian response and may relate to embryo transfer outcomes.
+
+**For our research:** HCG-day estradiol, progesterone and LH are treatment-cycle features. They are useful, but they are not available at the first consultation before treatment begins.
+
+Deep reading:
+
+- [ASRM/ReproductiveFacts ART booklet](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/assisted-reproductive-technologies-booklet/)
+
 ## 2PN Zygote
 
 **Simple meaning:** A fertilized egg showing two pronuclei, one from the egg and one from the sperm.
