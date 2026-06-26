@@ -1858,6 +1858,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Tree
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#random-forest" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2386,6 +2397,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#specificity" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2534,6 +2556,8 @@
       
         
           
+        
+      
         
       
         
@@ -3150,6 +3174,34 @@
     
   
     Paper 19: Wang et al. 2022
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-20-handayani-2022-clinical-pregnancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 20: Handayani et al. 2022
   
 
     
@@ -5097,6 +5149,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Tree
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#random-forest" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5618,6 +5681,17 @@
     <span class="md-ellipsis">
       
         AUC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Accuracy
       
     </span>
   </a>
@@ -6263,6 +6337,14 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/svm.html">scikit-learn SVM</a></li>
 </ul>
+<h2 id="decision-tree">Decision Tree<a class="headerlink" href="#decision-tree" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A machine-learning model that splits data through a sequence of if-then rules.</p>
+<p><strong>Why it matters:</strong> Decision Trees are easy to interpret and are often used as baseline models in clinical prediction.</p>
+<p><strong>For our research:</strong> Decision Trees can provide simple comparisons, but they may be less stable than ensemble models such as Random Forest.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html">scikit-learn DecisionTreeClassifier</a></li>
+</ul>
 <h2 id="random-forest">Random Forest<a class="headerlink" href="#random-forest" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> An ensemble model made from many decision trees.</p>
 <p><strong>Why it matters:</strong> It can capture non-linear relationships and is commonly used in IVF prediction papers.</p>
@@ -6646,6 +6728,14 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics">scikit-learn ROC and AUC</a></li>
+</ul>
+<h2 id="balanced-accuracy">Balanced Accuracy<a class="headerlink" href="#balanced-accuracy" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> The average of sensitivity and specificity, often used when outcome classes are imbalanced.</p>
+<p><strong>Why it matters:</strong> IVF datasets can have uneven positive and negative outcome groups, so ordinary accuracy may be misleading.</p>
+<p><strong>For our research:</strong> Balanced accuracy is useful, but it should still be interpreted with AUC, calibration and clinical decision thresholds.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html">scikit-learn balanced accuracy score</a></li>
 </ul>
 <h2 id="specificity">Specificity<a class="headerlink" href="#specificity" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> Among truly negative cases, the proportion correctly predicted as negative.</p>
