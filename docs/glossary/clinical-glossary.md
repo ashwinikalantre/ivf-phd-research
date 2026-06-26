@@ -89,6 +89,18 @@ Deep reading:
 
 - [ASRM/ReproductiveFacts ART booklet](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/assisted-reproductive-technologies-booklet/)
 
+## FSH
+
+**Simple meaning:** Follicle-stimulating hormone. A hormone used as medication during IVF ovarian stimulation to help follicles grow.
+
+**Why it matters:** Starting FSH dose is a major clinical decision in IVF stimulation.
+
+**For our research:** FSH dose can be both a treatment variable and a decision-support target.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
+
 ## Trigger Day
 
 **Simple meaning:** The day when medication is given to trigger final egg maturation before egg retrieval.
@@ -100,6 +112,18 @@ Deep reading:
 Deep reading:
 
 - [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
+
+## OHSS
+
+**Simple meaning:** Ovarian hyperstimulation syndrome. A possible complication of fertility medication where the ovaries respond too strongly.
+
+**Why it matters:** IVF stimulation decisions must balance oocyte yield with patient safety.
+
+**For our research:** A CDSS should not optimize egg count alone. Safety-related factors such as OHSS risk are clinically important.
+
+Deep reading:
+
+- [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 
 ## Estradiol
 

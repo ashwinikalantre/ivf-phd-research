@@ -62,6 +62,18 @@ Deep reading:
 
 - [AHRQ clinical decision support overview](https://digital.ahrq.gov/clinical-decision-support)
 
+## Post-Market Study
+
+**Simple meaning:** A study done after a medical software or product is already available for clinical use.
+
+**Why it matters:** It can show how a tool performs in real practice, but it may not be as controlled as a randomized trial.
+
+**For our research:** Paper 02 is useful because it gives prospective post-market evidence for IVF AI-CDSS use.
+
+Deep reading:
+
+- [FDA real-world evidence overview](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+
 ## Feature
 
 **Simple meaning:** An input variable used by a model.
@@ -73,6 +85,30 @@ Deep reading:
 Deep reading:
 
 - [Google ML Crash Course: numerical data](https://developers.google.com/machine-learning/crash-course/numerical-data)
+
+## K-Nearest Neighbors
+
+**Simple meaning:** A method that finds the most similar previous cases and uses them to support prediction or comparison.
+
+**Why it matters:** It is intuitive for clinical examples because it asks: what happened to similar patients before?
+
+**For our research:** Paper 02 used a K-nearest-neighbors approach in the Starting Dose Tool and for matching/imputation steps.
+
+Deep reading:
+
+- [scikit-learn nearest neighbors](https://scikit-learn.org/stable/modules/neighbors.html)
+
+## KNN Imputer
+
+**Simple meaning:** A missing-data method that fills a missing value using values from similar records.
+
+**Why it matters:** IVF clinic data often has missing AMH, AFC or BMI values.
+
+**For our research:** Missing-data handling must be reported clearly because it affects trust and reproducibility.
+
+Deep reading:
+
+- [scikit-learn KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html)
 
 ## Outcome / Target Variable
 
@@ -170,6 +206,30 @@ Deep reading:
 Deep reading:
 
 - [scikit-learn cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html)
+
+## Propensity Matching
+
+**Simple meaning:** A method for making comparison groups more similar based on important baseline variables.
+
+**Why it matters:** It is useful when a randomized control group is not available.
+
+**For our research:** Paper 02 matched AI-treated patients to historical control patients using age, AMH and AFC.
+
+Deep reading:
+
+- [NIH/NLM overview of propensity score analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3144483/)
+
+## Historical Control
+
+**Simple meaning:** A comparison group from an earlier time period rather than a concurrent randomized control group.
+
+**Why it matters:** It can be practical, but changes over time in clinic workflow or patient population may affect comparisons.
+
+**For our research:** Historical controls should be treated cautiously when judging real clinical impact.
+
+Deep reading:
+
+- [ICH E10 guideline on choice of control group](https://www.ich.org/page/efficacy-guidelines)
 
 ## Leave-One-Clinic-Out Cross-Validation
 

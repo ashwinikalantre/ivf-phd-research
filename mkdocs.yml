@@ -92,6 +92,7 @@ nav:
       - Paper Reading Notes:
           - Overview: paper-notes/index.md
           - "Paper 01: Hanassab et al. 2025": paper-notes/paper-01-hanassab-2025-xai-follicles.md
+          - "Paper 02: Canon et al. 2024": paper-notes/paper-02-canon-2024-stim-assist.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md
