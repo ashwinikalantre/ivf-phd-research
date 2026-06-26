@@ -1869,6 +1869,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#missforest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        missForest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#out-of-bag-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Out-of-Bag Error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mean-decrease-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mean Decrease Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#super-learner" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2364,6 +2397,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#repeated-cross-validation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2490,6 +2534,8 @@
       
         
           
+        
+      
         
       
         
@@ -3076,6 +3122,34 @@
     
   
     Paper 18: Yigit et al. 2022
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-19-wang-2022-clinical-pregnancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 19: Wang et al. 2022
   
 
     
@@ -5034,6 +5108,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#missforest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        missForest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#out-of-bag-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Out-of-Bag Error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mean-decrease-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mean Decrease Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#super-learner" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5522,6 +5629,17 @@
     <span class="md-ellipsis">
       
         Specificity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensitivity
       
     </span>
   </a>
@@ -6153,6 +6271,30 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">scikit-learn RandomForestClassifier</a></li>
 </ul>
+<h2 id="missforest">missForest<a class="headerlink" href="#missforest" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A Random Forest based method for filling missing values in mixed clinical datasets.</p>
+<p><strong>Why it matters:</strong> IVF datasets often have missing clinical and treatment variables.</p>
+<p><strong>For our research:</strong> Imputation can help use incomplete records, but high missingness should be reported and sensitivity analysis may be needed.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=missForest">missForest R package</a></li>
+</ul>
+<h2 id="out-of-bag-error">Out-of-Bag Error<a class="headerlink" href="#out-of-bag-error" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An internal Random Forest error estimate calculated using samples not included in each tree's bootstrap sample.</p>
+<p><strong>Why it matters:</strong> It gives a model-performance estimate without a separate validation split, but it is still internal validation.</p>
+<p><strong>For our research:</strong> OOB error is useful during model development, but external validation remains stronger.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/ensemble.html#forest">Random Forest overview, scikit-learn</a></li>
+</ul>
+<h2 id="mean-decrease-accuracy">Mean Decrease Accuracy<a class="headerlink" href="#mean-decrease-accuracy" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A Random Forest feature-importance measure showing how much model accuracy decreases when a variable is removed or permuted.</p>
+<p><strong>Why it matters:</strong> It helps rank variables that influence model predictions.</p>
+<p><strong>For our research:</strong> It can support interpretation, but it does not prove causal effect.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/permutation_importance.html">scikit-learn permutation importance</a></li>
+</ul>
 <h2 id="super-learner">Super Learner<a class="headerlink" href="#super-learner" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> An ensemble method that combines multiple candidate models and learns how to weight them.</p>
 <p><strong>Why it matters:</strong> It can perform well when no single model is best across all data patterns.</p>
@@ -6509,6 +6651,14 @@
 <p><strong>Simple meaning:</strong> Among truly negative cases, the proportion correctly predicted as negative.</p>
 <p><strong>Why it matters:</strong> In IVF prediction, specificity helps understand how often the model avoids falsely predicting success or risk.</p>
 <p><strong>For our research:</strong> Specificity should be interpreted together with sensitivity/recall, precision and clinical consequences.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall">Google ML Crash Course: classification metrics</a></li>
+</ul>
+<h2 id="sensitivity">Sensitivity<a class="headerlink" href="#sensitivity" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Among truly positive cases, the proportion correctly predicted as positive.</p>
+<p><strong>Why it matters:</strong> In IVF prediction, sensitivity helps understand how often the model detects patients who actually achieve the target outcome.</p>
+<p><strong>For our research:</strong> Sensitivity must be balanced with specificity, because false reassurance and false discouragement both matter in counseling.</p>
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall">Google ML Crash Course: classification metrics</a></li>
