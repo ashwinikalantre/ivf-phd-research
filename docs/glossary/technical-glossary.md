@@ -122,6 +122,18 @@ Deep reading:
 
 - [IBM convolutional neural networks overview](https://www.ibm.com/topics/convolutional-neural-networks)
 
+## 3D Convolutional Neural Network
+
+**Simple meaning:** A CNN that analyzes three-dimensional data, such as image sequences or videos, rather than a single flat image.
+
+**Why it matters:** Embryo time-lapse videos contain spatial and time information.
+
+**For our research:** 3D CNNs are relevant only if embryo videos or time-lapse data are available.
+
+Deep reading:
+
+- [PyTorch video classification models](https://pytorch.org/vision/stable/models.html#video-classification)
+
 ## ResNet
 
 **Simple meaning:** Residual Network. A CNN architecture that uses skip connections to make deep image models easier to train.
@@ -217,6 +229,30 @@ Deep reading:
 Deep reading:
 
 - [AHRQ clinical decision support overview](https://digital.ahrq.gov/clinical-decision-support)
+
+## Embryo Grading
+
+**Simple meaning:** Assessment of embryo quality based on visual or automated features.
+
+**Why it matters:** Embryo grading is used to help decide which embryo to transfer or freeze.
+
+**For our research:** Embryo grading data may be an important feature if available, but grading is subjective and may vary between embryologists.
+
+Deep reading:
+
+- [HFEA embryo grading information](https://www.hfea.gov.uk/treatments/explore-all-treatments/embryo-transfer/)
+
+## Pre-Clinical Validation
+
+**Simple meaning:** Testing a model before it is used to make real clinical decisions.
+
+**Why it matters:** It helps identify whether a model is promising before exposing patients to decision changes.
+
+**For our research:** Pre-clinical validation is useful, but it cannot prove patient benefit without prospective clinical evaluation.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
 
 ## Human-in-the-Loop AI
 

@@ -114,6 +114,7 @@ nav:
           - "Paper 21: Wen et al. 2025": paper-notes/paper-21-wen-2025-precision-ivf-et-cdss.md
           - "Paper 22: Bixby and Miller 2025": paper-notes/paper-22-bixby-2025-real-world-stim-assist.md
           - "Paper 23: Diwekar et al. 2024": paper-notes/paper-23-diwekar-2024-opt-ivf-randomized-trial.md
+          - "Paper 24: Cimadomo et al. 2023": paper-notes/paper-24-cimadomo-2023-idascore-pgta.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

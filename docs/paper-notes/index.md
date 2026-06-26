@@ -67,6 +67,7 @@ Each paper note follows this structure:
 | 21 | 2025 | Artificial intelligence-driven precision treatment of reproductive medicine-related diseases: the optimal protocol choice for IVF-ET | Ovarian stimulation protocol recommendation / AI-CDSS | Completed; 2025 epub, 2026 issue |
 | 22 | 2025 | Real-world use of an artificial intelligence-powered clinical decision support tool for ovarian stimulation | Real-world ovarian stimulation CDSS / Stim Assist | Completed; full-text details limited |
 | 23 | 2024 | A new decision-support tool in a multi-center randomized trial for personalized, optimized, and simplified fertility treatment in non-PCOS patients | Randomized Opt-IVF CDSS / ovarian stimulation | Completed; full table details limited |
+| 24 | 2023 | Towards Automation in IVF: Pre-Clinical Validation of a Deep Learning-Based Embryo Grading System during PGT-A Cycles | Embryo grading / iDAScore / pre-clinical validation | Completed |
 
 ## Priority Order
 

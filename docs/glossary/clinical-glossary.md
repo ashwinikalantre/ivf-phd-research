@@ -186,6 +186,42 @@ Deep reading:
 - [HFEA fertility glossary](https://www.hfea.gov.uk/about-us/a-z-fertility-glossary/)
 - [ASRM International Glossary on Infertility and Fertility Care](https://www.asrm.org/practice-guidance/practice-committee-documents/the-international-glossary-on-infertility-and-fertility-care-2025/)
 
+## PGT-A
+
+**Simple meaning:** Preimplantation genetic testing for aneuploidy. It tests embryo cells for abnormal chromosome number before transfer.
+
+**Why it matters:** PGT-A cycles provide euploid/aneuploid labels that can be used when validating embryo-ranking AI.
+
+**For our research:** PGT-A data is valuable but may not be available in all Indian clinics and should not be assumed.
+
+Deep reading:
+
+- [HFEA PGT-M and PGT-A information](https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/)
+
+## Euploid Embryo
+
+**Simple meaning:** An embryo with the expected normal number of chromosomes.
+
+**Why it matters:** Euploid embryos generally have higher implantation and live-birth potential than aneuploid embryos.
+
+**For our research:** Euploidy is useful for embryo-selection studies, but it is not identical to live birth.
+
+Deep reading:
+
+- [ASRM PGT-A committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/)
+
+## Aneuploid Embryo
+
+**Simple meaning:** An embryo with an abnormal number of chromosomes.
+
+**Why it matters:** Aneuploidy is a major reason embryos fail to implant or lead to miscarriage.
+
+**For our research:** Aneuploidy labels can help validate embryo assessment models if PGT-A data is available.
+
+Deep reading:
+
+- [ASRM PGT-A committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/)
+
 ## Vitrification
 
 **Simple meaning:** A rapid freezing method used to preserve embryos, eggs or sperm.
