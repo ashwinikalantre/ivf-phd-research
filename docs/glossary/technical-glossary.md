@@ -110,6 +110,90 @@ Deep reading:
 
 - [Ultralytics YOLO documentation](https://docs.ultralytics.com/)
 
+## Convolutional Neural Network
+
+**Simple meaning:** A deep-learning model commonly used for image analysis.
+
+**Why it matters:** CNNs can learn visual patterns from embryo images.
+
+**For our research:** CNNs are relevant only if embryo image data is available. For tabular clinic data, they are usually not needed.
+
+Deep reading:
+
+- [IBM convolutional neural networks overview](https://www.ibm.com/topics/convolutional-neural-networks)
+
+## ResNet
+
+**Simple meaning:** Residual Network. A CNN architecture that uses skip connections to make deep image models easier to train.
+
+**Why it matters:** ResNet is commonly used as an image-model backbone.
+
+**For our research:** Paper 04 used ResNet34 for blastocyst image classification.
+
+Deep reading:
+
+- [PyTorch ResNet documentation](https://pytorch.org/vision/main/models/resnet.html)
+
+## Fusion Model
+
+**Simple meaning:** A model that combines information from two or more input sources.
+
+**Example:** Combining clinical data features with embryo image features.
+
+**For our research:** Fusion models are central to testing whether multimodal IVF data improves prediction over single-modality models.
+
+Deep reading:
+
+- [Nature Medicine article on multimodal AI in healthcare](https://www.nature.com/articles/s41591-023-02448-8)
+
+## ScoreCAM
+
+**Simple meaning:** A visualization method that highlights image regions that influence a CNN prediction.
+
+**Why it matters:** It can help detect whether an embryo-image model is focusing on meaningful embryo regions or irrelevant background.
+
+**For our research:** Visualization can support trust, but it is not the same as full clinical explainability.
+
+Deep reading:
+
+- [Score-CAM paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.html)
+
+## Layer-Wise Relevance Propagation
+
+**Simple meaning:** A method that traces a model prediction backward to estimate which input features contributed most.
+
+**Why it matters:** It can be used to explain clinical feature importance in neural-network models.
+
+**For our research:** LRP is one possible explainability method, but SHAP may be easier to communicate for tabular clinical models.
+
+Deep reading:
+
+- [LRP overview from Explainable AI literature](https://doi.org/10.1371/journal.pone.0130140)
+
+## Class Imbalance
+
+**Simple meaning:** A dataset problem where one outcome class is much more common than another.
+
+**Example:** Many more pregnant than non-pregnant samples.
+
+**For our research:** IVF datasets often have imbalance, so metrics such as F1, sensitivity, specificity and calibration must be checked carefully.
+
+Deep reading:
+
+- [Google ML Crash Course: classification and imbalanced datasets](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)
+
+## Blind Test Set
+
+**Simple meaning:** A test dataset kept hidden from the model during training and tuning.
+
+**Why it matters:** It gives a more honest estimate of model performance than testing on training data.
+
+**For our research:** A blind test set is useful, but external clinic validation is still stronger.
+
+Deep reading:
+
+- [Google ML Crash Course: training and test sets](https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets)
+
 ## Explainable AI
 
 **Simple meaning:** AI methods that help users understand why a model gives a prediction.

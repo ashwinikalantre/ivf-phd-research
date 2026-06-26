@@ -47,6 +47,7 @@ Each paper note follows this structure:
 | 01 | 2025 | Explainable artificial intelligence to identify follicles that optimize clinical outcomes during assisted conception | Ovarian stimulation / XAI / CDSS | Completed |
 | 02 | 2024 | Optimizing oocyte yield utilizing a machine learning model for dose and trigger decisions, a multi-center, prospective study | Ovarian stimulation / CDSS / prospective evaluation | Completed |
 | 03 | 2026 | Multimodal intelligent prediction model for in vitro fertilization | Multimodal embryo video + clinical-data prediction | Completed; outside original 2021-2025 window |
+| 04 | 2025 | Deep learning classification integrating embryo images with associated clinical information from ART cycles | Multimodal embryo image + clinical-data prediction | Completed |
 
 ## Priority Order
 
