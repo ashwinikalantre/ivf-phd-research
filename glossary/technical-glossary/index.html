@@ -1748,6 +1748,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#voting-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voting Classifier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacking-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stacking Classifier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smotetomek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMOTETomek
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutual-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mutual Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2017,6 +2061,8 @@
       
         
           
+        
+      
         
       
         
@@ -2333,6 +2379,34 @@
     
   
     Paper 09: Liu et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-10-liu-2025-svbt-miscarriage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 10: Liu et al. 2025
   
 
     
@@ -4170,6 +4244,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#voting-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voting Classifier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacking-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stacking Classifier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smotetomek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMOTETomek
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutual-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mutual Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multilayer-perceptron" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4848,6 +4966,38 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://www.mskcc.org/departments/epidemiology-biostatistics/biostatistics/decision-curve-analysis">Decision curve analysis overview</a></li>
+</ul>
+<h2 id="voting-classifier">Voting Classifier<a class="headerlink" href="#voting-classifier" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An ensemble model that combines predictions from multiple models and chooses the final class by voting or averaged probabilities.</p>
+<p><strong>Why it matters:</strong> It can improve stability when different models capture different patterns.</p>
+<p><strong>For our research:</strong> Voting classifiers may be useful for comparison, but explainability and calibration still matter.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html">scikit-learn VotingClassifier</a></li>
+</ul>
+<h2 id="stacking-classifier">Stacking Classifier<a class="headerlink" href="#stacking-classifier" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> An ensemble method where predictions from several base models are used as inputs to another model.</p>
+<p><strong>Why it matters:</strong> It can improve performance but may become harder to explain.</p>
+<p><strong>For our research:</strong> Stacking should be used cautiously in healthcare because transparency and overfitting risk must be controlled.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html">scikit-learn StackingClassifier</a></li>
+</ul>
+<h2 id="smotetomek">SMOTETomek<a class="headerlink" href="#smotetomek" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A class-balancing method that combines SMOTE oversampling with Tomek Links cleaning.</p>
+<p><strong>Why it matters:</strong> It helps when one outcome class is much smaller than another.</p>
+<p><strong>For our research:</strong> Class balancing must be applied only to training data to avoid leakage.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTETomek.html">imbalanced-learn SMOTETomek</a></li>
+</ul>
+<h2 id="mutual-information">Mutual Information<a class="headerlink" href="#mutual-information" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A statistic that measures how much knowing one variable reduces uncertainty about another variable.</p>
+<p><strong>Why it matters:</strong> It can identify useful predictors even when relationships are non-linear.</p>
+<p><strong>For our research:</strong> Mutual information can support feature selection, but clinical relevance should still be checked.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_classif.html">scikit-learn mutual_info_classif</a></li>
 </ul>
 <h2 id="multilayer-perceptron">Multilayer Perceptron<a class="headerlink" href="#multilayer-perceptron" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A feedforward neural network with one or more hidden layers.</p>
