@@ -1605,6 +1605,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adaboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AdaBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artificial Neural Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xgboost" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1752,6 +1774,28 @@
     <span class="md-ellipsis">
       
         Permutation Importance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partial-dependence-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partial Dependence Plot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accumulated-local-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accumulated Local Effects
       
     </span>
   </a>
@@ -1907,6 +1951,8 @@
       
         
           
+        
+      
         
       
         
@@ -2163,6 +2209,34 @@
     
   
     Paper 07: Zhu et al. 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-notes/paper-08-wu-2025-fresh-transfer-live-birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper 08: Wu et al. 2025
   
 
     
@@ -3857,6 +3931,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adaboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AdaBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artificial Neural Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xgboost" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4004,6 +4100,28 @@
     <span class="md-ellipsis">
       
         Permutation Importance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partial-dependence-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partial Dependence Plot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accumulated-local-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accumulated Local Effects
       
     </span>
   </a>
@@ -4465,6 +4583,22 @@
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html">scikit-learn ExtraTreesClassifier</a></li>
 </ul>
+<h2 id="adaboost">AdaBoost<a class="headerlink" href="#adaboost" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> Adaptive Boosting. An ensemble method that gives more attention to samples that previous models classified incorrectly.</p>
+<p><strong>Why it matters:</strong> It is often used as a comparison boosting model.</p>
+<p><strong>For our research:</strong> AdaBoost may be useful for benchmarking, but stronger models such as XGBoost, LightGBM or Random Forest may perform better on IVF tabular data.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html">scikit-learn AdaBoostClassifier</a></li>
+</ul>
+<h2 id="artificial-neural-network">Artificial Neural Network<a class="headerlink" href="#artificial-neural-network" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A machine-learning model inspired by connected layers of artificial neurons.</p>
+<p><strong>Why it matters:</strong> ANNs can learn non-linear patterns but may overfit if the dataset is not large or balanced enough.</p>
+<p><strong>For our research:</strong> Use ANN as a comparison model only if sample size and validation design support it.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/neural_networks_supervised.html">scikit-learn neural network models</a></li>
+</ul>
 <h2 id="xgboost">XGBoost<a class="headerlink" href="#xgboost" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> A powerful gradient-boosting tree algorithm often used for structured tabular data.</p>
 <p><strong>Why it matters:</strong> Many IVF prediction studies report strong XGBoost performance.</p>
@@ -4576,6 +4710,22 @@
 <p>Deep reading:</p>
 <ul>
 <li><a href="https://scikit-learn.org/stable/modules/permutation_importance.html">scikit-learn permutation importance</a></li>
+</ul>
+<h2 id="partial-dependence-plot">Partial Dependence Plot<a class="headerlink" href="#partial-dependence-plot" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A plot showing how a model prediction changes as one feature changes, while averaging over other features.</p>
+<p><strong>Why it matters:</strong> It can help explain feature effects, but may mislead when features are highly correlated.</p>
+<p><strong>For our research:</strong> PDPs can support global explanation, but local patient-level explanations and clinician interpretation are also needed.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/partial_dependence.html">scikit-learn partial dependence plots</a></li>
+</ul>
+<h2 id="accumulated-local-effects">Accumulated Local Effects<a class="headerlink" href="#accumulated-local-effects" title="Permanent link">&para;</a></h2>
+<p><strong>Simple meaning:</strong> A model-interpretation method that shows feature effects while reducing some problems caused by correlated features.</p>
+<p><strong>Why it matters:</strong> IVF variables are often correlated, such as hormones, follicles and oocytes.</p>
+<p><strong>For our research:</strong> ALE can complement SHAP and PDP in explainability analysis.</p>
+<p>Deep reading:</p>
+<ul>
+<li><a href="https://christophm.github.io/interpretable-ml-book/ale.html">Interpretable Machine Learning: Accumulated Local Effects</a></li>
 </ul>
 <h2 id="mean-absolute-error">Mean Absolute Error<a class="headerlink" href="#mean-absolute-error" title="Permanent link">&para;</a></h2>
 <p><strong>Simple meaning:</strong> Average absolute difference between predicted and actual numeric values.</p>
