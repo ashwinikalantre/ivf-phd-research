@@ -339,6 +339,78 @@ Deep reading:
 
 - [scikit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
+## Support Vector Machine
+
+**Simple meaning:** A supervised machine-learning model that tries to separate classes using a boundary with maximum margin.
+
+**Why it matters:** SVM is often used as a comparison model in medical prediction studies.
+
+**For our research:** SVM can be tested, but tree-based models often perform better on mixed clinical tabular data.
+
+Deep reading:
+
+- [scikit-learn SVM](https://scikit-learn.org/stable/modules/svm.html)
+
+## Random Forest
+
+**Simple meaning:** An ensemble model made from many decision trees.
+
+**Why it matters:** It can capture non-linear relationships and is commonly used in IVF prediction papers.
+
+**For our research:** Random Forest is a useful baseline before more complex boosting models.
+
+Deep reading:
+
+- [scikit-learn RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+
+## Extra Trees
+
+**Simple meaning:** Extremely Randomized Trees. An ensemble method similar to Random Forest but with more randomization in tree construction.
+
+**Why it matters:** It is often used as a comparison ensemble model.
+
+**For our research:** Extra Trees may be useful for benchmarking, but clinical interpretability still needs attention.
+
+Deep reading:
+
+- [scikit-learn ExtraTreesClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html)
+
+## XGBoost
+
+**Simple meaning:** A powerful gradient-boosting tree algorithm often used for structured tabular data.
+
+**Why it matters:** Many IVF prediction studies report strong XGBoost performance.
+
+**For our research:** XGBoost is a strong candidate model, but it must be calibrated, explained and externally validated.
+
+Deep reading:
+
+- [XGBoost documentation](https://xgboost.readthedocs.io/)
+
+## LightGBM
+
+**Simple meaning:** A fast gradient-boosting framework designed for efficient training on large or structured datasets.
+
+**Why it matters:** LightGBM often performs well on clinical tabular datasets.
+
+**For our research:** LightGBM is a strong candidate model, but high performance must be interpreted with validation and explainability.
+
+Deep reading:
+
+- [LightGBM documentation](https://lightgbm.readthedocs.io/)
+
+## Feature Selection
+
+**Simple meaning:** Choosing the most useful input variables for a model.
+
+**Why it matters:** Too many weak or redundant variables can reduce model reliability and interpretability.
+
+**For our research:** Feature selection should be clinically sensible, not only mathematically optimized.
+
+Deep reading:
+
+- [scikit-learn feature selection](https://scikit-learn.org/stable/modules/feature_selection.html)
+
 ## Multilayer Perceptron
 
 **Simple meaning:** A feedforward neural network with one or more hidden layers.
