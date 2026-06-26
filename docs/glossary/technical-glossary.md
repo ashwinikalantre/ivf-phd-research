@@ -386,6 +386,42 @@ Deep reading:
 
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 
+## Precision Medicine
+
+**Simple meaning:** Healthcare that adapts treatment choices to the individual patient instead of using one standard approach for everyone.
+
+**Why it matters:** IVF treatment response varies by age, ovarian reserve, diagnosis, hormone profile and previous treatment history.
+
+**For our research:** Precision medicine supports the idea of personalized IVF treatment recommendation rather than only outcome prediction.
+
+Deep reading:
+
+- [NIH precision medicine overview](https://medlineplus.gov/genetics/understanding/precisionmedicine/definition/)
+
+## Cost-Effectiveness
+
+**Simple meaning:** A way to compare whether a treatment or system gives better outcomes for the money spent.
+
+**Why it matters:** IVF is expensive, so a CDSS should consider cost, time and burden, not only clinical probability.
+
+**For our research:** Cost-effectiveness may be useful if Indian clinic cost data can be collected reliably.
+
+Deep reading:
+
+- [NICE health technology evaluation methods](https://www.nice.org.uk/process/pmg36)
+
+## ICER
+
+**Simple meaning:** Incremental cost-effectiveness ratio. It compares the extra cost required to gain one additional unit of benefit.
+
+**Why it matters:** It helps judge whether an intervention improves outcomes at acceptable cost.
+
+**For our research:** ICER is relevant only if we collect reliable cost and outcome data.
+
+Deep reading:
+
+- [NICE health technology evaluation methods](https://www.nice.org.uk/process/pmg36)
+
 ## Model Generalizability
 
 **Simple meaning:** How well a model works on new patients, clinics or populations beyond the data used to build it.

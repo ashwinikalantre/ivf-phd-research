@@ -64,6 +64,7 @@ Each paper note follows this structure:
 | 18 | 2022 | Comparison of machine learning classification techniques to predict implantation success in an IVF treatment cycle | Implantation prediction / model comparison | Completed; full-text details limited |
 | 19 | 2022 | Predicting clinical pregnancy using clinical features and machine learning algorithms in in vitro fertilization | Clinical-pregnancy prediction / Random Forest / PDP | Completed |
 | 20 | 2022 | Machine Learning Approach to Predict Clinical Pregnancy Potential in Women Undergoing IVF Program | Clinical-pregnancy prediction / tree-based ML / GA | Completed; full-text details limited |
+| 21 | 2025 | Artificial intelligence-driven precision treatment of reproductive medicine-related diseases: the optimal protocol choice for IVF-ET | Ovarian stimulation protocol recommendation / AI-CDSS | Completed; 2025 epub, 2026 issue |
 
 ## Priority Order
 
