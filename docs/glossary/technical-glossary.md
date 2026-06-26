@@ -230,6 +230,90 @@ Deep reading:
 
 - [NIST human-centered AI resources](https://www.nist.gov/artificial-intelligence)
 
+## Human-Centred AI
+
+**Simple meaning:** AI designed around human needs, abilities, values and decision-making context.
+
+**Why it matters:** Healthcare AI must be understandable and usable by real users, not only technically accurate.
+
+**For our research:** A CDSS should be designed for clinicians and possibly patient counseling, not only for model developers.
+
+Deep reading:
+
+- [NIST human-centered AI resources](https://www.nist.gov/artificial-intelligence)
+
+## Patient-Centred Explainability
+
+**Simple meaning:** Explanations designed for patients’ questions, understanding and decision needs.
+
+**Why it matters:** Patients may ask about model scope, exclusions, uncertainty and personal relevance, not only feature importance.
+
+**For our research:** If patient-facing explanations are included, they must be written in simple language and evaluated with users.
+
+Deep reading:
+
+- [NIST explainable AI overview](https://www.nist.gov/artificial-intelligence/explainable-ai)
+
+## Dialogue-Based Explanation
+
+**Simple meaning:** An explanation interface where users can ask follow-up questions instead of receiving only a fixed explanation.
+
+**Why it matters:** IVF patients may need personalized answers about probability, data applicability and limitations.
+
+**For our research:** This is promising future work, but it should be grounded in verified clinical knowledge to avoid unsafe answers.
+
+Deep reading:
+
+- [NIST human-centered AI resources](https://www.nist.gov/artificial-intelligence)
+
+## Risk Communication
+
+**Simple meaning:** Explaining probability, uncertainty and possible outcomes in a way that people can understand.
+
+**Why it matters:** IVF counseling often involves uncertain probabilities, not guaranteed answers.
+
+**For our research:** Model output should avoid false certainty and should explain what the probability means.
+
+Deep reading:
+
+- [CDC risk communication resources](https://www.cdc.gov/risk-communication/php/toolkit/index.html)
+
+## Data Shift
+
+**Simple meaning:** A change between the data used to build a model and the data where it is later used.
+
+**Why it matters:** A model may be less reliable if clinic population, treatment practice or outcome rates change.
+
+**For our research:** Data shift should be explained to clinicians and checked through validation.
+
+Deep reading:
+
+- [Evidently AI data drift guide](https://www.evidentlyai.com/ml-in-production/data-drift)
+
+## Model Exclusion
+
+**Simple meaning:** A situation where certain patient groups or cases were excluded from model training or validation.
+
+**Why it matters:** Patients may not trust a model if they are similar to excluded groups.
+
+**For our research:** Any exclusion criteria must be clearly documented and explained.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
+## Retrieval-Augmented Generation
+
+**Simple meaning:** A method where a language model answers using retrieved documents or knowledge sources.
+
+**Why it matters:** It can reduce unsupported answers compared with a general chatbot, but it still needs careful validation.
+
+**For our research:** RAG may be future work for explanation support, but only with curated clinical sources.
+
+Deep reading:
+
+- [IBM retrieval augmented generation overview](https://www.ibm.com/topics/retrieval-augmented-generation)
+
 ## Black-Box AI
 
 **Simple meaning:** An AI model whose internal reasoning is difficult for humans to understand.
