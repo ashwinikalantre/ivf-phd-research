@@ -99,6 +99,7 @@ nav:
           - "Paper 06: Bai et al. 2025": paper-notes/paper-06-bai-2025-ivf-et-pregnancy-outcomes.md
           - "Paper 07: Zhu et al. 2025": paper-notes/paper-07-zhu-2025-pcos-live-birth.md
           - "Paper 08: Wu et al. 2025": paper-notes/paper-08-wu-2025-fresh-transfer-live-birth.md
+          - "Paper 09: Liu et al. 2025": paper-notes/paper-09-liu-2025-cnn-emr-live-birth.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

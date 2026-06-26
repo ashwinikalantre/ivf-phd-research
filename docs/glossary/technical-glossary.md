@@ -399,6 +399,78 @@ Deep reading:
 
 - [scikit-learn neural network models](https://scikit-learn.org/stable/modules/neural_networks_supervised.html)
 
+## Feedforward Neural Network
+
+**Simple meaning:** A neural network where information moves in one direction from input to output.
+
+**Why it matters:** It is a common comparison model for structured clinical prediction.
+
+**For our research:** It can model non-linear relationships but needs careful validation to avoid overfitting.
+
+Deep reading:
+
+- [IBM neural networks overview](https://www.ibm.com/topics/neural-networks)
+
+## Naive Bayes
+
+**Simple meaning:** A probabilistic classification model based on Bayes’ theorem and a simplifying assumption that features are conditionally independent.
+
+**Why it matters:** It is simple and fast, but often weak when clinical features are correlated.
+
+**For our research:** Use mainly as a comparison baseline, not as the main model.
+
+Deep reading:
+
+- [scikit-learn Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html)
+
+## Electronic Medical Record
+
+**Simple meaning:** A digital record of patient clinical information collected during care.
+
+**Why it matters:** EMR data is a common source for retrospective IVF prediction studies.
+
+**For our research:** Clinic EMR data may be useful, but missingness, inconsistent coding and privacy must be handled carefully.
+
+Deep reading:
+
+- [HealthIT.gov electronic medical records overview](https://www.healthit.gov/faq/what-are-electronic-medical-records-emrs)
+
+## One-Hot Encoding
+
+**Simple meaning:** A way to convert categories into numeric columns so machine-learning models can use them.
+
+**Example:** Infertility type becomes separate yes/no columns for PCOS, tubal factor, male factor, etc.
+
+**For our research:** Needed for categorical IVF variables, but categories should be clinically meaningful.
+
+Deep reading:
+
+- [scikit-learn OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
+
+## Min-Max Scaling
+
+**Simple meaning:** A method that rescales numeric values to a fixed range.
+
+**Why it matters:** Some models train better when numeric features are on similar scales.
+
+**For our research:** Scaling should be fitted only on training data to avoid data leakage.
+
+Deep reading:
+
+- [scikit-learn MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+
+## Early Stopping
+
+**Simple meaning:** A training method that stops model training when validation performance stops improving.
+
+**Why it matters:** It helps reduce overfitting in neural networks.
+
+**For our research:** Useful for deep learning or boosting models, but validation design must be correct.
+
+Deep reading:
+
+- [Keras early stopping documentation](https://keras.io/api/callbacks/early_stopping/)
+
 ## XGBoost
 
 **Simple meaning:** A powerful gradient-boosting tree algorithm often used for structured tabular data.
