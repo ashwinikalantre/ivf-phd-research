@@ -558,6 +558,18 @@ Deep reading:
 
 - [WHO polycystic ovary syndrome fact sheet](https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome)
 
+## Endometriosis
+
+**Simple meaning:** A chronic condition where tissue similar to the uterine lining grows outside the uterus.
+
+**Why it matters:** Endometriosis can affect fertility through inflammation, ovarian reserve, pelvic anatomy, egg quality and endometrial receptivity.
+
+**For our research:** Endometriosis papers are useful for subgroup-specific IVF prediction and personalized decision support.
+
+Deep reading:
+
+- [WHO endometriosis fact sheet](https://www.who.int/news-room/fact-sheets/detail/endometriosis)
+
 ## Antagonist Protocol
 
 **Simple meaning:** An ovarian stimulation protocol using GnRH antagonist medication to prevent premature ovulation.
