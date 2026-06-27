@@ -39,3 +39,17 @@ It is justified because IVF is:
 - increasingly dependent on personalized decisions
 
 This makes explainable clinical decision support relevant.
+
+## Panel Preparation Pages
+
+Use the panel-preparation workflow as the main entry point:
+
+- [Panel Preparation Workflow](panel-preparation-workflow.md)
+- [Quick Panel Question Bank](panel-question-bank.md)
+- [Stage 1: Question Skeleton](panel-question-bank-stage-1.md)
+- [Stage 2: Evidence-Based Answers](panel-question-bank-stage-2.md)
+- [Stage 3: Feasibility Framework](panel-question-bank-stage-3.md)
+- [Stage 4: Variable and Outcome Map](panel-question-bank-stage-4.md)
+- [Stage 5: Research Questions and Hypotheses](panel-question-bank-stage-5.md)
+- [Stage 6: Methodology Blueprint](panel-question-bank-stage-6.md)
+- [Stage 7: Defense Script](panel-question-bank-stage-7.md)
