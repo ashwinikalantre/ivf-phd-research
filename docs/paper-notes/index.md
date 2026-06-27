@@ -75,6 +75,7 @@ Each paper note follows this structure:
 | 29 | 2025 | Artificial intelligence-enhanced in-vitro fertilization outcome prediction for the Indian subpopulation: integrating pre-treatment parameters and Bayesian-optimized ensemble techniques | Indian IVF outcome prediction / Bayesian-optimized ensemble | Completed; source access limited to article page |
 | 30 | 2024 | Machine learning algorithms in constructing prediction models for assisted reproductive technology related live birth outcomes | ART live-birth prediction / model comparison / calibration | Completed |
 | 31 | 2025 | Machine learning prediction of clinical pregnancy in endometriosis patients following fresh IVF/ICSI-ET | Endometriosis subgroup / clinical pregnancy / XGBoost / SHAP | Completed |
+| 32 | 2025 | Artificial intelligence in assisted reproductive technology: separating the dream from reality | Critical review / clinical utility / trustworthy AI | Completed; full-text details limited |
 
 ## Priority Order
 
