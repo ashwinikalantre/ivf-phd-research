@@ -596,64 +596,165 @@ def methodology_blueprint():
         "Methods, Models and Technical Blueprint",
         "Guide review pack | Tentative implementation plan, subject to data access",
     )
-    doc.add_heading("System Idea", level=1)
+    doc.add_heading("Purpose", level=1)
+    doc.add_paragraph(
+        "This document describes the likely technical route for the PhD after data access is confirmed. "
+        "It is a blueprint for guide discussion, not a final implementation commitment."
+    )
+    doc.add_heading("Proposed System Idea", level=1)
     doc.add_paragraph(
         "Build an explainable clinical decision-support framework that predicts IVF outcome probability, explains patient-specific factors, "
         "and supports doctor-patient counseling without replacing clinician judgment."
     )
-    doc.add_heading("Candidate Data Pipeline", level=1)
-    add_numbered(
+    doc.add_heading("High-Level Workflow", level=1)
+    add_table(
         doc,
+        ["Step", "Purpose", "Main Output"],
         [
-            "Collect anonymized IVF records after permission and ethics approval.",
-            "Clean missing values, inconsistent formats and outliers.",
-            "Map clinical, treatment-cycle, embryology and optional lifestyle variables.",
-            "Train baseline and advanced machine-learning models.",
-            "Evaluate discrimination, calibration and subgroup performance.",
-            "Generate XAI explanations and test whether clinicians find them useful.",
+            ["Data access and ethics", "Confirm clinic data, permission, anonymization and outcome availability.", "Approved data access plan."],
+            ["Data cleaning", "Handle missing values, duplicates, inconsistent formats and outliers.", "Clean research dataset."],
+            ["Variable mapping", "Map demographic, clinical, treatment, embryology and optional lifestyle variables.", "Feature dictionary and analysis dataset."],
+            ["Exploratory analysis", "Understand distributions, outcome rates, missingness and class imbalance.", "EDA summary and modelling decisions."],
+            ["Model development", "Compare baseline and advanced models.", "Candidate prediction models."],
+            ["Explainability", "Explain global patterns and patient-level predictions.", "XAI outputs for clinician review."],
+            ["Validation", "Test internal, temporal, subgroup or external performance depending on data.", "Validation report."],
+            ["CDSS prototype", "Convert model and explanation into a doctor-facing output.", "Prototype or mock decision-support screen."],
         ],
+        [1.45, 2.75, 2.1],
+    )
+    doc.add_heading("Data Model", level=1)
+    add_table(
+        doc,
+        ["Table / Entity", "Example Fields", "Use"],
+        [
+            ["Patient", "anonymous patient ID, age, BMI, infertility duration, diagnosis.", "Patient-level risk and counselling context."],
+            ["Cycle", "cycle ID, year, IVF/ICSI, fresh/frozen, protocol, trigger, endometrial thickness.", "Treatment-cycle modelling and temporal validation."],
+            ["Hormone / ovarian reserve", "AMH, AFC, FSH, LH, estradiol, progesterone.", "Clinical prediction and ovarian response explanation."],
+            ["Embryology", "oocytes, MII oocytes, fertilization, embryo grade, blastocyst grade, embryos transferred.", "Multimodal prediction if available."],
+            ["Outcome", "clinical pregnancy, live birth, miscarriage, implantation, oocyte yield.", "Dependent variable definition."],
+            ["Lifestyle", "smoking, sleep, stress, activity, diet.", "Optional personalization only if reliably collected."],
+        ],
+        [1.45, 3.0, 1.85],
     )
     doc.add_heading("Candidate Models", level=1)
     add_table(
         doc,
-        ["Model", "Role"],
+        ["Model", "Role", "When To Use"],
         [
-            ["Logistic Regression", "Baseline and interpretable comparison model."],
-            ["Decision Tree", "Simple interpretable model."],
-            ["Random Forest", "Non-linear tabular-data baseline."],
-            ["XGBoost / LightGBM", "Strong candidate models for structured IVF data."],
-            ["SVM", "Comparison model if dataset size and feature set support it."],
-            ["Neural network", "Only if data volume or image/time-lapse data justifies it."],
+            ["Logistic Regression", "Baseline and interpretable comparison model.", "Always useful as a transparent starting point."],
+            ["Decision Tree", "Simple rule-like model.", "Useful for explanation but may overfit."],
+            ["Random Forest", "Non-linear tabular-data baseline.", "Useful when relationships are not purely linear."],
+            ["XGBoost / LightGBM", "Strong candidate models for structured IVF data.", "Likely primary advanced models for tabular clinical/embryology data."],
+            ["SVM", "Comparison model.", "Use only if dataset size and feature scaling support it."],
+            ["Neural network", "Deep learning candidate.", "Use only for large data, image/time-lapse data or clear technical justification."],
         ],
-        [2.1, 4.2],
+        [1.45, 2.25, 2.65],
     )
-    doc.add_heading("Explainability Methods", level=1)
-    add_bullets(
+    doc.add_heading("Recommended Model Strategy", level=1)
+    add_numbered(
         doc,
         [
-            "SHAP for global and patient-level explanations.",
-            "LIME as a possible local explanation comparison.",
-            "Permutation importance for model-agnostic feature importance.",
-            "Partial dependence or related plots for selected variables if clinically meaningful.",
+            "Start with Logistic Regression as the baseline.",
+            "Add Random Forest as a non-linear comparison model.",
+            "Use XGBoost or LightGBM as the main advanced tabular-data model.",
+            "Use deep learning only if image, time-lapse or sufficiently large data are available.",
+            "Select the final model using performance, calibration, explainability and clinical usefulness, not accuracy alone.",
         ],
     )
+    doc.add_heading("Explainability Methods", level=1)
+    add_table(
+        doc,
+        ["Method", "Use", "Caution"],
+        [
+            ["SHAP", "Global feature importance and patient-level positive/negative drivers.", "Explanations must be interpreted clinically, not as causality."],
+            ["LIME", "Optional local explanation comparison.", "Can be unstable; use as supporting method only."],
+            ["Permutation importance", "Model-agnostic feature importance.", "Can be affected by correlated predictors."],
+            ["Partial dependence / related plots", "Shows model relationship for selected variables.", "Use only for clinically meaningful variables."],
+            ["Explanation card", "Doctor-facing summary of probability, key factors and caution notes.", "Must be reviewed by clinicians before claiming usefulness."],
+        ],
+        [1.35, 2.65, 2.3],
+    )
+    doc.add_page_break()
     doc.add_heading("Evaluation Metrics", level=1)
     add_table(
         doc,
-        ["Area", "Candidate Measures"],
+        ["Area", "Candidate Measures", "Why It Matters"],
         [
-            ["Classification", "AUC, accuracy, sensitivity, specificity, precision, recall, F1."],
-            ["Calibration", "Calibration curve and Brier score."],
-            ["Clinical usefulness", "Decision curve analysis if feasible."],
-            ["Generalization", "External, temporal or subgroup validation depending on data."],
-            ["Explainability/usefulness", "Clinician review or structured feedback."],
+            ["Discrimination", "AUC, sensitivity, specificity, precision, recall, F1.", "Shows whether model separates outcome groups."],
+            ["Calibration", "Calibration curve and Brier score.", "Important because clinicians need reliable probabilities."],
+            ["Clinical usefulness", "Decision curve analysis if feasible.", "Shows whether predictions may support decisions better than simple strategies."],
+            ["Generalization", "Internal, temporal, subgroup or external validation.", "Addresses repeated literature gap around poor validation."],
+            ["Explainability/usefulness", "SHAP review, clinician feedback or structured questionnaire.", "Tests whether explanations are understandable and useful."],
         ],
-        [1.7, 4.6],
+        [1.45, 2.35, 2.5],
+    )
+    doc.add_heading("Possible Technology Stack", level=1)
+    add_table(
+        doc,
+        ["Area", "Candidate Tools", "Comment"],
+        [
+            ["Data processing", "Python, Pandas, NumPy.", "Suitable for structured IVF data cleaning."],
+            ["Machine learning", "Scikit-learn, XGBoost, LightGBM.", "Practical and widely used for tabular clinical data."],
+            ["Explainable AI", "SHAP, LIME, permutation importance.", "Use with careful clinical interpretation."],
+            ["Visualization", "Matplotlib, Seaborn, Plotly.", "Useful for EDA, model results and guide/panel presentation."],
+            ["Prototype", "Streamlit, Flask or FastAPI.", "Prototype only; not clinical deployment."],
+            ["Database", "CSV/Excel initially; PostgreSQL/MySQL if a formal app is needed.", "Depends on data source and system scope."],
+        ],
+        [1.45, 2.3, 2.55],
+    )
+    doc.add_heading("Expected Decision-Support Output", level=1)
+    add_table(
+        doc,
+        ["Output", "Example", "Purpose"],
+        [
+            ["Predicted probability", "Estimated probability of clinical pregnancy or live birth.", "Gives model output in understandable form."],
+            ["Positive factors", "Age range, AMH, embryo grade or endometrial thickness if supportive.", "Shows factors increasing predicted chance."],
+            ["Negative factors", "High BMI, low AMH, thin endometrium etc. if model-supported.", "Shows factors reducing predicted chance."],
+            ["Modifiable / non-modifiable split", "BMI or smoking versus age or infertility duration.", "Helps counselling without overclaiming."],
+            ["Caution note", "Decision support only; clinician judgment remains final.", "Prevents inappropriate use."],
+        ],
+        [1.6, 2.65, 2.05],
+    )
+    doc.add_heading("Dataset-Dependent Technical Choices", level=1)
+    add_table(
+        doc,
+        ["Dataset Situation", "Technical Direction"],
+        [
+            ["Clinical data only", "Tabular ML with XAI and internal/temporal validation."],
+            ["Clinical + embryology", "Multimodal tabular modelling with clinical and embryology feature groups."],
+            ["Image/time-lapse data", "Deep learning or hybrid model only if data volume, labels and ethics support it."],
+            ["Lifestyle data", "Add questionnaire/context variables; analyze carefully and avoid causal claims."],
+            ["Multiple clinics/sources", "External validation and clinic-wise generalization analysis."],
+            ["Clinician review possible", "Add structured usability or usefulness evaluation of explanation outputs."],
+        ],
+        [2.0, 4.3],
+    )
+    doc.add_heading("Implementation Roadmap", level=1)
+    add_table(
+        doc,
+        ["Work Package", "Output"],
+        [
+            ["Data access and ethics", "Permission, variable list and anonymization plan."],
+            ["Data preparation", "Cleaned dataset and feature dictionary."],
+            ["EDA", "Missingness, distributions, outcome rates and imbalance summary."],
+            ["Model development", "Baseline and advanced model comparison."],
+            ["XAI integration", "Global and patient-level explanation outputs."],
+            ["Validation", "Internal/temporal/subgroup/external validation report as feasible."],
+            ["Prototype", "Doctor-facing decision-support screen or report."],
+            ["Clinician review", "Feedback on explanation clarity and usefulness if feasible."],
+        ],
+        [2.25, 4.05],
     )
     doc.add_heading("Important Boundary", level=1)
-    doc.add_paragraph(
-        "The current plan should not claim treatment improvement or clinical deployment. "
-        "The defensible claim is prediction, explanation, validation and decision-support design."
+    add_bullets(
+        doc,
+        [
+            "Do not claim the model improves IVF success unless a clinical outcome study proves it.",
+            "Do not claim deployment; use prototype or decision-support framework language.",
+            "Do not claim causality from retrospective prediction data.",
+            "Do not use deep learning as the main plan unless the dataset justifies it.",
+            "The defensible contribution is prediction, explanation, validation and clinician-facing decision-support design.",
+        ],
     )
     return save_doc(doc, "05_methods_models_and_technical_blueprint.docx")
 
