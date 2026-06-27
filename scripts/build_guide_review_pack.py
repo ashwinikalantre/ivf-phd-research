@@ -427,38 +427,130 @@ def dataset_feasibility():
     )
     doc.add_heading("Purpose", level=1)
     doc.add_paragraph(
-        "The final PhD topic depends heavily on clinic data access. This document identifies the minimum, strong and ideal data scenarios."
+        "The final PhD topic depends heavily on clinic data access. This document converts dataset uncertainty into a decision plan: "
+        "what minimum data are needed, what stronger data would improve the study, and which title words should remain conditional."
     )
+    doc.add_heading("Core Decision Gates", level=1)
+    add_table(
+        doc,
+        ["Decision Question", "If Yes", "If No"],
+        [
+            [
+                "Can IVF clinical data be accessed?",
+                "A basic explainable IVF outcome prediction study is feasible.",
+                "The current topic cannot move forward practically; need another clinic/source.",
+            ],
+            [
+                "Is a clear outcome available?",
+                "Model target can be defined: clinical pregnancy, live birth, miscarriage or oocyte/embryo response.",
+                "Prediction study is weak; outcome definition must be solved first.",
+            ],
+            [
+                "Are embryology variables available?",
+                "The title may include multimodal clinical and embryological data.",
+                "Use clinical data only; keep embryology as future scope.",
+            ],
+            [
+                "Are lifestyle variables available or collectable?",
+                "Lifestyle personalization can be explored carefully.",
+                "Do not include lifestyle in the title.",
+            ],
+            [
+                "Is independent validation possible?",
+                "External, clinic-wise or temporal validation can be claimed depending on source.",
+                "Use internal validation and clearly state limitation.",
+            ],
+            [
+                "Can doctors review explanation outputs?",
+                "Clinician usefulness/usability can become an objective.",
+                "Keep CDSS as a proposed framework, not clinically evaluated deployment.",
+            ],
+        ],
+        [1.95, 2.2, 2.15],
+    )
+    doc.add_heading("Variable Priority Levels", level=1)
+    add_table(
+        doc,
+        ["Level", "Meaning", "Example"],
+        [
+            ["Mandatory", "Minimum variables required for a defensible IVF outcome-prediction model.", "Age, BMI, infertility diagnosis, AMH, AFC, treatment type, outcome."],
+            ["Recommended", "Strongly useful for personalization, model quality or explanation.", "Previous IVF attempts, gonadotropin dose, oocytes retrieved, embryo grade."],
+            ["Optional", "Useful if available, but not essential for the first study.", "Diet, sleep, stress, ultrasound images, PGT-A status."],
+            ["Sensitive", "Potentially valuable but needs stronger privacy, consent and ethics handling.", "Income, occupation, doctor ID, embryologist ID, images, genetic/ploidy data."],
+        ],
+        [1.2, 2.65, 2.45],
+    )
+    doc.add_page_break()
     doc.add_heading("Minimum Viable Dataset", level=1)
     add_table(
         doc,
-        ["Category", "Minimum Variables"],
+        ["Category", "Minimum Variables", "Why It Matters"],
         [
-            ["Outcome", "Clinical pregnancy or live birth."],
-            ["Demographic", "Age, BMI, infertility duration, infertility type/cause."],
-            ["Clinical", "AMH, AFC, diagnosis such as PCOS/endometriosis if available."],
-            ["Treatment", "IVF/ICSI, fresh/frozen transfer, stimulation protocol, endometrial thickness, embryos transferred."],
-            ["Validation", "At least train/test or temporal split; external validation only if independent data exists."],
+            ["Outcome", "Clinical pregnancy or live birth.", "At least one clear dependent variable is required."],
+            ["Demographic", "Age, BMI, infertility duration, infertility type/cause.", "Core patient-level predictors and counselling variables."],
+            ["Clinical/hormonal", "AMH, AFC, diagnosis such as PCOS/endometriosis if available.", "Represents ovarian reserve and major clinical subgroups."],
+            ["Treatment", "IVF/ICSI, fresh/frozen transfer, stimulation protocol, endometrial thickness, embryos transferred.", "Captures treatment pathway and transfer context."],
+            ["Validation", "Train/test, cross-validation or temporal split.", "External validation only if independent data exists."],
         ],
-        [1.55, 4.8],
+        [1.25, 2.75, 2.25],
     )
     doc.add_heading("Strong Dataset Scenario", level=1)
-    add_bullets(
+    add_table(
         doc,
+        ["Data Group", "Useful Variables", "Topic Benefit"],
         [
-            "Clinical variables plus embryology variables such as oocytes retrieved, mature oocytes, fertilization rate, embryo grade, blastocyst grade and transfer day.",
-            "Allows the title to include multimodal clinical and embryological data.",
-            "Supports stronger personalization and explanation outputs than clinical data alone.",
+            ["Embryology", "Oocytes retrieved, mature oocytes, fertilization rate, embryo grade, blastocyst grade, transfer day.", "Allows multimodal clinical-embryological prediction."],
+            ["Treatment intensity", "Starting dose, total gonadotropin dose, stimulation duration, trigger type/day.", "Supports personalization and possible stimulation-response analysis."],
+            ["Male partner", "Sperm count/concentration, motility, morphology, male-factor diagnosis.", "Improves couple-level IVF context if available."],
+            ["Time/workflow", "Treatment year, protocol changes, clinic ID if available.", "Supports temporal or clinic-wise validation and model drift discussion."],
         ],
+        [1.3, 3.0, 2.0],
     )
     doc.add_heading("Ideal Dataset Scenario", level=1)
+    add_table(
+        doc,
+        ["Ideal Addition", "Use", "Caution"],
+        [
+            ["Lifestyle questionnaire", "Smoking, physical activity, sleep, stress, diet, caffeine or occupation.", "Use validated or clearly defined measures; avoid weak self-report claims."],
+            ["Multiple clinics or independent time period", "External, clinic-wise or temporal validation.", "Do not call internal testing external validation."],
+            ["Clinician review", "Checks whether explanation outputs are meaningful for counselling.", "This evaluates usefulness, not clinical outcome improvement."],
+            ["Images/time-lapse/radiomics", "Possible deep learning or radiomics direction.", "Only feasible with storage, consent, annotation and technical support."],
+        ],
+        [1.7, 2.55, 2.05],
+    )
+    doc.add_heading("Outcome Selection", level=1)
+    add_table(
+        doc,
+        ["Outcome", "Priority", "Use In Study", "Caution"],
+        [
+            ["Live birth", "Preferred if available", "Strongest patient-relevant IVF endpoint.", "May require follow-up and complete records."],
+            ["Clinical pregnancy", "Minimum acceptable", "Often easier to obtain and still clinically meaningful.", "Less final than live birth."],
+            ["Miscarriage", "Secondary", "Useful for post-pregnancy risk modelling.", "Only relevant after pregnancy is confirmed."],
+            ["Oocyte/mature oocyte yield", "Secondary", "Useful for ovarian stimulation response.", "Different target from pregnancy/live birth."],
+            ["Good-quality embryo/blastocyst", "Secondary", "Useful if embryology data exists.", "Lab outcome, not final patient outcome."],
+        ],
+        [1.3, 1.25, 2.3, 1.5],
+    )
+    doc.add_heading("Validation Options", level=1)
+    add_table(
+        doc,
+        ["Validation Type", "When It Is Possible", "How To Word It Safely"],
+        [
+            ["Internal validation", "One dataset from one clinic.", "Internal model validation only."],
+            ["Temporal validation", "Same clinic, later years held out.", "Validation on a later time period."],
+            ["External validation", "Different clinic/source/system.", "External validation, if truly independent."],
+            ["Subgroup validation", "Adequate sample sizes by age, diagnosis, PCOS/endometriosis etc.", "Subgroup performance analysis, not proof of fairness unless designed properly."],
+        ],
+        [1.45, 2.35, 2.5],
+    )
+    doc.add_heading("Ethics and Privacy Requirements", level=1)
     add_bullets(
         doc,
         [
-            "Clinical, treatment, embryology and lifestyle variables collected consistently.",
-            "More than one clinic or one independent time period for validation.",
-            "Clinician review of explanation outputs.",
-            "Ethics approval and anonymization process clearly documented.",
+            "Use anonymized or de-identified patient/cycle IDs; direct identifiers should not enter the research dataset.",
+            "Confirm whether ethics committee approval, clinic permission and data-use agreement are required.",
+            "Handle sensitive data carefully: income, occupation, doctor/embryologist IDs, embryo images, genetic/ploidy data and lifestyle details.",
+            "Keep the system framed as clinical decision support; the model should not make autonomous treatment decisions.",
         ],
     )
     doc.add_heading("Doctor / Clinic Questions", level=1)
@@ -467,24 +559,34 @@ def dataset_feasibility():
         [
             "Which IVF variables are routinely recorded in electronic or paper records?",
             "Is live birth available, or only clinical pregnancy?",
+            "Approximately how many IVF cycles are available, and from which years?",
             "Are embryology variables available in structured form?",
+            "Are stimulation dose, trigger and follicle-monitoring variables available?",
             "Are lifestyle variables already recorded, or would a questionnaire be needed?",
             "Can data from more than one clinic, doctor, year or time period be accessed?",
             "Can clinicians review whether explanation outputs are meaningful?",
+            "What anonymization, permission and ethics process will be required?",
         ],
     )
     doc.add_page_break()
     doc.add_heading("Title Implication", level=1)
     add_table(
         doc,
-        ["Data Available", "Safe Topic Direction"],
+        ["Data Available", "Safe Topic Direction", "Avoid Claiming"],
         [
-            ["Clinical data only", "Explainable clinical IVF outcome prediction."],
-            ["Clinical + embryology", "Explainable multimodal IVF outcome prediction."],
-            ["Clinical + embryology + lifestyle", "Personalized IVF prediction using clinical, embryological and lifestyle data."],
-            ["Multi-center data", "External validation in Indian IVF settings can be considered."],
+            ["Clinical data only", "Explainable clinical IVF outcome prediction.", "Multimodal or embryology-based title."],
+            ["Clinical + embryology", "Explainable multimodal IVF outcome prediction.", "Image/deep-learning claims unless images are available."],
+            ["Clinical + embryology + lifestyle", "Personalized IVF prediction using clinical, embryological and lifestyle data.", "Lifestyle effect claims without reliable measurement."],
+            ["Independent clinic/source", "External validation in Indian IVF settings can be considered.", "External validation if only one-center internal split exists."],
+            ["Clinician review possible", "Clinician-facing explanation/usability evaluation can be added.", "Clinical deployment or improved success rate."],
         ],
-        [2.0, 4.3],
+        [1.8, 2.55, 1.95],
+    )
+    doc.add_heading("Current Safe Position For Guide", level=1)
+    doc.add_paragraph(
+        "The safest current position is that the PhD direction is dataset-dependent. "
+        "A clinical-data-only study is still possible, but the stronger topic is clinical plus embryological data with explainability and decision-support framing. "
+        "Indian validation, lifestyle data, external validation and clinician usability should remain conditional until data access is confirmed."
     )
     return save_doc(doc, "04_dataset_feasibility_and_data_requirements.docx")
 
