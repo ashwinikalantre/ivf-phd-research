@@ -764,48 +764,125 @@ def rq_hypothesis_stats():
         "Research Questions, Hypotheses and Statistical Plan",
         "Guide review pack | Draft academic structure for guide discussion",
     )
-    doc.add_heading("Current Research Questions", level=1)
-    add_numbered(
+    doc.add_heading("Purpose", level=1)
+    doc.add_paragraph(
+        "This document converts the research direction into testable questions and dataset-dependent hypotheses. "
+        "The final RQs and hypotheses should be fixed only after outcome, variables and validation data are confirmed."
+    )
+    doc.add_heading("Research Question Selection Logic", level=1)
+    add_table(
         doc,
+        ["Step", "Decision"],
         [
-            "Which clinical, embryological and contextual factors are useful for personalized IVF outcome prediction?",
-            "Can a multimodal machine-learning model predict IVF outcomes better than a single-data-type model?",
-            "How can explainable AI show the main reasons behind each prediction?",
-            "Does the model perform consistently across patient groups, clinics or Indian IVF data if such data are available?",
-            "How can prediction results be presented to doctors as decision support without replacing doctor judgment?",
+            ["1", "Confirm available outcome: live birth, clinical pregnancy, miscarriage or another IVF target."],
+            ["2", "Confirm available predictors: clinical, embryology, lifestyle, imaging or mixed data."],
+            ["3", "Confirm validation option: internal, temporal, external, multi-clinic or subgroup validation."],
+            ["4", "Confirm whether clinician review of explanation outputs is possible."],
+            ["5", "Select only RQs and hypotheses that can be tested with the available data."],
         ],
+        [0.55, 5.75],
+    )
+    doc.add_heading("Core Research Questions", level=1)
+    add_table(
+        doc,
+        ["RQ", "Research Question", "Required Data"],
+        [
+            ["RQ1", "Which available clinical variables are associated with IVF outcome prediction?", "Clinical variables plus reliable outcome."],
+            ["RQ2", "Can ML models predict IVF outcome better than a baseline statistical model?", "Enough records, outcome balance and clinical predictors."],
+            ["RQ3", "Does adding embryology variables improve prediction compared with clinical variables alone?", "Clinical plus structured embryology variables."],
+            ["RQ4", "Do lifestyle/contextual variables add predictive or personalization value?", "Reliable lifestyle/contextual variables."],
+            ["RQ5", "Which variables most influence individual predictions according to XAI methods?", "Trained model plus interpretable features."],
+            ["RQ6", "Are model probabilities well calibrated for counseling?", "Predicted probabilities plus observed outcomes."],
+            ["RQ7", "Does performance differ across age, diagnosis, transfer type or other subgroups?", "Subgroup variables with sufficient sample size."],
+            ["RQ8", "Does the model generalize to a second clinic, time period or source?", "External source or temporal split."],
+            ["RQ9", "Are clinician-facing explanations understandable and useful?", "Clinician review protocol plus explanation outputs."],
+        ],
+        [0.55, 3.55, 2.2],
+    )
+    doc.add_heading("Research Questions By Dataset Scenario", level=1)
+    add_table(
+        doc,
+        ["Dataset Scenario", "Suitable RQs", "Avoid"],
+        [
+            ["Clinical data only", "RQ1, RQ2, RQ5, RQ6, selected subgroup RQs.", "Embryology, lifestyle or external validation claims."],
+            ["Clinical + embryology", "RQ1, RQ2, RQ3, RQ5, RQ6, RQ7.", "Lifestyle claims unless lifestyle data exists."],
+            ["Clinical + lifestyle", "RQ1, RQ2, RQ4, RQ5, RQ6.", "Embryology claims unless embryo data exists."],
+            ["Independent validation data", "RQ8 plus relevant model RQs.", "Broad generalization beyond available sources."],
+            ["Clinician review possible", "RQ9 plus XAI usefulness questions.", "Claims of clinician usefulness without review."],
+            ["Live birth unavailable", "Clinical pregnancy version of RQs.", "Live-birth prediction claims."],
+        ],
+        [1.65, 2.35, 2.3],
     )
     doc.add_heading("Tentative Hypotheses", level=1)
     add_table(
         doc,
-        ["Hypothesis", "Status"],
+        ["H", "Tentative Hypothesis", "Required Data", "Evaluation"],
         [
-            ["Clinical and embryological variables together improve prediction compared with clinical variables alone.", "Testable only if embryology variables are available."],
-            ["XAI can identify patient-specific positive and negative prediction drivers.", "Testable after model development."],
-            ["Model performance differs across age, diagnosis or treatment subgroups.", "Testable if subgroup sizes are adequate."],
-            ["Clinicians find structured explanation outputs useful for counseling.", "Testable only if clinician review is feasible."],
+            ["H1", "Clinical variables can predict the selected IVF outcome better than chance.", "Clinical predictors plus outcome.", "AUC with confidence interval; baseline model."],
+            ["H2", "An advanced ML model improves prediction compared with logistic regression.", "Adequate sample size and outcome balance.", "AUC, calibration, Brier score, cross-validation/test-set comparison."],
+            ["H3", "Adding embryology variables improves prediction over clinical variables alone.", "Clinical plus embryology variables.", "Model comparison, calibration and net benefit if feasible."],
+            ["H4", "Lifestyle variables add predictive or personalization value beyond clinical variables.", "Reliable lifestyle data.", "Model comparison and feature contribution; avoid causality."],
+            ["H5", "XAI identifies clinically meaningful patient-level prediction drivers.", "Trained model plus XAI outputs.", "SHAP/LIME review and clinician interpretation if available."],
+            ["H6", "Model performance varies across important patient subgroups.", "Subgroup variables and sufficient sample.", "Stratified AUC/calibration and interaction checks."],
+            ["H7", "The model maintains acceptable performance on independent/temporal validation data.", "Second source or later time-period data.", "External/temporal discrimination and calibration."],
+            ["H8", "Clinician-facing explanations are perceived as useful for counseling.", "Clinician review study.", "Likert ratings, structured feedback or short interview."],
         ],
-        [3.8, 2.5],
+        [0.45, 2.6, 1.7, 1.55],
+    )
+    doc.add_heading("Hypotheses To Avoid For Now", level=1)
+    add_table(
+        doc,
+        ["Avoid Hypothesis", "Why Unsafe", "Safer Version"],
+        [
+            ["The model will increase IVF success rate.", "Requires prospective clinical intervention and outcome testing.", "The model may support counseling; clinical impact needs future prospective validation."],
+            ["Lifestyle causes IVF failure.", "Observational prediction data cannot prove causality.", "Lifestyle variables may be associated with outcomes if measured reliably."],
+            ["XAI will make doctors trust the model.", "Trust must be measured, not assumed.", "Clinicians can rate explanation usefulness and understandability."],
+            ["The model works for all Indian IVF clinics.", "Requires broad multi-center Indian validation.", "The model can be tested on available Indian data and limitations stated."],
+            ["Deep learning will be superior.", "Depends on data type and sample size.", "Deep learning may be considered only if data justifies it."],
+        ],
+        [1.8, 2.15, 2.35],
+    )
+    doc.add_heading("Objective To RQ Mapping", level=1)
+    add_table(
+        doc,
+        ["Objective", "Related RQs", "Data Requirement"],
+        [
+            ["Identify useful IVF outcome predictors.", "RQ1, RQ5", "Clinical variables and outcome."],
+            ["Compare baseline and ML models.", "RQ2, RQ6", "Model-development dataset."],
+            ["Test value of embryology data.", "RQ3", "Structured embryology variables."],
+            ["Test value of lifestyle/contextual data.", "RQ4", "Reliable lifestyle data."],
+            ["Evaluate validation/generalization.", "RQ7, RQ8", "Subgroup, temporal or external validation data."],
+            ["Evaluate clinician-facing explanations.", "RQ9", "Doctor review protocol."],
+        ],
+        [2.1, 1.15, 3.05],
     )
     doc.add_heading("Statistical and ML Evaluation Plan", level=1)
-    add_bullets(
+    add_table(
         doc,
+        ["Question Type", "Suitable Analysis", "Important Note"],
         [
-            "Use descriptive statistics to summarize age, BMI, diagnosis, treatment type and outcomes.",
-            "Use appropriate univariate comparison tests depending on variable type and distribution.",
-            "Use train/validation/test, cross-validation, bootstrap, temporal validation or external validation depending on dataset size and source.",
-            "Report discrimination metrics such as AUC, sensitivity and specificity.",
-            "Report calibration because a clinically useful probability must be reliable, not only ranked correctly.",
-            "Perform subgroup analysis only when sample sizes are sufficient.",
+            ["Dataset description", "Descriptive statistics, missingness summary, outcome rate.", "Required before modelling."],
+            ["Group comparison", "Chi-square, t-test or Mann-Whitney U as appropriate.", "Depends on variable type and distribution."],
+            ["Binary outcome association", "Logistic regression.", "Useful baseline and interpretable model."],
+            ["Model discrimination", "AUC/ROC, PR-AUC, sensitivity, specificity.", "AUC alone is not enough."],
+            ["Probability reliability", "Calibration curve, Brier score.", "Important for counseling."],
+            ["Imbalanced outcome", "Precision, recall, F1, PR-AUC.", "Important if positive outcome class is rare."],
+            ["Model comparison", "Cross-validation/test-set metrics; DeLong test if appropriate.", "Avoid data leakage."],
+            ["Feature contribution", "SHAP, permutation importance.", "Explanation, not causality."],
+            ["Subgroup behavior", "Stratified metrics, interaction terms.", "Needs sufficient sample size."],
+            ["Clinical usefulness", "Decision curve analysis if thresholds are meaningful.", "Use only if clinically interpretable."],
+            ["Clinician review", "Likert-scale survey and qualitative feedback.", "Requires review protocol."],
         ],
+        [1.55, 2.4, 2.35],
     )
-    doc.add_heading("Not Final Yet", level=1)
+    doc.add_heading("Safe Current Position", level=1)
     add_bullets(
         doc,
         [
-            "Final dependent variable: live birth is preferred but may not be available.",
-            "Final hypotheses: must match actual variables and outcomes.",
-            "Final validation plan: depends on whether more than one clinic/source/time period is available.",
+            "The main hypothesis is not finalized because the dependent variable and predictor set are not confirmed.",
+            "A safe tentative hypothesis is that an explainable model using available IVF clinical variables can predict the selected outcome better than chance and provide interpretable patient-level explanations.",
+            "If embryology data is available, an additional hypothesis can test whether embryology variables improve prediction over clinical variables alone.",
+            "Improved IVF success rate should not be claimed unless future prospective clinical validation proves it.",
         ],
     )
     return save_doc(doc, "06_research_questions_hypotheses_and_stats.docx")
