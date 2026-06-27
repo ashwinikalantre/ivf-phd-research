@@ -26,6 +26,7 @@ Every panel answer should fall into one of three categories:
 | 6 | [Stage 6: Methodology Blueprint](panel-question-bank-stage-6.md) | Explain how the study will be conducted. |
 | 7 | [Stage 7: Defense Script](panel-question-bank-stage-7.md) | Practice 30-second, 2-minute and 5-minute answers. |
 | 8 | [Quick Panel Question Bank](panel-question-bank.md) | Use before the actual meeting for compact revision. |
+| 9 | [Stage 9: Final Claim Audit](panel-question-bank-stage-9.md) | Check unsupported claims, stale numbers and title wording. |
 
 ## What Each Stage Solves
 
@@ -38,6 +39,7 @@ Every panel answer should fall into one of three categories:
 | Stage 5 | "Which research questions and hypotheses are testable?" |
 | Stage 6 | "What is the methodology?" |
 | Stage 7 | "How do I speak clearly in the panel?" |
+| Stage 9 | "What should I re-check or avoid before presenting?" |
 
 ## Final Panel Position
 
@@ -113,3 +115,9 @@ Stage 8 is complete when:
 - the student knows which page to read for which question
 - the workflow separates faculty preparation from doctor data discussion
 - unsupported claims are blocked clearly
+
+## Final Audit
+
+Before presentation, use:
+
+- [Stage 9: Final Claim Audit](panel-question-bank-stage-9.md)

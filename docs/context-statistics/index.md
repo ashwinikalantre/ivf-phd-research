@@ -53,3 +53,4 @@ Use the panel-preparation workflow as the main entry point:
 - [Stage 5: Research Questions and Hypotheses](panel-question-bank-stage-5.md)
 - [Stage 6: Methodology Blueprint](panel-question-bank-stage-6.md)
 - [Stage 7: Defense Script](panel-question-bank-stage-7.md)
+- [Stage 9: Final Claim Audit](panel-question-bank-stage-9.md)
