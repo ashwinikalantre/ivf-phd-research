@@ -123,6 +123,7 @@ nav:
           - "Paper 30: Peng et al. 2024": paper-notes/paper-30-peng-2024-art-live-birth-prediction.md
           - "Paper 31: Wan et al. 2025": paper-notes/paper-31-wan-2025-endometriosis-fresh-ivf-icsi-et.md
           - "Paper 32: Cohen et al. 2025": paper-notes/paper-32-cohen-2025-ai-art-dream-reality.md
+          - "Paper 33: Agirsoy and Oehlschlaeger 2025": paper-notes/paper-33-agirsoy-2025-live-birth-miscarriage-xai.md
       - Theme-Wise Review: research-design/theme-wise-review.md
       - Themes:
           - IVF Outcome Prediction: research-design/themes/ivf-outcome-prediction.md

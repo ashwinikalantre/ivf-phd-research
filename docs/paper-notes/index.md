@@ -76,6 +76,7 @@ Each paper note follows this structure:
 | 30 | 2024 | Machine learning algorithms in constructing prediction models for assisted reproductive technology related live birth outcomes | ART live-birth prediction / model comparison / calibration | Completed |
 | 31 | 2025 | Machine learning prediction of clinical pregnancy in endometriosis patients following fresh IVF/ICSI-ET | Endometriosis subgroup / clinical pregnancy / XGBoost / SHAP | Completed |
 | 32 | 2025 | Artificial intelligence in assisted reproductive technology: separating the dream from reality | Critical review / clinical utility / trustworthy AI | Completed; full-text details limited |
+| 33 | 2025 | Development of an explainable machine learning model to predict live birth versus miscarriage among IVF-ET pregnancies | Post-conception IVF risk / live birth versus miscarriage / XGBoost / SHAP | Completed |
 
 ## Priority Order
 

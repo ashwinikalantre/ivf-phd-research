@@ -450,6 +450,54 @@ Deep reading:
 
 - [CDC ART Glossary](https://www.cdc.gov/art/glossary/index.html)
 
+## ESR
+
+**Simple meaning:** Erythrocyte sedimentation rate. A blood test that can reflect inflammation in the body.
+
+**Why it matters:** Some IVF outcome studies include inflammatory markers when predicting miscarriage or live-birth outcomes.
+
+**For our research:** ESR is not a standard lifestyle variable, but it may appear in broader clinical datasets that include immune or inflammatory markers.
+
+Deep reading:
+
+- [MedlinePlus ESR test](https://medlineplus.gov/lab-tests/erythrocyte-sedimentation-rate-esr/)
+
+## ANA
+
+**Simple meaning:** Anti-nuclear antibody. A blood marker that may indicate autoimmune activity.
+
+**Why it matters:** Autoimmune markers are sometimes studied in pregnancy loss and reproductive-outcome prediction.
+
+**For our research:** ANA is a specialized clinical marker. Include it only if clinics routinely record it and clinicians consider it relevant.
+
+Deep reading:
+
+- [MedlinePlus ANA test](https://medlineplus.gov/lab-tests/ana-antinuclear-antibody-test/)
+
+## Prolactin
+
+**Simple meaning:** A hormone involved in reproductive and lactation physiology.
+
+**Why it matters:** Abnormal prolactin levels may be relevant in infertility evaluation for some patients.
+
+**For our research:** Prolactin may appear as a hormonal predictor in some IVF datasets, but its use should be clinically justified.
+
+Deep reading:
+
+- [MedlinePlus prolactin levels test](https://medlineplus.gov/lab-tests/prolactin-levels/)
+
+## Coagulation Markers
+
+**Simple meaning:** Blood-test markers related to clotting, such as D-dimer, prothrombin time and activated partial thromboplastin time.
+
+**Why it matters:** Some pregnancy-loss studies investigate whether clotting-related markers are associated with miscarriage risk.
+
+**For our research:** These are specialized laboratory variables. They should not be assumed available in routine IVF datasets unless confirmed by doctors.
+
+Deep reading:
+
+- [MedlinePlus blood clotting tests](https://medlineplus.gov/lab-tests/blood-clotting-tests/)
+
 ## Fresh Embryo Transfer
 
 **Simple meaning:** Embryo transfer done in the same cycle as egg retrieval.
