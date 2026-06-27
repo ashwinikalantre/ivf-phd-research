@@ -1,4 +1,6 @@
 from pathlib import Path
+import csv
+import io
 
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
@@ -12,6 +14,35 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "guide_review_pack"
 
 
+def load_literature_rows():
+    matrix = ROOT / "docs" / "evidence-base" / "literature-matrix.md"
+    rows = []
+    for line in matrix.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("| "):
+            continue
+        if line.startswith("| No ") or line.startswith("| ---"):
+            continue
+        raw = line.strip().strip("|")
+        parsed = next(csv.reader(io.StringIO(raw), delimiter="|", skipinitialspace=True))
+        cells = [cell.strip() for cell in parsed]
+        if len(cells) != 9:
+            continue
+        rows.append(
+            {
+                "no": cells[0],
+                "year": cells[1],
+                "title": cells[2],
+                "journal": cells[3],
+                "objective": cells[4],
+                "method": cells[5],
+                "dataset": cells[6],
+                "gap": cells[7],
+                "relevance": cells[8],
+            }
+        )
+    return rows
+
+
 def set_cell_shading(cell, fill):
     tc_pr = cell._tc.get_or_add_tcPr()
     shd = OxmlElement("w:shd")
@@ -19,14 +50,14 @@ def set_cell_shading(cell, fill):
     tc_pr.append(shd)
 
 
-def set_cell_text(cell, text, bold=False):
+def set_cell_text(cell, text, bold=False, font_size=9):
     cell.text = ""
     paragraph = cell.paragraphs[0]
     paragraph.paragraph_format.space_after = Pt(0)
     run = paragraph.add_run(str(text))
     run.bold = bold
     run.font.name = "Calibri"
-    run.font.size = Pt(9)
+    run.font.size = Pt(font_size)
 
 
 def add_table(doc, headers, rows, widths=None):
@@ -47,6 +78,29 @@ def add_table(doc, headers, rows, widths=None):
             cells[i].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
             if widths:
                 cells[i].width = Inches(widths[i])
+    doc.add_paragraph()
+    return table
+
+
+def add_compact_paper_table(doc, rows):
+    headers = ["Paper", "Focus and Method", "Dataset / Evidence", "Main Gap / Use"]
+    table = doc.add_table(rows=1, cols=len(headers))
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.style = "Table Grid"
+    for i, header in enumerate(headers):
+        set_cell_text(table.rows[0].cells[i], header, bold=True, font_size=8)
+        set_cell_shading(table.rows[0].cells[i], "F2F4F7")
+    for row in rows:
+        cells = table.add_row().cells
+        values = [
+            f'Paper {row["no"]} ({row["year"]})\n{row["title"]}\n{row["journal"]}',
+            f'{row["objective"]}\nMethod: {row["method"]}',
+            row["dataset"],
+            f'{row["gap"]}\nRelevance: {row["relevance"]}',
+        ]
+        for i, value in enumerate(values):
+            set_cell_text(cells[i], value, font_size=8)
+            cells[i].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
     doc.add_paragraph()
     return table
 
@@ -165,6 +219,13 @@ def literature_summary():
         "The strongest working direction is explainable and personalized IVF outcome prediction with a clinical decision-support framing. "
         "The final title should remain open until clinic data feasibility is confirmed."
     )
+    doc.add_page_break()
+    doc.add_heading("Paper-Wise Compact Summary", level=1)
+    doc.add_paragraph(
+        "This section gives a compact guide-facing summary of the current 35 reviewed papers. "
+        "It is derived from the working literature matrix; full extraction fields remain in the Excel workbook and paper-wise notes."
+    )
+    add_compact_paper_table(doc, load_literature_rows())
     return save_doc(doc, "02_compact_literature_review_summary.docx")
 
 
