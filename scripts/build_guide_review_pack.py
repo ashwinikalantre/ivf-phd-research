@@ -239,33 +239,147 @@ def theme_gap_analysis():
         "Theme classification helps convert individual papers into research directions. "
         "It prevents title selection from depending on a single paper or isolated limitation."
     )
-    doc.add_heading("Main Theme Groups", level=1)
-    add_table(
-        doc,
-        ["Theme Group", "Paper Examples", "Interpretation"],
-        [
-            ["IVF outcome prediction", "5, 6, 7, 8, 9, 15, 29, 30, 31, 33", "Core predictive analytics direction."],
-            ["Explainable / trustworthy AI", "1, 14, 25, 26, 27, 33", "Needed for transparent clinical use."],
-            ["Clinical decision support", "2, 21, 22, 23, 34", "Moves work beyond accuracy-only model building."],
-            ["Personalization", "1, 2, 12, 21, 23", "Supports patient-specific or protocol-specific modeling."],
-            ["Embryo and multimodal AI", "3, 4, 24, 27, 28", "Useful if embryology/image data can be accessed."],
-            ["Indian/context-specific validation", "1, 5, 29", "Promising but dataset-dependent."],
-        ],
-        [1.55, 1.45, 3.35],
+    doc.add_heading("Theme Classification Logic", level=1)
+    doc.add_paragraph(
+        "The review was organized as: paper-wise extraction, theme grouping, repeated-gap analysis, research opportunity identification, "
+        "and then candidate topic development. The final title should emerge from repeated gaps and dataset feasibility, not from a single attractive keyword."
     )
-    doc.add_heading("Repeated Gap Frequency", level=1)
+    doc.add_heading("Major Theme Groups", level=1)
     add_table(
         doc,
-        ["Gap", "Frequency", "How To Use It"],
+        ["Major Theme", "Paper Examples", "How It Helps Topic Selection", "Dataset Dependency"],
         [
-            ["Need external validation", "26 papers", "Strong repeated gap; final claim depends on access to independent clinic/time-period data."],
-            ["Need clinical decision support", "18 papers", "Strong design opportunity; supports CDSS framing."],
-            ["Need real-world deployment evidence", "9 papers", "Useful for justification, but full deployment may be beyond PhD scope."],
-            ["Retrospective design", "9 papers", "Shows limitation of many studies; can be addressed partly through validation strategy."],
-            ["Trustworthy AI gap", "8 papers", "Supports XAI, clinician review and cautious claims."],
-            ["Single-center study", "6 papers", "Supports multi-center or temporal validation if feasible."],
+            [
+                "IVF outcome prediction",
+                "5, 6, 7, 8, 9, 15, 29, 30, 31, 33",
+                "Provides the core predictive analytics direction: clinical pregnancy, live birth, miscarriage or related IVF outcome.",
+                "Needs a clear outcome variable; live birth is strongest but may be harder to collect.",
+            ],
+            [
+                "Explainable / trustworthy AI",
+                "1, 14, 25, 26, 27, 33",
+                "Supports moving beyond black-box prediction toward interpretable, patient-level and clinician-facing explanations.",
+                "Needs model outputs that can be explained; clinician review is ideal.",
+            ],
+            [
+                "Clinical decision support",
+                "2, 21, 22, 23, 34",
+                "Positions the PhD as a usable framework, not only an accuracy comparison study.",
+                "Needs careful framing: support clinical counseling or planning, not replace doctors.",
+            ],
+            [
+                "Personalization",
+                "1, 2, 12, 21, 23",
+                "Supports patient-specific prediction and treatment-context interpretation.",
+                "Needs enough patient-level variables and subgroup size.",
+            ],
         ],
-        [2.0, 1.1, 3.2],
+        [1.35, 1.1, 2.55, 1.35],
+    )
+    doc.add_heading("Supporting Themes", level=1)
+    add_table(
+        doc,
+        ["Supporting Theme", "Paper Examples", "Use", "Caution"],
+        [
+            [
+                "Embryo and multimodal AI",
+                "3, 4, 24, 27, 28",
+                "Useful if embryology variables, embryo grades, images or time-lapse data are available.",
+                "Do not promise image/deep-learning work without data access.",
+            ],
+            [
+                "Ovarian stimulation / protocol decision support",
+                "1, 2, 21, 22, 23",
+                "Strong direction if dose, trigger and stimulation-monitoring records are available.",
+                "May require more detailed clinical workflow data than basic outcome prediction.",
+            ],
+            [
+                "Indian/context-specific validation",
+                "1, 5, 29",
+                "Potentially important because many models are not validated in Indian IVF settings.",
+                "Should appear in title only if Indian clinic data and validation are feasible.",
+            ],
+            [
+                "Lifestyle and contextual data",
+                "Mainly from planned data framework, not yet a strong repeated paper gap",
+                "Can enrich personalization if reliably collected.",
+                "Should remain conditional until questionnaire/data feasibility is confirmed.",
+            ],
+        ],
+        [1.45, 1.15, 2.25, 1.5],
+    )
+    doc.add_heading("Repeated Gap Assessment", level=1)
+    add_table(
+        doc,
+        ["Gap", "Frequency", "Evidence Strength", "Actionable in PhD?", "Topic Relevance"],
+        [
+            [
+                "Need external validation",
+                "26",
+                "Very strong",
+                "Conditional",
+                "Strong if independent clinic, source or time-period data is available.",
+            ],
+            [
+                "Need clinical decision support",
+                "18",
+                "Very strong",
+                "Yes",
+                "Supports CDSS framing and avoids an accuracy-only thesis.",
+            ],
+            [
+                "Need real-world deployment evidence",
+                "9",
+                "Strong",
+                "Partly",
+                "Useful for justification; full deployment may be future work.",
+            ],
+            [
+                "Retrospective design",
+                "9",
+                "Strong",
+                "Partly",
+                "Can be handled through careful validation and honest limitation wording.",
+            ],
+            [
+                "Trustworthy AI gap",
+                "8",
+                "Strong",
+                "Yes",
+                "Supports XAI, clinician review and conservative claims.",
+            ],
+            [
+                "Single-center study",
+                "6",
+                "Moderate-strong",
+                "Conditional",
+                "Supports multi-center or temporal validation if feasible.",
+            ],
+        ],
+        [1.4, 0.7, 1.05, 1.0, 2.2],
+    )
+    doc.add_heading("Strong Gaps Versus Conditional Gaps", level=1)
+    add_table(
+        doc,
+        ["Gap Type", "Gaps", "How To Treat In Proposal"],
+        [
+            [
+                "Strong repeated gaps",
+                "External validation, clinical decision support, trustworthy/explainable AI, real-world clinical usefulness, retrospective/single-center limitations.",
+                "Use these to justify the main research direction.",
+            ],
+            [
+                "Conditional gaps",
+                "Indian validation, lifestyle data, embryo-image/deep-learning work, multi-center validation.",
+                "Use only if data access supports them.",
+            ],
+            [
+                "Weak/not-yet-claimable gaps",
+                "Any gap supported by only one paper or by our interest alone.",
+                "Do not use as novelty claim until stronger evidence is collected.",
+            ],
+        ],
+        [1.35, 2.6, 2.4],
     )
     doc.add_heading("Gaps To Treat Carefully", level=1)
     add_bullets(
@@ -278,8 +392,30 @@ def theme_gap_analysis():
     )
     doc.add_heading("Working Research Opportunity", level=1)
     doc.add_paragraph(
-        "A defensible opportunity is an explainable clinical decision-support framework for IVF outcome prediction, "
-        "using available clinical and embryological variables, with validation and clinician review as far as data access permits."
+        "The strongest current research opportunity is not simply to build another IVF prediction model. "
+        "A more defensible PhD direction is to design an explainable, personalized and clinically usable decision-support framework "
+        "for IVF outcome prediction, with the exact data modality and validation strategy finalized after clinic data feasibility is known."
+    )
+    doc.add_heading("What Should Not Be Claimed Yet", level=1)
+    add_bullets(
+        doc,
+        [
+            "Do not claim that AI will improve IVF success rates unless a clinical outcome study proves it.",
+            "Do not claim external validation unless an independent source, clinic or time period is used.",
+            "Do not include Indian women, lifestyle data or embryo images in the final title unless those data are confirmed.",
+            "Do not present model accuracy as the only PhD contribution; explanation, validation and clinical usability matter.",
+        ],
+    )
+    doc.add_heading("Guide Discussion Questions", level=1)
+    add_numbered(
+        doc,
+        [
+            "Which theme should be prioritized: outcome prediction, stimulation decision support or broader clinical decision support?",
+            "Should the topic remain broad until data access is confirmed, or should it be narrowed now?",
+            "Should Indian validation be part of the title, or only a conditional objective?",
+            "Which gaps are strong enough for the proposal, and which should remain future work?",
+            "What dataset scenario is realistic for the next meeting with doctors or clinics?",
+        ],
     )
     return save_doc(doc, "03_theme_and_gap_analysis.docx")
 
