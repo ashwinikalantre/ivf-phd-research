@@ -78,6 +78,7 @@ Each paper note follows this structure:
 | 32 | 2025 | Artificial intelligence in assisted reproductive technology: separating the dream from reality | Critical review / clinical utility / trustworthy AI | Completed; full-text details limited |
 | 33 | 2025 | Development of an explainable machine learning model to predict live birth versus miscarriage among IVF-ET pregnancies | Post-conception IVF risk / live birth versus miscarriage / XGBoost / SHAP | Completed |
 | 34 | 2025 | A review of artificial intelligence applications in in vitro fertilization | Broad IVF-AI review / workflow framing / validation gap | Completed; abstract-level extraction |
+| 35 | 2025 | Global trends in the use of artificial intelligence in reproductive medicine: insights from surveys of international fertility specialists | AI adoption survey / clinician readiness / deployment barriers | Completed |
 
 ## Priority Order
 

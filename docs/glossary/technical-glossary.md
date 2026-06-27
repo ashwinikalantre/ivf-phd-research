@@ -434,6 +434,18 @@ Deep reading:
 
 - [FDA software as a medical device resources](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd)
 
+## Clinical Utility
+
+**Simple meaning:** Evidence that a model or tool is useful in real clinical decision-making, not only accurate in testing.
+
+**Why it matters:** A model can have good AUC but still fail to improve decisions, workflow, safety or patient outcomes.
+
+**For our research:** Clinical utility should be evaluated through clinician review, realistic use cases, decision impact and, where possible, prospective validation.
+
+Deep reading:
+
+- [TRIPOD statement](https://www.tripod-statement.org/)
+
 ## Long-Term Follow-Up
 
 **Simple meaning:** Tracking outcomes over months or years after an intervention.
