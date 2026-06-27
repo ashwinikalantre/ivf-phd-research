@@ -896,51 +896,132 @@ def candidate_topics():
     doc.add_heading("Current Position", level=1)
     doc.add_paragraph(
         "The title should not be finalized before clinic data feasibility is confirmed. "
-        "The current literature supports a direction, not a final wording."
+        "The current literature supports a strong direction, but the final wording must depend on outcome availability, data modality and validation feasibility."
+    )
+    doc.add_heading("Why A Generic Title Is Weak", level=1)
+    add_table(
+        doc,
+        ["Weak Title Direction", "Why It Is Weak", "Stronger Direction"],
+        [
+            [
+                "Machine Learning Model for IVF Success Prediction",
+                "Many papers already build IVF prediction models; this sounds like a classifier-comparison study.",
+                "Explainable, personalized and clinically usable decision support for IVF outcome prediction.",
+            ],
+            [
+                "Deep Learning for IVF Prediction",
+                "Deep learning is data-dependent and should not be promised without image/time-lapse or large-scale data.",
+                "Use deep learning only as a conditional method if the dataset justifies it.",
+            ],
+            [
+                "AI to Improve IVF Success",
+                "Improved success requires prospective clinical outcome evidence.",
+                "AI-assisted prediction, explanation and counseling support.",
+            ],
+        ],
+        [1.8, 2.25, 2.25],
     )
     doc.add_heading("Candidate Directions", level=1)
     add_table(
         doc,
-        ["Candidate Direction", "Strength", "Risk / Dependency"],
+        ["Rank", "Candidate Direction", "Evidence Support", "Risk / Dependency"],
         [
             [
+                "1",
                 "Explainable and personalized clinical decision-support framework for IVF outcome prediction.",
-                "Best overall fit with repeated gaps: XAI, CDSS, personalization and validation.",
+                "Best overall fit with repeated gaps: XAI, CDSS, personalization, validation and clinical usefulness.",
                 "Needs clinic outcome data and careful scope control.",
             ],
             [
+                "2",
                 "Trustworthy AI-based decision support for ovarian stimulation and IVF outcomes.",
                 "Strong connection with dose, trigger and protocol decision-support literature.",
                 "Requires detailed stimulation and protocol data.",
             ],
             [
+                "3",
+                "Explainable multimodal IVF prediction using clinical and embryological data.",
+                "Strong if structured embryology variables are available; supports multimodal theme.",
+                "Cannot be used if embryology data are unavailable or incomplete.",
+            ],
+            [
+                "4",
                 "Integration of clinical, embryological and lifestyle data for explainable IVF success prediction.",
                 "Strong personalization angle if lifestyle data can be collected reliably.",
                 "Lifestyle data availability and quality are uncertain.",
             ],
             [
+                "5",
                 "Explainable ML for IVF live-birth prediction with Indian population validation.",
                 "Strong Indian-context contribution if data is available.",
                 "Depends heavily on access to Indian clinic data and live-birth outcome.",
             ],
         ],
-        [2.2, 2.0, 2.1],
+        [0.55, 2.25, 2.05, 1.45],
+    )
+    doc.add_page_break()
+    doc.add_heading("Decision Matrix", level=1)
+    add_table(
+        doc,
+        ["Decision Factor", "Best Current Choice", "Reason"],
+        [
+            ["Academic novelty", "XAI + CDSS + validation-aware IVF prediction.", "Stronger than only comparing ML algorithms."],
+            ["Department fit", "Computer Applications with healthcare informatics and predictive analytics.", "Allows technical contribution and applied clinical relevance."],
+            ["Data feasibility", "Keep title flexible until clinic confirms variables.", "Avoids untestable claims."],
+            ["Safest outcome wording", "IVF outcome prediction.", "Can later become clinical pregnancy or live birth if data allows."],
+            ["Safest data wording", "Clinical and embryological data.", "Use only if embryology variables are confirmed; otherwise clinical data only."],
+            ["Safest contribution wording", "Decision-support framework.", "Avoids claiming autonomous decision-making or clinical deployment."],
+        ],
+        [1.7, 2.25, 2.35],
     )
     doc.add_heading("Safest Working Title", level=1)
     doc.add_paragraph(
         "An Explainable and Personalized Clinical Decision Support Framework for IVF Outcome Prediction Using Multimodal Clinical and Embryological Data"
     )
+    doc.add_heading("Fallback Titles By Dataset", level=1)
+    add_table(
+        doc,
+        ["Dataset Confirmed", "Safer Title Direction"],
+        [
+            ["Clinical data only", "An Explainable Clinical Decision Support Framework for IVF Outcome Prediction Using Clinical Data."],
+            ["Clinical + embryology", "An Explainable and Personalized Clinical Decision Support Framework for IVF Outcome Prediction Using Multimodal Clinical and Embryological Data."],
+            ["Clinical + embryology + lifestyle", "An Explainable Multimodal Clinical Decision Support Framework for Personalized IVF Outcome Prediction Using Clinical, Embryological and Lifestyle Data."],
+            ["Live birth outcome confirmed", "Use live-birth prediction wording if follow-up and sample size are adequate."],
+            ["Only clinical pregnancy confirmed", "Use clinical pregnancy prediction wording, not live-birth prediction."],
+        ],
+        [2.05, 4.25],
+    )
     doc.add_heading("Conditional Title Extensions", level=1)
     add_table(
         doc,
-        ["Extension", "Use Only If"],
+        ["Extension", "Use Only If", "Avoid If"],
         [
-            ["in Indian Women / Indian IVF Settings", "Indian clinic data and validation are available."],
-            ["Using Clinical, Embryological and Lifestyle Data", "Lifestyle variables are collected reliably and ethically."],
-            ["with External Validation", "Independent clinic/source/time-period data is available."],
-            ["for Live-Birth Prediction", "Live-birth outcome is available with adequate follow-up."],
+            ["in Indian Women / Indian IVF Settings", "Indian clinic data and validation are available.", "Only literature support exists but no data access."],
+            ["Using Clinical, Embryological and Lifestyle Data", "Lifestyle variables are collected reliably and ethically.", "Lifestyle data are absent or weak self-report."],
+            ["with External Validation", "Independent clinic/source/time-period data is available.", "Only one-center internal split is available."],
+            ["for Live-Birth Prediction", "Live-birth outcome is available with adequate follow-up.", "Only clinical pregnancy is available."],
+            ["Using Deep Learning", "Image, time-lapse or large-scale data justify deep learning.", "Only small structured tabular data are available."],
         ],
-        [2.4, 3.9],
+        [1.9, 2.25, 2.15],
+    )
+    doc.add_heading("Recommended Position To Tell Guide", level=1)
+    doc.add_paragraph(
+        "The recommended position is to present one strongest working title and keep dataset-sensitive title words conditional. "
+        "The strongest direction is explainable and personalized clinical decision support for IVF outcome prediction. "
+        "The exact outcome, data modality and validation wording should be finalized after clinic discussion."
+    )
+    doc.add_heading("What We Need From Guide", level=1)
+    add_table(
+        doc,
+        ["Guide Decision", "Why It Matters"],
+        [
+            ["Should the topic focus on outcome prediction or ovarian stimulation decision support?", "This decides the required clinical variables and model target."],
+            ["Should the proposal title stay broad initially?", "This reduces risk before data access is confirmed."],
+            ["Should Indian validation be title wording or objective/future scope?", "This depends on likely Indian dataset access."],
+            ["Is CDSS/framework wording acceptable for the department?", "It positions the work beyond classifier comparison."],
+            ["Which words should be avoided in the first formal proposal?", "Prevents overclaiming before feasibility is known."],
+        ],
+        [2.5, 3.8],
     )
     doc.add_heading("Guide Input Needed", level=1)
     add_numbered(
