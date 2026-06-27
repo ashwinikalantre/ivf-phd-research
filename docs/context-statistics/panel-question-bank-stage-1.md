@@ -1,19 +1,7 @@
-# Panel Question Bank Stage 1
+# Panel Question Areas
 
-This page is the first-stage question skeleton for panel preparation.
+This page lists realistic question areas that faculty may ask during a panel discussion.
 
-At this stage, the purpose is not to give final answers. The purpose is to collect realistic questions that faculty may ask and organize them into clear categories.
-
-## Stage 1 Rule
-
-Do not answer from assumption.
-
-Later stages should answer each question using:
-
-- evidence from reviewed papers
-- reliable statistics pages
-- dataset-feasibility status
-- confidence label: **Confident**, **Conditional**, or **Not yet claimable**
 
 ## 1. Domain Understanding
 
@@ -194,25 +182,3 @@ Later stages should answer each question using:
 | 118 | What if the dataset is too small for deep learning? |
 | 119 | What claims will you avoid? |
 | 120 | What must be confirmed before finalizing the title? |
-
-## Stage 1 Completion Check
-
-This stage is complete when:
-
-- the question list covers the likely panel areas
-- duplicate questions are removed
-- the highest-priority questions are marked for Stage 2
-- no answers are written without evidence
-
-## Next Stage
-
-Stage 2 will convert selected questions into safe answers using this structure:
-
-| Field | Purpose |
-| --- | --- |
-| Question | The panel question |
-| Likely concern | What the faculty member is really testing |
-| Safe answer | Short, defensible answer |
-| Evidence basis | Paper numbers, statistics pages or source pages |
-| Confidence | Confident, Conditional or Not yet claimable |
-| If challenged | What to say if faculty pushes deeper |

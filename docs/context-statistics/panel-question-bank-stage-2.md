@@ -1,8 +1,8 @@
-# Panel Question Bank Stage 2
+# Evidence-Based Panel Answers
 
-This page converts selected high-priority panel questions into safe, evidence-based answers.
+This page gives safe, evidence-based answers for high-priority panel questions.
 
-Stage 2 is not the final defense script. It is the evidence-backed answer bank that will later be shortened into spoken answers.
+Use it as the detailed answer bank. The [Panel Defense Script](panel-question-bank-stage-7.md) gives shorter spoken versions.
 
 ## Answer Confidence Labels
 
@@ -10,7 +10,7 @@ Stage 2 is not the final defense script. It is the evidence-backed answer bank t
 | --- | --- |
 | Confident | Supported by reviewed papers, statistics pages or reliable sources. |
 | Conditional | Depends on clinic data access, outcome availability or ethics approval. |
-| Not yet claimable | Should not be stated as a conclusion at this stage. |
+| Not yet claimable | Should not be stated as a conclusion at this point. |
 
 ## How To Answer In Panel
 
@@ -34,7 +34,7 @@ Example:
 | Can AI replace doctors? | No. The proposed work is clinical decision support. Doctors remain responsible for treatment decisions. | Confident |
 | Can lifestyle data be promised? | Not yet. Lifestyle can be included only if collected reliably and ethically. | Conditional |
 | Can external validation be promised? | Only if another clinic, time period or independent dataset is available. | Conditional |
-| Can improved IVF success be claimed? | No. At this stage we can study prediction, explanation and decision support, not prove improved live-birth rates. | Not yet claimable |
+| Can improved IVF success be claimed? | No. At this point we can study prediction, explanation and decision support, not prove improved live-birth rates. | Not yet claimable |
 
 ## Domain Questions
 
@@ -50,7 +50,7 @@ Example:
 
 | Question | Safe answer | Evidence basis | Confidence | If challenged |
 | --- | --- | --- | --- | --- |
-| How many papers have been reviewed so far? | Thirty-five paper notes have been prepared in the site. They include model-development papers, XAI papers, CDSS papers, reviews, RCT evidence and adoption survey evidence. | Paper Reading Notes index. | Confident | The number can increase, but current Stage 2 answers are based on the reviewed set. |
+| How many papers have been reviewed so far? | Thirty-five paper notes have been prepared in the site. They include model-development papers, XAI papers, CDSS papers, reviews, RCT evidence and adoption survey evidence. | Paper Reading Notes index. | Confident | The number can increase, but current answers are based on the reviewed set. |
 | Why use 2021-2025 papers? | This period captures recent AI-IVF work, especially modern ML, XAI, CDSS and validation discussions. Older foundational papers may still be cited if needed. | Project scope and literature matrix. | Confident | I am not excluding older science completely; the primary review window is recent literature. |
 | Which papers are strongest evidence? | Stronger papers include multicenter or prospective studies, RCTs, high-quality reviews and full-text model papers. Examples: Paper 1, 2, 5, 21, 25, 28, 30, 31 and 33. | Paper notes and source registry. | Confident | Strength depends on the question. A review is strong for framing, while an RCT is stronger for clinical effect. |
 | Which papers should be used cautiously? | Papers with limited full-text access, preprints, single-center retrospective data or non-indexed/less established venues should be used cautiously. | Paper 14 is preprint; Paper 29 source access is article-page limited; Paper 32 full-text details are limited. | Confident | Cautious does not mean useless. It means the claim should match the evidence level. |
@@ -135,25 +135,3 @@ Example:
 | What if the model does not perform well? | Then the result is still useful if it shows which variables, data gaps or validation limits reduce predictive value. | Paper 30 shows modest AUC can still be informative. | Confident | The PhD should not depend only on achieving high accuracy. |
 | What if external validation is not possible? | Then the thesis should state internal/temporal validation only and position external validation as future work. | Dataset feasibility page; external validation gap. | Conditional | I should not label internal testing as external validation. |
 | What claims will you avoid? | I will avoid claiming that AI improves IVF success, replaces clinicians, proves causality, or generalizes to all Indian clinics without evidence. | Papers 26, 28, 32 and 35. | Confident | Conservative claims are more defensible in panel and thesis. |
-
-## Stage 2 Completion Check
-
-Stage 2 v1 is complete when:
-
-- high-priority questions have safe answers
-- every answer has a confidence label
-- dataset-dependent answers are clearly marked conditional
-- unsupported claims are explicitly avoided
-
-## Stage 3 Preview
-
-Stage 3 should convert the dataset-related answers into a feasibility framework:
-
-| Dataset Situation | Feasible Direction |
-| --- | --- |
-| Clinical data only | Explainable clinical IVF outcome prediction |
-| Clinical + embryology data | Multimodal clinical-embryology IVF prediction |
-| Clinical + lifestyle data | Personalized IVF risk-factor and outcome modeling |
-| One clinic only | Internal/temporal validation with single-center limitation |
-| Two or more clinics | External validation and generalization analysis |
-| No live birth outcome | Clinical pregnancy outcome with clear limitation |

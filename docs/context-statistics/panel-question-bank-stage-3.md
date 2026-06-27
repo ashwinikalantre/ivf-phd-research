@@ -1,6 +1,6 @@
-# Panel Question Bank Stage 3
+# Dataset Feasibility Plan
 
-Stage 3 converts dataset uncertainty into a clear feasibility framework.
+This page converts dataset uncertainty into a clear feasibility framework.
 
 The purpose is to answer panel questions like:
 
@@ -10,11 +10,6 @@ The purpose is to answer panel questions like:
 - Can this be done with one clinic?
 - What claims will you avoid?
 
-## Stage 3 Rule
-
-Do not force the original title if the dataset does not support it.
-
-The final title must follow the data.
 
 ## Feasibility Levels
 
@@ -202,26 +197,3 @@ Use this before meeting doctors or clinics.
 | Clinician review | Can doctors review sample model explanations? | Decides CDSS usability objective. |
 | Ethics | What approvals are required? | Required before data use. |
 | Data format | Is data in Excel, EMR, paper or mixed format? | Determines cleaning effort. |
-
-## Stage 3 Completion Check
-
-Stage 3 is complete when:
-
-- every dataset limitation has a fallback plan
-- title options are tied to available data
-- unsupported claims are blocked
-- minimum, strong and best dataset scenarios are clear
-- doctor meeting questions are ready
-
-## Next Stage
-
-Stage 4 should create the variable and outcome map:
-
-- dependent variables
-- independent variables
-- confounders
-- moderators
-- mediators
-- mandatory variables
-- optional variables
-- variables that require ethics caution

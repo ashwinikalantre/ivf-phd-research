@@ -1,16 +1,9 @@
-# Panel Question Bank Stage 7
+# Panel Defense Script
 
-Stage 7 converts the preparation into speaking scripts for the faculty panel.
+This page converts the preparation into speaking scripts for the faculty panel.
 
 The aim is to sound clear, honest and research-ready, without pretending that the final title or dataset is already fixed.
 
-## Stage 7 Rule
-
-Speak in three layers:
-
-1. what is already confirmed from literature
-2. what is conditional on clinic data
-3. what is not yet claimable
 
 ## 30-Second Topic Introduction
 
@@ -143,7 +136,7 @@ Safe answer:
 
 Safe answer:
 
-> I cannot claim that at this stage. Improving success would require prospective clinical testing. The current aim is prediction, explanation, validation and decision-support design.
+> I cannot claim that at this point. Improving success would require prospective clinical testing. The current aim is prediction, explanation, validation and decision-support design.
 
 ### What is the role of doctors?
 
@@ -191,21 +184,3 @@ My current work is not a forced title. It is a structured topic discovery proces
 The literature supports IVF-AI as an active area, but repeated gaps remain in validation, explainability, clinical decision support and real-world usefulness.
 
 The next step is dataset confirmation with doctors and clinics. After that, I can responsibly finalize the title, research questions, hypotheses and methodology.
-
-## Stage 7 Completion Check
-
-Stage 7 is complete when:
-
-- the student can explain the topic in 30 seconds, 2 minutes and 5 minutes
-- difficult questions have safe answers
-- confirmed, conditional and not-claimable statements are separated
-- answers stay simple and evidence-aware
-
-## Next Stage
-
-Stage 8 should polish the site documentation:
-
-- connect pages more clearly
-- reduce duplication
-- create a panel-preparation landing page
-- make the question-bank workflow easier to navigate

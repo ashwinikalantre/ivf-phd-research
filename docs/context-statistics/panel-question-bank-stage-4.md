@@ -1,16 +1,9 @@
-# Panel Question Bank Stage 4
+# Variable and Outcome Map
 
-Stage 4 organizes variables and outcomes so panel answers stay precise.
+This page organizes variables and outcomes so panel answers stay precise.
 
 The goal is to avoid vague answers like "we will collect many IVF variables." Instead, every variable should have a role, source, timing and feasibility status.
 
-## Stage 4 Rule
-
-Do not finalize variables before clinic data audit.
-
-Use this wording:
-
-> These are candidate variables. The final variable set will depend on what the clinic records reliably and what ethics approval allows.
 
 ## Outcome Map
 
@@ -239,25 +232,3 @@ Answer:
 > Embryo variables can add information about fertilization and embryo development, which clinical baseline variables alone may miss. But I will include them only if structured embryology records are available.
 
 Confidence: **Conditional**
-
-## Stage 4 Completion Check
-
-Stage 4 is complete when:
-
-- dependent variables are separated from predictors
-- variable timing is clear
-- embryology and lifestyle claims are conditional
-- confounders, moderators and mediators are understood
-- every variable group maps to what can or cannot be claimed
-
-## Next Stage
-
-Stage 5 should create tentative research questions and hypotheses.
-
-Each hypothesis must include:
-
-- required data
-- outcome variable
-- independent variables
-- statistical or ML test
-- confidence condition

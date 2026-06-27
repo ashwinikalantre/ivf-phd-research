@@ -12,34 +12,34 @@ Every panel answer should fall into one of three categories:
 | --- | --- |
 | Confident | Supported by reviewed papers, statistics pages or reliable sources. |
 | Conditional | Depends on clinic data, ethics approval, outcome availability or clinician review. |
-| Not yet claimable | Should not be stated as a conclusion at this stage. |
+| Not yet claimable | Should not be stated as a conclusion at this point. |
 
 ## Recommended Reading Order
 
 | Step | Page | Use |
 | ---: | --- | --- |
-| 1 | [Stage 1: Question Skeleton](panel-question-bank-stage-1.md) | See the full set of possible faculty questions. |
-| 2 | [Stage 2: Evidence-Based Answers](panel-question-bank-stage-2.md) | Learn safe answers with confidence labels. |
-| 3 | [Stage 3: Feasibility Framework](panel-question-bank-stage-3.md) | Prepare fallback answers for dataset limitations. |
-| 4 | [Stage 4: Variable and Outcome Map](panel-question-bank-stage-4.md) | Understand dependent variables, predictors and claim boundaries. |
-| 5 | [Stage 5: Research Questions and Hypotheses](panel-question-bank-stage-5.md) | Use only testable, dataset-dependent hypotheses. |
-| 6 | [Stage 6: Methodology Blueprint](panel-question-bank-stage-6.md) | Explain how the study will be conducted. |
-| 7 | [Stage 7: Defense Script](panel-question-bank-stage-7.md) | Practice 30-second, 2-minute and 5-minute answers. |
+| 1 | [Panel Question Areas](panel-question-bank-stage-1.md) | See the full set of possible faculty questions. |
+| 2 | [Evidence-Based Panel Answers](panel-question-bank-stage-2.md) | Learn safe answers with confidence labels. |
+| 3 | [Dataset Feasibility Plan](panel-question-bank-stage-3.md) | Prepare fallback answers for dataset limitations. |
+| 4 | [Variable and Outcome Map](panel-question-bank-stage-4.md) | Understand dependent variables, predictors and claim boundaries. |
+| 5 | [Research Questions and Hypotheses](panel-question-bank-stage-5.md) | Use only testable, dataset-dependent hypotheses. |
+| 6 | [Methodology Blueprint](panel-question-bank-stage-6.md) | Explain how the study will be conducted. |
+| 7 | [Panel Defense Script](panel-question-bank-stage-7.md) | Practice 30-second, 2-minute and 5-minute answers. |
 | 8 | [Quick Panel Question Bank](panel-question-bank.md) | Use before the actual meeting for compact revision. |
-| 9 | [Stage 9: Final Claim Audit](panel-question-bank-stage-9.md) | Check unsupported claims, stale numbers and title wording. |
+| 9 | [Final Claim Audit](panel-question-bank-stage-9.md) | Check unsupported claims, stale numbers and title wording. |
 
-## What Each Stage Solves
+## What Each Page Solves
 
-| Stage | Main Problem It Solves |
+| Page | Main Problem It Solves |
 | --- | --- |
-| Stage 1 | "What questions can faculty ask?" |
-| Stage 2 | "How do I answer safely without assumptions?" |
-| Stage 3 | "What if I do not get all data?" |
-| Stage 4 | "Which variables matter, and what can I claim from them?" |
-| Stage 5 | "Which research questions and hypotheses are testable?" |
-| Stage 6 | "What is the methodology?" |
-| Stage 7 | "How do I speak clearly in the panel?" |
-| Stage 9 | "What should I re-check or avoid before presenting?" |
+| Panel Question Areas | What questions can faculty ask? |
+| Evidence-Based Panel Answers | How do I answer safely without assumptions? |
+| Dataset Feasibility Plan | What if I do not get all data? |
+| Variable and Outcome Map | Which variables matter, and what can I claim from them? |
+| Research Questions and Hypotheses | Which research questions and hypotheses are testable? |
+| Methodology Blueprint | What is the methodology? |
+| Panel Defense Script | How do I speak clearly in the panel? |
+| Final Claim Audit | What should I re-check or avoid before presenting? |
 
 ## Final Panel Position
 
@@ -63,7 +63,7 @@ Use this as the central message:
 | Final dataset | Not confirmed |
 | Final hypotheses | Not fixed |
 
-## Stop Rules
+## When To Stop Polishing
 
 Stop polishing and move to doctor/clinic discussion when you can answer:
 
@@ -82,18 +82,18 @@ Stop polishing and move to doctor/clinic discussion when you can answer:
 
 Read in this order:
 
-1. Stage 7 for spoken answers.
-2. Stage 2 for safe evidence-backed answers.
-3. Stage 3 for feasibility questions.
-4. Stage 4 for variable questions.
+1. Panel Defense Script for spoken answers.
+2. Evidence-Based Panel Answers for safe evidence-backed answers.
+3. Dataset Feasibility Plan for feasibility questions.
+4. Variable and Outcome Map for variable questions.
 5. Quick panel question bank for revision.
 
 ## Before Meeting Doctors
 
 Read in this order:
 
-1. Stage 3 for data feasibility scenarios.
-2. Stage 4 for variable and outcome mapping.
+1. Dataset Feasibility Plan for data feasibility scenarios.
+2. Variable and Outcome Map for variable and outcome mapping.
 3. [Data Collection Framework](../research-design/data-collection-framework.md).
 4. [Clinic Discussion Checklist](../research-design/clinic-discussion-checklist.md).
 
@@ -107,17 +107,8 @@ Read in this order:
 | We will do external validation. | External validation will be done only if independent data is available. |
 | XAI will make doctors trust the model. | Clinician trust/usefulness must be evaluated separately. |
 
-## Stage 8 Completion Check
-
-Stage 8 is complete when:
-
-- all panel-preparation pages are easy to find
-- the student knows which page to read for which question
-- the workflow separates faculty preparation from doctor data discussion
-- unsupported claims are blocked clearly
-
 ## Final Audit
 
 Before presentation, use:
 
-- [Stage 9: Final Claim Audit](panel-question-bank-stage-9.md)
+- [Final Claim Audit](panel-question-bank-stage-9.md)

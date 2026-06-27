@@ -32,7 +32,7 @@ This page tracks which sources are safest to use in presentation.
 | News articles | Good for context, not core academic evidence. |
 | Social media | Avoid for formal presentation. |
 
-## Presentation Rule
+## Presentation Use
 
 For every number, ask:
 

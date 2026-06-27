@@ -2,7 +2,7 @@
 
 Use this page before the faculty presentation. The aim is to answer clearly, with evidence, without claiming more than the literature and available data support.
 
-## Answering Rule
+## Answering Approach
 
 For every question, answer in this order:
 

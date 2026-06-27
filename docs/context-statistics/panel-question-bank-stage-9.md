@@ -1,21 +1,11 @@
-# Panel Question Bank Stage 9
+# Final Claim Audit
 
-Stage 9 is the final claim audit before faculty or doctor discussion.
+This page is the final claim audit before faculty or doctor discussion.
 
 The purpose is to remove weak claims, stale numbers and unsupported promises.
 
-## Stage 9 Rule
 
-If a statement cannot be supported by a reviewed paper, reliable statistics source or confirmed clinic data, do not present it as fact.
-
-Use one of these labels:
-
-- **Confirmed**
-- **Conditional**
-- **Not yet claimable**
-- **Needs re-check before presentation**
-
-## Final Claim Audit
+## Claim Audit
 
 | Claim | Status | Safe Wording |
 | --- | --- | --- |
@@ -115,8 +105,8 @@ Before the panel, the student should be able to answer:
 
 | Situation | Decision |
 | --- | --- |
-| Faculty presentation is near | Stop adding new pages; practice Stage 7. |
-| Doctor meeting is next | Use Stage 3, Stage 4 and data collection framework. |
+| Faculty presentation is near | Stop adding new pages; practice Panel Defense Script. |
+| Doctor meeting is next | Use Dataset Feasibility Plan, Variable and Outcome Map and data collection framework. |
 | More literature questions expected | Review paper notes and literature matrix. |
 | More statistics questions expected | Review key statistics and source-quality pages. |
 | Data access is confirmed | Move from panel preparation to final title/objective refinement. |
@@ -126,14 +116,3 @@ Before the panel, the student should be able to answer:
 Use this if the panel asks whether the PhD is ready:
 
 > The literature-backed direction is ready, but the final PhD title should be fixed only after clinic data feasibility is confirmed. I have identified the repeated gaps, prepared dataset scenarios, mapped variables, created conditional research questions and planned a methodology that avoids unsupported claims.
-
-## Stage 9 Completion Check
-
-Stage 9 is complete when:
-
-- unsupported claims are blocked
-- stale numbers are marked for re-check
-- title words are tied to data availability
-- hypotheses are tied to testable data
-- methodology claims are tied to validation level
-- the student knows when to stop polishing and move to clinic confirmation

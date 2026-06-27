@@ -1,20 +1,9 @@
-# Panel Question Bank Stage 6
+# Methodology Blueprint
 
-Stage 6 gives a methodology blueprint for panel discussion.
+This page gives a methodology blueprint for panel discussion.
 
 This is not the final thesis methodology. It is a defensible workflow that can be adapted after clinic data access is confirmed.
 
-## Stage 6 Rule
-
-Methodology must follow the available dataset.
-
-Do not promise:
-
-- deep learning without image/video or large data
-- external validation without independent data
-- clinician usability without clinician review
-- live-birth prediction without live-birth follow-up
-- clinical deployment without ethics approval and clinic permission
 
 ## Methodology Overview
 
@@ -318,24 +307,3 @@ Answer:
 > Every claim will be tied to validation type. Internal validation supports local model performance, external validation supports generalization, and clinician review supports usability. I will not claim improved IVF success unless a prospective clinical study proves it.
 
 Confidence: **Confident**
-
-## Stage 6 Completion Check
-
-Stage 6 is complete when:
-
-- methodology follows dataset feasibility
-- baseline and ML models are justified
-- evaluation metrics include calibration
-- validation claims are bounded
-- XAI is explained as interpretation, not causality
-- CDSS is framed as doctor support, not decision replacement
-
-## Next Stage
-
-Stage 7 should create the panel defense script:
-
-- 2-minute explanation
-- 5-minute explanation
-- short answers to difficult questions
-- what is confirmed
-- what is pending clinic confirmation

@@ -1,16 +1,9 @@
-# Panel Question Bank Stage 5
+# Research Questions and Hypotheses
 
-Stage 5 creates tentative research questions and hypotheses.
+This page presents tentative research questions and hypotheses.
 
 These are not final thesis commitments. They are dataset-dependent templates for panel discussion.
 
-## Stage 5 Rule
-
-Do not present a hypothesis unless the required data exists.
-
-Use this wording:
-
-> These are tentative research questions and hypotheses. The final set will be selected after clinic data access, outcome availability and variable completeness are confirmed.
 
 ## Research Question Selection Logic
 
@@ -187,28 +180,6 @@ Question:
 
 Answer:
 
-> Not at this stage. That would require a prospective clinical intervention study. My current work can evaluate prediction, explanation, calibration and clinician usefulness, but not claim improved live-birth rates unless future prospective validation is done.
+> Not at this point. That would require a prospective clinical intervention study. My current work can evaluate prediction, explanation, calibration and clinician usefulness, but not claim improved live-birth rates unless future prospective validation is done.
 
 Confidence: **Confident**
-
-## Stage 5 Completion Check
-
-Stage 5 is complete when:
-
-- every research question is tied to required data
-- every hypothesis is conditional and testable
-- unsafe hypotheses are explicitly blocked
-- final RQs can be selected after clinic data audit
-
-## Next Stage
-
-Stage 6 should create the methodology blueprint:
-
-- data collection
-- preprocessing
-- missing data handling
-- model comparison
-- validation
-- XAI
-- clinician review
-- reporting metrics
